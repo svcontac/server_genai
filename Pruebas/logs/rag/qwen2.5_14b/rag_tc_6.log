@@ -1,0 +1,90 @@
+2025-04-29 17:28:39,061 - INFO - --- Running RAG Test 7: Componentes Retroexcavadora (Log file: logs\rag\qwen2.5_14b\rag_tc_6.log) ---
+2025-04-29 17:28:39,061 - INFO - User Query: ¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-29 17:28:39,061 - INFO - Reference: Chasis o bastidor, cabina, ruedas u orugas, estabilizadores, brazo principal (boom), brazo secundario (dipper stick), cucharón (bucket), cargador frontal (front loader), sistemas hidráulicos, motor, sistema de escape, luces y espejos, placa de contrapeso.
+2025-04-29 17:28:39,062 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'componentes externos retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-29 17:28:39,062 - INFO - Running test with conversation ID: test-run-d7361f99-a6e7-4286-9c5b-13ef5a562db0
+2025-04-29 17:29:05,832 - INFO - --- Workflow Output Messages ---
+2025-04-29 17:29:05,832 - INFO - ================================ Human Message =================================
+
+¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-29 17:29:05,833 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (136f55e3-e1ef-4fa9-8e9b-3c388c548b8b)
+ Call ID: 136f55e3-e1ef-4fa9-8e9b-3c388c548b8b
+  Args:
+2025-04-29 17:29:05,833 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 17:29:05,833 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (7c7f97f5-0bab-4e97-9d38-896757fccc29)
+ Call ID: 7c7f97f5-0bab-4e97-9d38-896757fccc29
+  Args:
+    k: 3
+    query: componentes externos retroexcavadora
+2025-04-29 17:29:05,833 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\n133 
+ 
+ 
+ 
+ 
+COMPONENTES DE UNA RETROEXCAVADORA 
+ 
+Cada uno de los componentes de un retroexcavadora cumple una función específica. Esto es lo que 
+las convierte en máquinas tan versátiles, ya que pueden usarse para excavar mientras se utiliza el 
+cargador frontal para transportar material. 
+Una retroexcavadora se compone de varios componentes esenciales que permiten su 
+funcionamiento efectivo en tareas de excavación y carga. 
+FUNCIÓN DE LOS COMPONENTES DE LA ESTRUCTURA DE LA CABINA ROPS – FOPS\n---\n131 
+ 
+ 
+ 
+COMPONENTES EXTERNOS DE UN RETROEXCAVADORA 
+ 
+Los componentes externos de una retroexcavadora son las partes visibles y accesibles desde el 
+exterior de la máquina, que contribuyen a su funcionamiento y operación en tareas de construcción 
+y excavación.\n---\nCOMPONENTES EXTERNOS DE UN RETROEXCAVADORA ............................................................ 131 
+COMPONENTES DE UNA RETROEXCAVADORA ............................................................................ 133 
+COMPONENTES DE LA CABINA DE LA RETROEXCAVADORA ....................................................... 136 
+SISTEMA DE FRENOS ................................................................................................................... 141
+2025-04-29 17:29:05,834 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Según el contexto recuperado, los componentes externos de una retroexcavadora son las partes visibles y accesibles desde el exterior de la máquina. Estas contribuyen a su funcionamiento y operación en tareas de construcción y excavación.
+
+Para obtener detalles específicos sobre cada uno de estos componentes externos, puedes consultar la sección específica del documento que trata sobre los **Componentes Externos de una Retroexcavadora**, la cual comienza en la página 131.
+2025-04-29 17:29:05,834 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (ea5d42ce-dc47-4616-8f0d-039c06334067)
+ Call ID: ea5d42ce-dc47-4616-8f0d-039c06334067
+  Args:
+2025-04-29 17:29:05,835 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 17:29:05,835 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Para obtener más detalles específicos sobre cada uno de los componentes externos de una retroexcavadora, puedes consultar la sección específica del documento que trata sobre estos componentes. Esta información comienza en la página 131.
+
+Si necesitas el texto exacto o más detalles, por favor indícame y lo buscaré para ti.
+2025-04-29 17:29:05,836 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 17:29:05,836 - INFO - --- Calculating answer_accuracy score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 17:29:06,878 - INFO - answer_accuracy: 0.0000
+2025-04-29 17:29:06,878 - INFO - --- Calculating bleu score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 17:29:06,879 - INFO - bleu: 0.0069
+2025-04-29 17:29:06,879 - INFO - --- Calculating rouge score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 17:29:06,881 - INFO - rouge: 0.0430
+2025-04-29 17:29:06,881 - INFO - --- Calculating non_llm_similarity score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 17:29:06,881 - INFO - non_llm_similarity: 0.2229
+2025-04-29 17:29:06,881 - INFO - --- Calculating tool score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 17:29:06,882 - INFO - tool: 1.0000
+2025-04-29 17:29:06,882 - INFO - --- End of RAG Test 7: Componentes Retroexcavadora ---

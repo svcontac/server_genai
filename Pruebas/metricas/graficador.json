@@ -1,0 +1,174 @@
+{
+   "graficador": {
+      "qwen2.5:14b": {
+         "0": {
+            "metricas": {
+               "time": 19.494441747665405,
+               "goal": 1.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 1: Line Plot"
+         },
+         "1": {
+            "metricas": {
+               "time": 14.938438653945923,
+               "goal": 0.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 2: Histogram"
+         },
+         "2": {
+            "metricas": {
+               "time": 36.2481586933136,
+               "goal": 1.0,
+               "tool": 0.4444444444444444
+            },
+            "description": "Test Case 3: Line Plot - 2"
+         },
+         "3": {
+            "metricas": {
+               "time": 37.52289366722107,
+               "goal": 1.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 4: Histogram - 2"
+         }
+      },
+      "PetrosStav/gemma3-tools:12b": {
+         "0": {
+            "metricas": {
+               "time": 69.34637141227722,
+               "goal": 0.0,
+               "tool": 0.5555555555555555
+            },
+            "description": "Test Case 1: Line Plot"
+         },
+         "1": {
+            "metricas": {
+               "time": 47.39712405204773,
+               "goal": 0.0,
+               "tool": 0.5
+            },
+            "description": "Test Case 2: Histogram"
+         },
+         "2": {
+            "metricas": {
+               "time": 37.099738359451294,
+               "goal": 0.0,
+               "tool": 0.0
+            },
+            "description": "Test Case 3: Line Plot - 2"
+         },
+         "3": {
+            "metricas": {
+               "time": 68.06172299385071,
+               "goal": 0.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 4: Histogram - 2"
+         }
+      },
+      "hf.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf:F16": {
+         "0": {
+            "metricas": {
+               "time": 30.669412851333618,
+               "goal": 1.0,
+               "tool": 0.0
+            },
+            "description": "Test Case 1: Line Plot"
+         },
+         "1": {
+            "metricas": {
+               "time": 18.550979137420654,
+               "goal": 0.0,
+               "tool": 0.0
+            },
+            "description": "Test Case 2: Histogram"
+         },
+         "2": {
+            "metricas": {
+               "time": 21.938717126846313,
+               "goal": 0.0,
+               "tool": 0.0
+            },
+            "description": "Test Case 3: Line Plot - 2"
+         },
+         "3": {
+            "metricas": {
+               "time": 20.082268238067627,
+               "goal": 0.0,
+               "tool": 0.0
+            },
+            "description": "Test Case 4: Histogram - 2"
+         }
+      },
+      "hf.co/Eddie-3dd13/ToolACE-2-Llama-3.1-8B-Q8_0-GGUF:Q8_0": {
+         "0": {
+            "metricas": {
+               "time": 18.856406211853027,
+               "goal": 1.0,
+               "tool": 0.0
+            },
+            "description": "Test Case 1: Line Plot"
+         },
+         "1": {
+            "metricas": {
+               "time": 12.305072546005249,
+               "goal": 0.0,
+               "tool": 0.0
+            },
+            "description": "Test Case 2: Histogram"
+         },
+         "2": {
+            "metricas": {
+               "time": 12.810960054397583,
+               "goal": 0.0,
+               "tool": 0.0
+            },
+            "description": "Test Case 3: Line Plot - 2"
+         },
+         "3": {
+            "metricas": {
+               "time": 16.259648084640503,
+               "goal": 0.0,
+               "tool": 0.0
+            },
+            "description": "Test Case 4: Histogram - 2"
+         }
+      },
+      "qwen3:14b": {
+         "0": {
+            "metricas": {
+               "time": 22.76539635658264,
+               "goal": 1.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 1: Line Plot"
+         },
+         "1": {
+            "metricas": {
+               "time": 21.117486238479614,
+               "goal": 0.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 2: Histogram"
+         },
+         "2": {
+            "metricas": {
+               "time": 28.15305233001709,
+               "goal": 1.0,
+               "tool": 0.8888888888888888
+            },
+            "description": "Test Case 3: Line Plot - 2"
+         },
+         "3": {
+            "metricas": {
+               "time": 20.247830867767334,
+               "goal": 0.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 4: Histogram - 2"
+         }
+      }
+   }
+}

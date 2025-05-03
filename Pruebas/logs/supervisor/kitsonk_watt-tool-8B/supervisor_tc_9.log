@@ -1,0 +1,18 @@
+2025-04-28 17:31:26,861 - INFO - --- Running TC 10 (RAG): Delegate Reserva Plata 2016 Query (Log file: logs\supervisor\kitsonk_watt-tool-8B\supervisor_tc_9.log) ---
+2025-04-28 17:31:26,861 - INFO - User Query: ¿Cuál fue la reserva de plata en el Anuario de la Minería de Chile del 2016?
+2025-04-28 17:31:26,861 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:31:26,861 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:31:26,862 - INFO - Running test with conversation ID: test-run-7a37c143-b9b7-421d-bcfb-9997bc77d7ad
+2025-04-28 17:31:27,148 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:31:27,148 - INFO - ================================ Human Message =================================
+
+¿Cuál fue la reserva de plata en el Anuario de la Minería de Chile del 2016?
+2025-04-28 17:31:27,149 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_rag_expert, "parameters": {}}
+2025-04-28 17:31:27,149 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:31:27,149 - INFO - --- Calculating tool score for TC 10 (RAG): Delegate Reserva Plata 2016 Query ---
+2025-04-28 17:31:27,149 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:31:27,149 - INFO - tool: 0.0000
+2025-04-28 17:31:27,150 - INFO - --- End of TC 10 (RAG): Delegate Reserva Plata 2016 Query ---

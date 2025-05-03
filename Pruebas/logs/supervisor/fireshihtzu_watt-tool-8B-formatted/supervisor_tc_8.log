@@ -1,0 +1,18 @@
+2025-04-28 17:32:16,943 - INFO - --- Running TC 9 (RAG): Delegate PIB Cobre 2023 Query (Log file: logs\supervisor\fireshihtzu_watt-tool-8B-formatted\supervisor_tc_8.log) ---
+2025-04-28 17:32:16,943 - INFO - User Query: ¿Cuál fue el porcentaje del PIB nacional correspondiente al cobre en el año 2023?
+2025-04-28 17:32:16,943 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:32:16,943 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:32:16,943 - INFO - Running test with conversation ID: test-run-48c318a1-8024-4842-8318-825837cda6d6
+2025-04-28 17:32:17,226 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:32:17,226 - INFO - ================================ Human Message =================================
+
+¿Cuál fue el porcentaje del PIB nacional correspondiente al cobre en el año 2023?
+2025-04-28 17:32:17,226 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_rag_expert, "parameters": {}}
+2025-04-28 17:32:17,226 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:32:17,226 - INFO - --- Calculating tool score for TC 9 (RAG): Delegate PIB Cobre 2023 Query ---
+2025-04-28 17:32:17,227 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:32:17,227 - INFO - tool: 0.0000
+2025-04-28 17:32:17,227 - INFO - --- End of TC 9 (RAG): Delegate PIB Cobre 2023 Query ---

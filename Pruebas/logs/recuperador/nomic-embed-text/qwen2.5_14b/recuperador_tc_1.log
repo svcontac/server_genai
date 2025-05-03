@@ -1,0 +1,56 @@
+2025-04-28 15:21:49,123 - INFO - --- Running Test Case 2: Estrategia Nacional del Litio (Log file: logs\recuperador\qwen2.5_14b\recuperador_tc_1.log) ---
+2025-04-28 15:21:49,124 - INFO - User Query: Puedes entregarme el archivo pdf que hable sobre la estrategia nacional del Litio
+2025-04-28 15:21:49,124 - INFO - Reference: El documento que estás buscando es src\data\mineria_chilena_removed.pdf
+2025-04-28 15:21:49,124 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'estrategia nacional del Litio'})", 'transfer_back_to_supervisor({})']
+2025-04-28 15:21:49,124 - INFO - Running test with conversation ID: test-run-6042a12d-ecbb-4296-ac2f-a6284a9838ab
+2025-04-28 15:22:01,791 - INFO - --- Workflow Output Messages ---
+2025-04-28 15:22:01,791 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que hable sobre la estrategia nacional del Litio
+2025-04-28 15:22:01,792 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (15daa74d-2be7-469b-8bdf-b9ff1a96ebab)
+ Call ID: 15daa74d-2be7-469b-8bdf-b9ff1a96ebab
+  Args:
+2025-04-28 15:22:01,792 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-28 15:22:01,792 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (04cb3cc8-dac6-4e95-a480-e95fae7a3fc1)
+ Call ID: 04cb3cc8-dac6-4e95-a480-e95fae7a3fc1
+  Args:
+    query: estrategia nacional del Litio
+2025-04-28 15:22:01,792 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+src\data\mineria_chilena_removed.pdf
+2025-04-28 15:22:01,793 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+src/data/mineria_chilena_removed.pdf
+2025-04-28 15:22:01,793 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (8b3c7a19-fe4a-4f15-acb7-5479d4402ec5)
+ Call ID: 8b3c7a19-fe4a-4f15-acb7-5479d4402ec5
+  Args:
+2025-04-28 15:22:01,793 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 15:22:01,793 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento que estás buscando es src/data/mineria_chilena_removed.pdf.
+2025-04-28 15:22:01,794 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 15:22:01,794 - INFO - --- Calculating goal score for Test Case 2: Estrategia Nacional del Litio ---
+2025-04-28 15:22:11,775 - INFO - goal: 1.0000
+2025-04-28 15:22:11,775 - INFO - --- Calculating tool score for Test Case 2: Estrategia Nacional del Litio ---
+2025-04-28 15:22:11,776 - INFO - tool: 1.0000
+2025-04-28 15:22:11,776 - INFO - --- End of Test Case 2: Estrategia Nacional del Litio ---

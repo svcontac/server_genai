@@ -1,0 +1,76 @@
+2025-04-28 20:59:02,822 - INFO - --- Running RAG Test 1: Producción Ministro Hales (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_0.log) ---
+2025-04-28 20:59:02,823 - INFO - User Query: ¿Cuál es la producción diaria estimada para la mina Ministro Hales?
+2025-04-28 20:59:02,823 - INFO - Reference: Tendría una producción diaria de 50.000 toneladas de mineral.
+2025-04-28 20:59:02,823 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'producción diaria estimada mina Ministro Hales'})", 'transfer_back_to_supervisor({})']
+2025-04-28 20:59:02,823 - INFO - Running test with conversation ID: test-run-e4757a2b-adae-4a9b-a50d-dc01d111824b
+2025-04-28 20:59:37,798 - INFO - --- Workflow Output Messages ---
+2025-04-28 20:59:37,800 - INFO - ================================ Human Message =================================
+
+¿Cuál es la producción diaria estimada para la mina Ministro Hales?
+2025-04-28 20:59:37,800 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (814a9c8c-51f6-445e-a9a4-aedb23a36dfe)
+ Call ID: 814a9c8c-51f6-445e-a9a4-aedb23a36dfe
+  Args:
+2025-04-28 20:59:37,800 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 20:59:37,801 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (cdf10f52-6ec7-4ec6-ab71-9b9b27a638b1)
+ Call ID: cdf10f52-6ec7-4ec6-ab71-9b9b27a638b1
+  Args:
+    k: 2
+    query: producción diaria estimada Ministro Hales
+2025-04-28 20:59:37,801 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nrajo abierto de 
+Ministro Hales, a 
+10 km al norte de 
+la localidad de 
+Calama en la región 
+de Antofagasta. 
+Construcción de la planta stockpile del proyecto 
+Ministro Hales.\n---\nOperación estimada: a fines de 2013
+Vida útil: 17 años (con posibilidad de continuar 
+con minería subterránea)
+fotos gentileza codelco
+ tendría una capacidad de producción diaria de 50.000 toneladas 
+de mineral, en un proceso que comprende una línea de chancado 
+primario, molienda S aG y dos molinos de bolas, entre otras.
+2025-04-28 20:59:37,802 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+La mina Ministro Hales tendría una capacidad de producción diaria estimada de 50,000 toneladas de mineral.
+2025-04-28 20:59:37,802 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (a596a11e-84d9-4633-a4da-7ae1fa98e7ee)
+ Call ID: a596a11e-84d9-4633-a4da-7ae1fa98e7ee
+  Args:
+2025-04-28 20:59:37,802 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 20:59:37,802 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+La producción diaria estimada para la mina Ministro Hales es de 50,000 toneladas de mineral.
+2025-04-28 20:59:37,803 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 20:59:37,803 - INFO - --- Calculating answer_accuracy score for RAG Test 1: Producción Ministro Hales ---
+2025-04-28 20:59:38,674 - INFO - answer_accuracy: 1.0000
+2025-04-28 20:59:38,674 - INFO - --- Calculating bleu score for RAG Test 1: Producción Ministro Hales ---
+2025-04-28 20:59:38,677 - INFO - bleu: 0.1892
+2025-04-28 20:59:38,677 - INFO - --- Calculating rouge score for RAG Test 1: Producción Ministro Hales ---
+2025-04-28 20:59:38,678 - INFO - rouge: 0.6207
+2025-04-28 20:59:38,678 - INFO - --- Calculating non_llm_similarity score for RAG Test 1: Producción Ministro Hales ---
+2025-04-28 20:59:38,680 - INFO - non_llm_similarity: 0.4891
+2025-04-28 20:59:38,680 - INFO - --- Calculating tool score for RAG Test 1: Producción Ministro Hales ---
+2025-04-28 20:59:38,681 - INFO - tool: 0.6667
+2025-04-28 20:59:38,681 - INFO - --- End of RAG Test 1: Producción Ministro Hales ---

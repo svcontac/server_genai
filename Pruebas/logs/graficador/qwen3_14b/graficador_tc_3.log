@@ -1,0 +1,66 @@
+2025-04-29 12:29:53,573 - INFO - --- Running Test Case 4: Histogram - 2 (Log file: logs\graficador\qwen3_14b\graficador_tc_3.log) ---
+2025-04-29 12:29:53,573 - INFO - User Query: Puedes graficar la frecuencia de la variable_1 de los datos en data.csv
+2025-04-29 12:29:53,573 - INFO - Reference: Histograma (plot_histogram) realizado exitosamente.
+2025-04-29 12:29:53,573 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'histogram'})", "plot_histogram({'column': 'variable_1', 'file_path': 'src/data/data.csv'})", 'transfer_back_to_supervisor({})']
+2025-04-29 12:29:53,574 - INFO - Running test with conversation ID: test-run-b449681d-d535-4730-bbf6-6b3c37429acf
+2025-04-29 12:30:13,822 - INFO - --- Workflow Output Messages ---
+2025-04-29 12:30:13,822 - INFO - ================================ Human Message =================================
+
+Puedes graficar la frecuencia de la variable_1 de los datos en data.csv
+2025-04-29 12:30:13,822 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_graph_expert (ae148fce-81cf-4737-8f95-2ec868e3b13a)
+ Call ID: ae148fce-81cf-4737-8f95-2ec868e3b13a
+  Args:
+    type: histogram
+2025-04-29 12:30:13,823 - INFO - ================================= Tool Message =================================
+Name: assign_to_graph_expert
+
+Successfully transferred to graph_expert
+2025-04-29 12:30:13,823 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_histogram (1e566375-b214-47e0-8339-65f5b06cdfb4)
+ Call ID: 1e566375-b214-47e0-8339-65f5b06cdfb4
+  Args:
+    column: variable_1
+    file_path: src/data/data.csv
+2025-04-29 12:30:13,823 - INFO - ================================= Tool Message =================================
+Name: plot_histogram
+
+Histograma (plot_histogram) realizado exitosamente
+2025-04-29 12:30:13,823 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+<think>
+
+</think>
+
+El histograma de la variable "variable_1" de los datos en "data.csv" se ha generado exitosamente. Si necesitas más análisis o gráficos, no dudes en pedirlo.
+2025-04-29 12:30:13,824 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (3d6f769a-184b-4003-9b2e-397669c77b5b)
+ Call ID: 3d6f769a-184b-4003-9b2e-397669c77b5b
+  Args:
+2025-04-29 12:30:13,824 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 12:30:13,824 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+<think>
+
+</think>
+
+El histograma de la variable "variable_1" de los datos en "data.csv" se ha generado exitosamente. Si necesitas más análisis o gráficos, no dudes en pedirlo.
+2025-04-29 12:30:13,825 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 12:30:13,825 - INFO - --- Calculating goal score for Test Case 4: Histogram - 2 ---
+2025-04-29 12:30:27,740 - INFO - goal: 0.0000
+2025-04-29 12:30:27,740 - INFO - --- Calculating tool score for Test Case 4: Histogram - 2 ---
+2025-04-29 12:30:27,741 - INFO - tool: 0.6667
+2025-04-29 12:30:27,741 - INFO - --- End of Test Case 4: Histogram - 2 ---

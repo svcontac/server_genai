@@ -1,0 +1,52 @@
+2025-04-29 15:08:25,768 - INFO - --- Running TC 7 (RAG): Delegate Inversión Proyecto Query (Log file: logs\supervisor\qwen2.5_14b\supervisor_tc_6.log) ---
+2025-04-29 15:08:25,768 - INFO - User Query: ¿Cuál es la inversión que contempló el proyecto de la mina Ministro Hales?
+2025-04-29 15:08:25,768 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-29 15:08:25,768 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-29 15:08:25,768 - INFO - Running test with conversation ID: test-run-a09c84eb-9e2d-4b2c-948a-2035f7e18c41
+2025-04-29 15:08:59,988 - INFO - --- Workflow Output Messages ---
+2025-04-29 15:08:59,988 - INFO - ================================ Human Message =================================
+
+¿Cuál es la inversión que contempló el proyecto de la mina Ministro Hales?
+2025-04-29 15:08:59,988 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (62e8b747-888d-4155-a10d-3ef4c50381bb)
+ Call ID: 62e8b747-888d-4155-a10d-3ef4c50381bb
+  Args:
+2025-04-29 15:08:59,989 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 15:08:59,989 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (0f0b5779-3e42-40e4-9589-98b949afd188)
+ Call ID: 0f0b5779-3e42-40e4-9589-98b949afd188
+  Args:
+    k: 5
+    query: inversión proyecto mina Ministro Hales
+2025-04-29 15:08:59,995 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+El proyecto de la mina Ministro Hales contempló una inversión total estimada de más de US$ 3.000 millones. Este yacimiento, conocido anteriormente como "Mansa Mina", se ubica a 5 km de Calama en la Región de Antofagasta. La inversión fue necesaria para su desarrollo y operación, que comenzó aproximadamente a fines de 2013.
+2025-04-29 15:08:59,995 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (a5caaed5-c197-460f-b7b9-8f5797489e6b)
+ Call ID: a5caaed5-c197-460f-b7b9-8f5797489e6b
+  Args:
+2025-04-29 15:08:59,996 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 15:08:59,996 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El proyecto de la mina Ministro Hales contempló una inversión total estimada de más de **US$ 3.000 millones**. Este yacimiento, conocido anteriormente como "Mansa Mina", se ubica a 5 km de Calama en la Región de Antofagasta. La inversión fue necesaria para su desarrollo y operación, que comenzó aproximadamente a fines de 2013.
+2025-04-29 15:08:59,997 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 15:08:59,997 - INFO - --- Calculating tool score for TC 7 (RAG): Delegate Inversión Proyecto Query ---
+2025-04-29 15:08:59,997 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-29 15:08:59,997 - INFO - tool: 1.0000
+2025-04-29 15:08:59,997 - INFO - --- End of TC 7 (RAG): Delegate Inversión Proyecto Query ---

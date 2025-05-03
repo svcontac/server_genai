@@ -1,0 +1,150 @@
+2025-04-29 16:14:59,378 - INFO - --- Running RAG Test 12: Excedentes Codelco 2021-2022 (Log file: logs\rag\qwen2.5_14b\rag_tc_11.log) ---
+2025-04-29 16:14:59,378 - INFO - User Query: ¿Cuáles fueron los excedentes de los años 2022, 2021 y la variación respectiva (VAR) en los resultados de Codelco?
+2025-04-29 16:14:59,379 - INFO - Reference: El año 2022 excedentes de 2.769, el año 2021 de 7.478, se tiene una variación de –4.710
+2025-04-29 16:14:59,379 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'excedentes 2022 2021 variación resultados Codelco'})", 'transfer_back_to_supervisor({})']
+2025-04-29 16:14:59,379 - INFO - Running test with conversation ID: test-run-a94c66c2-45fc-4ce5-89f9-c765bc0feed7
+2025-04-29 16:15:51,927 - INFO - --- Workflow Output Messages ---
+2025-04-29 16:15:51,927 - INFO - ================================ Human Message =================================
+
+¿Cuáles fueron los excedentes de los años 2022, 2021 y la variación respectiva (VAR) en los resultados de Codelco?
+2025-04-29 16:15:51,927 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (823150ee-04ea-4ef2-83ef-b65329cf0b25)
+ Call ID: 823150ee-04ea-4ef2-83ef-b65329cf0b25
+  Args:
+2025-04-29 16:15:51,927 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 16:15:51,928 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (8e4c1cdf-5f4e-425b-8320-17992c435b00)
+ Call ID: 8e4c1cdf-5f4e-425b-8320-17992c435b00
+  Args:
+    k: 5
+    query: excedentes Codelco 2021 y 2022
+2025-04-29 16:15:51,928 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nI  ENTREGA DE RESULTADOS 2022 6© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+GENERAMOS US$ 2.746 MILLONES DE EXCEDENTES
+La diferencia de 
+-
+62,9% respecto de 2021 se debe principalmente a 
+la caída de 13,8% en el precio 
+de realización de ventas de cobre en relación al año anterior; 
+la menor venta de cobre y subproductos; 
+e
+l incremento 
+de los precios de los insumos y al menor resultado de filiales.
+Excedentes
+2022
+Excedentes 
+2021
+-700
+Efecto Precio 
+Cu, IPC, Mo\n---\nI  ENTREGA DE RESULTADOS 2022 12© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+• Codelco enfrenta un 
+período de transición
+con importantes desafíos 
+operacionales y de 
+desarrollo de sus 
+proyectos. 
+• Entregaremos a Chile y 
+al mundo una empresa 
+en forma para abordar 
+un futuro de 50 años 
+más de aportes al país.
+• Al finalizar la década, 
+habremos reestablecido
+nuestra capacidad 
+productiva y con la 
+aspiración de crecer acorde 
+a nuestras importantes\n---\nI  ENTREGA DE RESULTADOS 2022 10© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+GESTIÓN 2022
+Los resultados del período se contextualizan en un 
+escenario de alta volatilidad y altos precios de los insumos
+COSTOS C1
+165,4 c/lb
+22,5%   
+superior
+al año 
+anterior
+COSTOS C3
+282,5 c/lb
+con margen 
+de 33%
+generación 
+de caja 
+operacional 
+(EBITDA) 
+US$ 5.565
+MILLONES
+1.446 MIL
+TONELADAS
+de excedentes, 
+62,9% inferior 
+a enero/
+diciembre 
+de 2021
+US$ 2.746 
+MILLONES\n---\nI  ENTREGA DE RESULTADOS 2022 8© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+PROYECTOS ESTRUCTURALES 
+para el futuro de Codelco
+Inversión inicial finalizada
+Se completaron las obras de inversión 
+para la apertura de mina subterránea, que 
+ya está en operaciones desde 2019, mientras 
+que la primera fase de la infraestructura de 
+continuidad del Nivel 1 alcanzó un avance 
+de 32,2%. Durante 2023 se autorizarán 
+fondos para avanzar en la segunda fase.\n---\nDISTRIBUCIÓN DE EXCEDENTES ENERO - DICIEMBRE 2022 / 2021
+(MILLONES DE US$)
+Montos devengados
+(*) Utilidad neta con tributación tipo sector privado, Codelco Individual.
+2025-04-29 16:15:51,930 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Según los resultados entregados por Codelco:
+
+- En el año **2022**, generaron excedentes de **US$ 2.746 millones**.
+
+- Para comparar con el año anterior (2021), hubo una disminución del **62,9%** en los excedentes respecto a 2021.
+
+Por lo tanto, la variación (VAR) entre 2022 y 2021 es de un decremento significativo del 62,9%. Este descenso se debe principalmente a una caída en el precio de realización de ventas de cobre, menor venta de cobre y subproductos, así como al incremento de los precios de insumos.
+2025-04-29 16:15:51,930 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (9bbbc02a-615e-4501-b21a-c2428a7b960e)
+ Call ID: 9bbbc02a-615e-4501-b21a-c2428a7b960e
+  Args:
+2025-04-29 16:15:51,931 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 16:15:51,931 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Según la información proporcionada por Codelco:
+
+- En el año **2022**, generaron excedentes de **US$ 2.746 millones**.
+
+- Para comparar con el año anterior (2021), hubo una disminución del **62,9%** en los excedentes respecto a 2021.
+
+Por lo tanto, la variación entre 2022 y 2021 es un decremento significativo del 62,9%. Este descenso se debe principalmente a una caída en el precio de realización de ventas de cobre, menor venta de cobre y subproductos, así como al incremento de los precios de insumos.
+2025-04-29 16:15:51,931 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 16:15:51,932 - INFO - --- Calculating answer_accuracy score for RAG Test 12: Excedentes Codelco 2021-2022 ---
+2025-04-29 16:15:53,107 - INFO - answer_accuracy: 0.5000
+2025-04-29 16:15:53,107 - INFO - --- Calculating bleu score for RAG Test 12: Excedentes Codelco 2021-2022 ---
+2025-04-29 16:15:53,108 - INFO - bleu: 0.0178
+2025-04-29 16:15:53,108 - INFO - --- Calculating rouge score for RAG Test 12: Excedentes Codelco 2021-2022 ---
+2025-04-29 16:15:53,109 - INFO - rouge: 0.2609
+2025-04-29 16:15:53,109 - INFO - --- Calculating non_llm_similarity score for RAG Test 12: Excedentes Codelco 2021-2022 ---
+2025-04-29 16:15:53,109 - INFO - non_llm_similarity: 0.1465
+2025-04-29 16:15:53,109 - INFO - --- Calculating tool score for RAG Test 12: Excedentes Codelco 2021-2022 ---
+2025-04-29 16:15:53,110 - INFO - tool: 0.6667
+2025-04-29 16:15:53,110 - INFO - --- End of RAG Test 12: Excedentes Codelco 2021-2022 ---

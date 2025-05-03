@@ -1,0 +1,101 @@
+2025-04-29 16:13:02,619 - INFO - --- Running RAG Test 9: Historia Retroexcavadora (Log file: logs\rag\qwen2.5_14b\rag_tc_8.log) ---
+2025-04-29 16:13:02,620 - INFO - User Query: ¿Qué país estuve involucrado en la historia de la retroexcavadora?
+2025-04-29 16:13:02,620 - INFO - Reference: Los EE.UU.
+2025-04-29 16:13:02,620 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'país involucrado historia retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-29 16:13:02,620 - INFO - Running test with conversation ID: test-run-7091d468-70e8-4701-978e-c8b489ae3396
+2025-04-29 16:13:49,198 - INFO - --- Workflow Output Messages ---
+2025-04-29 16:13:49,198 - INFO - ================================ Human Message =================================
+
+¿Qué país estuve involucrado en la historia de la retroexcavadora?
+2025-04-29 16:13:49,199 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (c03e86f3-b73a-41dc-a822-d838194e76fd)
+ Call ID: c03e86f3-b73a-41dc-a822-d838194e76fd
+  Args:
+2025-04-29 16:13:49,199 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 16:13:49,200 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (7865d2c6-973b-4a21-9740-08248ec9b2fe)
+ Call ID: 7865d2c6-973b-4a21-9740-08248ec9b2fe
+  Args:
+    k: 2
+    query: historia retroexcavadora
+2025-04-29 16:13:49,200 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nTRABAJO EN EQUIPO ................................................................................................................... 120 
+MODULO V ................................ ................................ ................................ ...........................  123 
+HISTORIA DE LA RETROEXCAVADORA ......................................................................................... 123\n---\n¿QUÉ ES UNA RETROEXCAVADORA? ........................................................................................... 124 
+APLICACIONES Y ÁMBITOS DE USO ............................................................................................. 125 
+TIPOS DE RETROEXCAVADORAS Y EXCAVADORAS ....................................................................... 127 
+CUÁL ES LA DIFERENCIA ENTRE EXCAVADORA Y RETROEXCAVADORA ....................................... 129
+2025-04-29 16:13:49,200 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Según el contexto recuperado, la historia de la retroexcavadora se menciona en la página 123 del documento. Sin embargo, no proporciona detalles específicos sobre un país particular involucrado en su historia. Necesitaría más información detallada para responder a tu pregunta con precisión.
+
+Para obtener una respuesta más precisa, necesitaríamos acceder al contenido específico de esa sección y buscar menciones explícitas de países relacionados con la historia de la retroexcavadora.
+2025-04-29 16:13:49,201 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (9dcd44e2-9508-49b1-9731-279dd523548d)
+ Call ID: 9dcd44e2-9508-49b1-9731-279dd523548d
+  Args:
+2025-04-29 16:13:49,201 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 16:13:49,201 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (3e46cbaa-b670-4f91-8318-d4cb76a5adee)
+ Call ID: 3e46cbaa-b670-4f91-8318-d4cb76a5adee
+  Args:
+    query: historia retroexcavadora país
+2025-04-29 16:13:49,201 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 16:13:49,202 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+El documento no proporciona información específica sobre un país particular involucrado en la historia de la retroexcavadora. La sección que menciona la historia de la retroexcavadora está resumida pero no contiene detalles geográficos o nacionales.
+
+Para obtener una respuesta más precisa, necesitaríamos acceso a contenido detallado que especifique el país relacionado con la historia de la retroexcavadora.
+2025-04-29 16:13:49,202 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (c310101d-065e-4e95-be6c-e59adcb42653)
+ Call ID: c310101d-065e-4e95-be6c-e59adcb42653
+  Args:
+2025-04-29 16:13:49,202 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 16:13:49,202 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El RAG expert ha revisado la información disponible y no encuentra menciones específicas sobre un país en relación a la historia de la retroexcavadora. Necesitaríamos más detalles o contenido específico para proporcionar una respuesta precisa.
+
+Si tienes acceso a más documentos o necesitas buscar en otros lugares, por favor indícalo.
+2025-04-29 16:13:49,203 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 16:13:49,203 - INFO - --- Calculating answer_accuracy score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-29 16:13:50,166 - INFO - answer_accuracy: 0.0000
+2025-04-29 16:13:50,166 - INFO - --- Calculating bleu score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-29 16:13:50,167 - INFO - bleu: 0.0000
+2025-04-29 16:13:50,168 - INFO - --- Calculating rouge score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-29 16:13:50,168 - INFO - rouge: 0.0000
+2025-04-29 16:13:50,168 - INFO - --- Calculating non_llm_similarity score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-29 16:13:50,169 - INFO - non_llm_similarity: 0.0149
+2025-04-29 16:13:50,169 - INFO - --- Calculating tool score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-29 16:13:50,169 - INFO - tool: 1.0000
+2025-04-29 16:13:50,169 - INFO - --- End of RAG Test 9: Historia Retroexcavadora ---

@@ -1,0 +1,51 @@
+2025-04-28 21:03:53,397 - INFO - --- Running RAG Test 8: Brazo Telescópico (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_7.log) ---
+2025-04-28 21:03:53,397 - INFO - User Query: ¿Qué es un brazo telescópico para la retroexcavadora?
+2025-04-28 21:03:53,398 - INFO - Reference: Un brazo telescópico es un tipo de brazo extensible que se puede alargar y acortar mediante un sistema de secciones deslizantes, similar a cómo funciona un telescopio.
+2025-04-28 21:03:53,398 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'brazo telescópico retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-28 21:03:53,398 - INFO - Running test with conversation ID: test-run-9c0fbedc-da5d-475e-bafe-77bce7db2136
+2025-04-28 21:04:26,792 - INFO - --- Workflow Output Messages ---
+2025-04-28 21:04:26,792 - INFO - ================================ Human Message =================================
+
+¿Qué es un brazo telescópico para la retroexcavadora?
+2025-04-28 21:04:26,792 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (cf155222-9877-4d22-9aa7-40be414732be)
+ Call ID: cf155222-9877-4d22-9aa7-40be414732be
+  Args:
+2025-04-28 21:04:26,793 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 21:04:26,793 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Un brazo telescópico para retroexcavadora, también conocido como brazo extensible o brazo telescópico, es una extensión del brazo principal de la retroexcavadora. Permite alcanzar distancias mayores y excavar a profundidades más significativas que con el brazo estándar.  Esencialmente, proporciona una mayor capacidad de alcance y excavación. Se utiliza comúnmente en aplicaciones como la excavación de zanjas profundas, la limpieza de escombros y la manipulación de materiales a granel.
+2025-04-28 21:04:26,793 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (8a822d88-d619-4726-b1ba-a488326b9941)
+ Call ID: 8a822d88-d619-4726-b1ba-a488326b9941
+  Args:
+2025-04-28 21:04:26,794 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 21:04:26,794 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Un brazo telescópico para retroexcavadora es una pieza que permite al equipo extenderse y alcanzar áreas más lejanas o excavar a mayor profundidad. Este componente es fundamental en diversas tareas de construcción y excavación, mejorando la versatilidad del equipo.
+2025-04-28 21:04:26,794 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 21:04:26,794 - INFO - --- Calculating answer_accuracy score for RAG Test 8: Brazo Telescópico ---
+2025-04-28 21:04:27,803 - INFO - answer_accuracy: 0.7500
+2025-04-28 21:04:27,803 - INFO - --- Calculating bleu score for RAG Test 8: Brazo Telescópico ---
+2025-04-28 21:04:27,803 - INFO - bleu: 0.0584
+2025-04-28 21:04:27,803 - INFO - --- Calculating rouge score for RAG Test 8: Brazo Telescópico ---
+2025-04-28 21:04:27,804 - INFO - rouge: 0.2222
+2025-04-28 21:04:27,805 - INFO - --- Calculating non_llm_similarity score for RAG Test 8: Brazo Telescópico ---
+2025-04-28 21:04:27,805 - INFO - non_llm_similarity: 0.3434
+2025-04-28 21:04:27,805 - INFO - --- Calculating tool score for RAG Test 8: Brazo Telescópico ---
+2025-04-28 21:04:27,805 - INFO - tool: 0.0000
+2025-04-28 21:04:27,805 - INFO - --- End of RAG Test 8: Brazo Telescópico ---

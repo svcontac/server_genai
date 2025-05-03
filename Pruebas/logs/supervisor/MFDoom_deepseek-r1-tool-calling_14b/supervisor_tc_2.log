@@ -1,0 +1,61 @@
+2025-04-28 17:23:20,397 - INFO - --- Running TC 3 (Graficador): Delegate Line Plot Query (Log file: logs\supervisor\MFDoom_deepseek-r1-tool-calling_14b\supervisor_tc_2.log) ---
+2025-04-28 17:23:20,397 - INFO - User Query: Genera un gráfico de línea de la primera columna vs la segunda columna del archivo data.csv
+2025-04-28 17:23:20,397 - INFO - Reference: The goal is to assign the task to the graph expert.
+2025-04-28 17:23:20,397 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'line'})"]
+2025-04-28 17:23:20,397 - INFO - Running test with conversation ID: test-run-ea59e82d-feb8-4fca-afe3-ef3bd3f8840c
+2025-04-28 17:23:40,615 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:23:40,615 - INFO - ================================ Human Message =================================
+
+Genera un gráfico de línea de la primera columna vs la segunda columna del archivo data.csv
+2025-04-28 17:23:40,615 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_graph_expert (7c71f809-44d0-4e81-b618-bd1b2b710678)
+ Call ID: 7c71f809-44d0-4e81-b618-bd1b2b710678
+  Args:
+    file_path: data.csv
+    graph_type: line
+2025-04-28 17:23:40,616 - INFO - ================================= Tool Message =================================
+Name: assign_to_graph_expert
+
+Successfully transferred to graph_expert
+2025-04-28 17:23:40,616 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_line (2e7d0d03-3293-4325-bdf7-5dae738ec327)
+ Call ID: 2e7d0d03-3293-4325-bdf7-5dae738ec327
+  Args:
+    file_path: src/data/data.csv
+    x_col: 0
+    y_col: 1
+2025-04-28 17:23:40,616 - INFO - ================================= Tool Message =================================
+Name: plot_line
+
+null
+2025-04-28 17:23:40,617 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+El gráfico de línea ha sido generado utilizando la primera columna para el eje x y la segunda columna para el eje y del archivo data.csv.
+2025-04-28 17:23:40,617 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (b8f05af4-080a-4d27-b2ce-1dabb003c999)
+ Call ID: b8f05af4-080a-4d27-b2ce-1dabb003c999
+  Args:
+2025-04-28 17:23:40,617 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 17:23:40,617 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+</think>
+
+El gráfico de línea ha sido generado correctamente utilizando la primera columna como eje x y la segunda columna como eje y del archivo data.csv.
+2025-04-28 17:23:40,618 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:23:40,618 - INFO - --- Calculating tool score for TC 3 (Graficador): Delegate Line Plot Query ---
+2025-04-28 17:23:40,618 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:23:40,618 - INFO - tool: 0.0000
+2025-04-28 17:23:40,619 - INFO - --- End of TC 3 (Graficador): Delegate Line Plot Query ---

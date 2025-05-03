@@ -1,0 +1,18 @@
+2025-04-28 17:31:25,450 - INFO - --- Running TC 5 (RAG): Delegate Producción Ministro Hales Query (Log file: logs\supervisor\kitsonk_watt-tool-8B\supervisor_tc_4.log) ---
+2025-04-28 17:31:25,450 - INFO - User Query: ¿Cuál es la producción diaria estimada para la mina Ministro Hales?
+2025-04-28 17:31:25,451 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:31:25,451 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:31:25,451 - INFO - Running test with conversation ID: test-run-f34a8a64-55ab-4ff5-a29d-9ac51355069c
+2025-04-28 17:31:25,727 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:31:25,727 - INFO - ================================ Human Message =================================
+
+¿Cuál es la producción diaria estimada para la mina Ministro Hales?
+2025-04-28 17:31:25,727 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_rag_expert, "parameters": {}}
+2025-04-28 17:31:25,728 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:31:25,728 - INFO - --- Calculating tool score for TC 5 (RAG): Delegate Producción Ministro Hales Query ---
+2025-04-28 17:31:25,728 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:31:25,728 - INFO - tool: 0.0000
+2025-04-28 17:31:25,728 - INFO - --- End of TC 5 (RAG): Delegate Producción Ministro Hales Query ---

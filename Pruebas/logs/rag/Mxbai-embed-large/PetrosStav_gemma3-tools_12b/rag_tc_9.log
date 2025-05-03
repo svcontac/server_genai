@@ -1,0 +1,67 @@
+2025-04-29 10:36:52,733 - INFO - --- Running RAG Test 10: Producción Cobre Codelco 2022 (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_9.log) ---
+2025-04-29 10:36:52,734 - INFO - User Query: ¿Cuál fue la producción de toneladas de cobre fino de Codelco el año 2022?
+2025-04-29 10:36:52,734 - INFO - Reference: 1.445.662 toneladas de cobre fino.
+2025-04-29 10:36:52,734 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'producción toneladas cobre fino Codelco 2022'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:36:52,734 - INFO - Running test with conversation ID: test-run-d543c38f-4a8d-4f71-9fdb-91e0fabd9a9c
+2025-04-29 10:37:39,112 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:37:39,113 - INFO - ================================ Human Message =================================
+
+¿Cuál fue la producción de toneladas de cobre fino de Codelco el año 2022?
+2025-04-29 10:37:39,113 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (be02e588-ef32-423f-b96c-ec45634fd9c1)
+ Call ID: be02e588-ef32-423f-b96c-ec45634fd9c1
+  Args:
+2025-04-29 10:37:39,113 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 10:37:39,113 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (0c671788-44e9-477c-8c42-fe10cde16da4)
+ Call ID: 0c671788-44e9-477c-8c42-fe10cde16da4
+  Args:
+    k: 1
+    query: producción de toneladas de cobre fino de Codelco el año 2022
+2025-04-29 10:37:39,114 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Error retrieving context from FAISS: 
+2025-04-29 10:37:39,114 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+I am sorry, but I was unable to retrieve the information about Codelco's copper production in 2022. It seems there was an error accessing the relevant data. I will try again later.
+
+
+
+Could you please rephrase your question or provide more context?
+2025-04-29 10:37:39,114 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (9dd7795d-7d09-4144-a5d6-1ecb1cb3c040)
+ Call ID: 9dd7795d-7d09-4144-a5d6-1ecb1cb3c040
+  Args:
+2025-04-29 10:37:39,115 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:37:39,115 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al recuperar la información sobre la producción de cobre fino de Codelco en 2022. Parece que ha habido un error accediendo a los datos relevantes. ¿Podrías reformular tu pregunta o proporcionar más contexto?
+2025-04-29 10:37:39,115 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:37:39,115 - INFO - --- Calculating answer_accuracy score for RAG Test 10: Producción Cobre Codelco 2022 ---
+2025-04-29 10:37:40,370 - INFO - answer_accuracy: 0.0000
+2025-04-29 10:37:40,370 - INFO - --- Calculating bleu score for RAG Test 10: Producción Cobre Codelco 2022 ---
+2025-04-29 10:37:40,371 - INFO - bleu: 0.0713
+2025-04-29 10:37:40,371 - INFO - --- Calculating rouge score for RAG Test 10: Producción Cobre Codelco 2022 ---
+2025-04-29 10:37:40,372 - INFO - rouge: 0.1224
+2025-04-29 10:37:40,372 - INFO - --- Calculating non_llm_similarity score for RAG Test 10: Producción Cobre Codelco 2022 ---
+2025-04-29 10:37:40,372 - INFO - non_llm_similarity: 0.0979
+2025-04-29 10:37:40,372 - INFO - --- Calculating tool score for RAG Test 10: Producción Cobre Codelco 2022 ---
+2025-04-29 10:37:40,373 - INFO - tool: 0.6667
+2025-04-29 10:37:40,373 - INFO - --- End of RAG Test 10: Producción Cobre Codelco 2022 ---

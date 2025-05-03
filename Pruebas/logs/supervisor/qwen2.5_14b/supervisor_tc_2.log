@@ -1,0 +1,58 @@
+2025-04-29 15:07:12,261 - INFO - --- Running TC 3 (Graficador): Delegate Line Plot Query (Log file: logs\supervisor\qwen2.5_14b\supervisor_tc_2.log) ---
+2025-04-29 15:07:12,261 - INFO - User Query: Genera un gráfico de línea de la primera columna vs la segunda columna del archivo data.csv
+2025-04-29 15:07:12,261 - INFO - Reference: The goal is to assign the task to the graph expert.
+2025-04-29 15:07:12,261 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'line'})"]
+2025-04-29 15:07:12,261 - INFO - Running test with conversation ID: test-run-5dd54ebf-c5ff-4b65-b9ec-33a25d6b05eb
+2025-04-29 15:07:26,119 - INFO - --- Workflow Output Messages ---
+2025-04-29 15:07:26,119 - INFO - ================================ Human Message =================================
+
+Genera un gráfico de línea de la primera columna vs la segunda columna del archivo data.csv
+2025-04-29 15:07:26,119 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_graph_expert (0a61f37d-1734-4fdd-934e-ae85e189ee27)
+ Call ID: 0a61f37d-1734-4fdd-934e-ae85e189ee27
+  Args:
+    type_of_graph: line plot
+2025-04-29 15:07:26,119 - INFO - ================================= Tool Message =================================
+Name: assign_to_graph_expert
+
+Successfully transferred to graph_expert
+2025-04-29 15:07:26,119 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_line (ebc0fdd5-9df7-462b-a439-7808a828bc8d)
+ Call ID: ebc0fdd5-9df7-462b-a439-7808a828bc8d
+  Args:
+    file_path: src/data/data.csv
+    x_col: 0
+    y_col: 1
+2025-04-29 15:07:26,120 - INFO - ================================= Tool Message =================================
+Name: plot_line
+
+Gráfico de línea (plot_line) realizado exitosamente
+2025-04-29 15:07:26,120 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Se ha generado el gráfico de línea correctamente utilizando la primera columna como eje X y la segunda columna como eje Y del archivo data.csv.
+2025-04-29 15:07:26,120 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (95965eae-336e-4cbd-8cd0-2d49989b6a9a)
+ Call ID: 95965eae-336e-4cbd-8cd0-2d49989b6a9a
+  Args:
+2025-04-29 15:07:26,120 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 15:07:26,121 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El gráfico de línea que solicitaste ha sido generado con éxito a partir del archivo data.csv. La primera columna se utilizó para el eje X y la segunda columna para el eje Y.
+2025-04-29 15:07:26,121 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 15:07:26,121 - INFO - --- Calculating tool score for TC 3 (Graficador): Delegate Line Plot Query ---
+2025-04-29 15:07:26,121 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-29 15:07:26,122 - INFO - tool: 0.0000
+2025-04-29 15:07:26,122 - INFO - --- End of TC 3 (Graficador): Delegate Line Plot Query ---

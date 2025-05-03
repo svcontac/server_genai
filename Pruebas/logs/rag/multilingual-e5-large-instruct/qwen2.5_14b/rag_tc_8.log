@@ -1,0 +1,63 @@
+2025-04-28 22:37:44,131 - INFO - --- Running RAG Test 9: Historia Retroexcavadora (Log file: logs\rag\qwen2.5_14b\rag_tc_8.log) ---
+2025-04-28 22:37:44,131 - INFO - User Query: ¿Qué país estuve involucrado en la historia de la retroexcavadora?
+2025-04-28 22:37:44,131 - INFO - Reference: Los EE.UU.
+2025-04-28 22:37:44,131 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'país involucrado historia retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-28 22:37:44,132 - INFO - Running test with conversation ID: test-run-ea4181c8-5556-4b58-9438-24ad0d287fac
+2025-04-28 22:38:20,215 - INFO - --- Workflow Output Messages ---
+2025-04-28 22:38:20,215 - INFO - ================================ Human Message =================================
+
+¿Qué país estuve involucrado en la historia de la retroexcavadora?
+2025-04-28 22:38:20,216 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (f3fcd443-87f3-45ed-a592-9c7b0c8ce6d4)
+ Call ID: f3fcd443-87f3-45ed-a592-9c7b0c8ce6d4
+  Args:
+2025-04-28 22:38:20,216 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 22:38:20,216 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (cedc165f-416b-4e50-9949-f41639d88cb5)
+ Call ID: cedc165f-416b-4e50-9949-f41639d88cb5
+  Args:
+    k: 2
+    query: historia retroexcavadora
+2025-04-28 22:38:20,217 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Error retrieving context from FAISS: 
+2025-04-28 22:38:20,217 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Lo siento, hubo un error al intentar recuperar la información relacionada con tu pregunta sobre la historia de la retroexcavadora. Por favor, inténtalo nuevamente más tarde o formula tu pregunta de una manera diferente para ver si puedo ayudarte mejor.
+2025-04-28 22:38:20,217 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (8bd3a9e0-1267-408d-97ee-a2189ca7b71b)
+ Call ID: 8bd3a9e0-1267-408d-97ee-a2189ca7b71b
+  Args:
+2025-04-28 22:38:20,217 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 22:38:20,218 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Ha habido un problema técnico al intentar recuperar la información sobre el país involucrado en la historia de la retroexcavadora. Te sugiero que reformules tu pregunta o vuelve a intentarlo más tarde. Si persiste, por favor avísame para buscar una solución alternativa.
+2025-04-28 22:38:20,218 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 22:38:20,218 - INFO - --- Calculating answer_accuracy score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 22:38:21,461 - INFO - answer_accuracy: 0.0000
+2025-04-28 22:38:21,461 - INFO - --- Calculating bleu score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 22:38:21,462 - INFO - bleu: 0.0000
+2025-04-28 22:38:21,462 - INFO - --- Calculating rouge score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 22:38:21,462 - INFO - rouge: 0.0000
+2025-04-28 22:38:21,462 - INFO - --- Calculating non_llm_similarity score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 22:38:21,463 - INFO - non_llm_similarity: 0.0185
+2025-04-28 22:38:21,463 - INFO - --- Calculating tool score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 22:38:21,463 - INFO - tool: 0.6667
+2025-04-28 22:38:21,463 - INFO - --- End of RAG Test 9: Historia Retroexcavadora ---

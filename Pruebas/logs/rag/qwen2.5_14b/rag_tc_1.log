@@ -1,0 +1,94 @@
+2025-04-29 17:26:20,317 - INFO - --- Running RAG Test 2: Áreas Montaje Industrial (Log file: logs\rag\qwen2.5_14b\rag_tc_1.log) ---
+2025-04-29 17:26:20,318 - INFO - User Query: ¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-29 17:26:20,318 - INFO - Reference: áreas 3000, 5000 y 6000.
+2025-04-29 17:26:20,318 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'áreas de montaje industrial proyecto mina Ministro Hales'})", 'transfer_back_to_supervisor({})']
+2025-04-29 17:26:20,318 - INFO - Running test with conversation ID: test-run-b1518c8e-4446-4950-8390-edbdb3aaf422
+2025-04-29 17:26:53,430 - INFO - --- Workflow Output Messages ---
+2025-04-29 17:26:53,430 - INFO - ================================ Human Message =================================
+
+¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-29 17:26:53,430 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (580b26b1-2c7b-46bf-8637-132e0728f4c2)
+ Call ID: 580b26b1-2c7b-46bf-8637-132e0728f4c2
+  Args:
+2025-04-29 17:26:53,431 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 17:26:53,431 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (dc31271b-1f22-4e04-919a-aab8112cddeb)
+ Call ID: dc31271b-1f22-4e04-919a-aab8112cddeb
+  Args:
+    k: 3
+    query: áreas de montaje industrial del proyecto de la mina Ministro Hales
+2025-04-29 17:26:53,431 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nrajo abierto de 
+Ministro Hales, a 
+10 km al norte de 
+la localidad de 
+Calama en la región 
+de Antofagasta. 
+Construcción de la planta stockpile del proyecto 
+Ministro Hales.\n---\nde relaves y concentrados de la mina, se dividió en tres 
+áreas principales, las cuales consideran todos los trabajos 
+de obras civiles, montaje de estructuras, cañerías, mecáni-
+ca, eléctricos y de instrumentación para su completo fun-
+cionamiento”. el proceso se dividió así:
+El área 3000 que es precisamente el sector de espe-
+samiento de relaves y concentrados, contempló el mon-
+taje de cuatro espesadores, dos de relaves de 100 m de 
+diámetro y dos de concentrado de 50 m de diámetro. a\n---\nmunidad de calama y se cumple con los principios susten-
+tables establecidos y declarados por la división.
+es la división ministro Hales, uno de los avances que 
+presenta la cuprífera estatal. una nueva mina que pronto 
+entrará en funcionamiento con tecnología de punta, cum-
+pliendo con las expectativas impuestas. //
+Camión minero y 
+una pala 
+electromecánica en 
+las labores de 
+prestripping en la 
+mina de cobre a 
+rajo abierto de 
+Ministro Hales, a 
+10 km al norte de 
+la localidad de 
+Calama en la región
+2025-04-29 17:26:53,432 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Según el contexto recuperado, las áreas de montaje industrial del proyecto de la mina Ministro Hales se dividen principalmente en tres sectores. Sin embargo, solo se menciona específicamente el área 3000 que es el sector de espesamiento de relaves y concentrados, donde se llevó a cabo el montaje de cuatro espesadores: dos para relaves con un diámetro de 100 metros y otros dos para concentrado con un diámetro de 50 metros. No se proporcionan detalles sobre las otras áreas mencionadas inicialmente.
+2025-04-29 17:26:53,432 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (ab361ec9-b9ed-4169-ae80-648667b83582)
+ Call ID: ab361ec9-b9ed-4169-ae80-648667b83582
+  Args:
+2025-04-29 17:26:53,433 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 17:26:53,433 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Según la información recuperada, en el proyecto de la mina Ministro Hales, se menciona específicamente el área 3000 que es el sector de espesamiento de relaves y concentrados. En esta área se llevó a cabo el montaje de cuatro espesadores: dos para relaves con un diámetro de 100 metros y otros dos para concentrado con un diámetro de 50 metros. No se proporcionan detalles sobre las otras áreas mencionadas inicialmente en la documentación revisada.
+2025-04-29 17:26:53,433 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 17:26:53,433 - INFO - --- Calculating answer_accuracy score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 17:26:54,491 - INFO - answer_accuracy: 0.5000
+2025-04-29 17:26:54,491 - INFO - --- Calculating bleu score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 17:26:54,492 - INFO - bleu: 0.0163
+2025-04-29 17:26:54,492 - INFO - --- Calculating rouge score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 17:26:54,493 - INFO - rouge: 0.0706
+2025-04-29 17:26:54,493 - INFO - --- Calculating non_llm_similarity score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 17:26:54,493 - INFO - non_llm_similarity: 0.0379
+2025-04-29 17:26:54,493 - INFO - --- Calculating tool score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 17:26:54,493 - INFO - tool: 0.6667
+2025-04-29 17:26:54,494 - INFO - --- End of RAG Test 2: Áreas Montaje Industrial ---

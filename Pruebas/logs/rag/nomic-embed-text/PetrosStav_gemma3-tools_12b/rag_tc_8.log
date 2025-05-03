@@ -1,0 +1,70 @@
+2025-04-28 21:04:27,806 - INFO - --- Running RAG Test 9: Historia Retroexcavadora (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_8.log) ---
+2025-04-28 21:04:27,807 - INFO - User Query: ¿Qué país estuve involucrado en la historia de la retroexcavadora?
+2025-04-28 21:04:27,807 - INFO - Reference: Los EE.UU.
+2025-04-28 21:04:27,807 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'país involucrado historia retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-28 21:04:27,807 - INFO - Running test with conversation ID: test-run-148c7676-51f8-43c2-8ea1-2ccef48d1ba7
+2025-04-28 21:05:08,879 - INFO - --- Workflow Output Messages ---
+2025-04-28 21:05:08,879 - INFO - ================================ Human Message =================================
+
+¿Qué país estuve involucrado en la historia de la retroexcavadora?
+2025-04-28 21:05:08,880 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (4d2a78f4-5571-4fef-adbe-45169c22ca48)
+ Call ID: 4d2a78f4-5571-4fef-adbe-45169c22ca48
+  Args:
+2025-04-28 21:05:08,880 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 21:05:08,880 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (f5007a09-ef7d-4b22-b0ff-ae370c3cba33)
+ Call ID: f5007a09-ef7d-4b22-b0ff-ae370c3cba33
+  Args:
+    k: 1
+    query: history of the backhoe
+2025-04-28 21:05:08,880 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nUso:  Excavación general, carga y descarga de materiales, y construcción. 
+Retroexcavadoras Deslizantes (Backhoe Loaders): 
+Descripción: Equipadas con un sistema que permite el deslizamiento lateral de la retroexcavadora 
+para mejorar el alcance. 
+Uso: Trabajos en espacios reducidos y maniobras en áreas estrechas. 
+Excavadoras de Alto Alcance: 
+Descripción: Equipadas con un brazo más largo que las retroexcavadoras estándar. 
+Uso: Excavación profunda, demolición y trabajos en sitios de difícil acceso.
+2025-04-28 21:05:08,881 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Según la información disponible, la retroexcavadora se utiliza para excavación general, carga y descarga de materiales, y construcción. También existen variantes como las retroexcavadoras deslizantes y las excavadoras de alto alcance, diseñadas para trabajos específicos. La información no especifica un país involucrado en la historia de la retroexcavadora.
+2025-04-28 21:05:08,881 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (57401825-ef95-491d-82d1-10629841afe1)
+ Call ID: 57401825-ef95-491d-82d1-10629841afe1
+  Args:
+2025-04-28 21:05:08,881 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 21:05:08,882 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+La información proporcionada no menciona específicamente a ningún país involucrado en la historia de la retroexcavadora. La descripción se centra en las características y usos generales de este tipo de maquinaria. Si necesitas detalles más específicos sobre un país particular, por favor indícalo para que podamos buscar esa información con mayor precisión.
+2025-04-28 21:05:08,882 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 21:05:08,882 - INFO - --- Calculating answer_accuracy score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 21:05:10,140 - INFO - answer_accuracy: 0.0000
+2025-04-28 21:05:10,140 - INFO - --- Calculating bleu score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 21:05:10,141 - INFO - bleu: 0.0000
+2025-04-28 21:05:10,141 - INFO - --- Calculating rouge score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 21:05:10,142 - INFO - rouge: 0.0000
+2025-04-28 21:05:10,142 - INFO - --- Calculating non_llm_similarity score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 21:05:10,142 - INFO - non_llm_similarity: 0.0168
+2025-04-28 21:05:10,142 - INFO - --- Calculating tool score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 21:05:10,142 - INFO - tool: 0.6667
+2025-04-28 21:05:10,142 - INFO - --- End of RAG Test 9: Historia Retroexcavadora ---

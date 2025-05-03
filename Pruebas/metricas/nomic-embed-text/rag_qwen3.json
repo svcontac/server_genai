@@ -1,0 +1,149 @@
+{
+    "rag": {
+        "qwen3:14b": {
+            "0": {
+                "metricas": {
+                    "time": 87.37790632247925,
+                    "answer_accuracy": 0.0,
+                    "bleu": 0.0,
+                    "rouge": 0.02666666666666666,
+                    "non_llm_similarity": 0.022502960915909975,
+                    "tool": 0.0
+                },
+                "description": "RAG Test 1: Producci\u00f3n Ministro Hales"
+            },
+            "1": {
+                "metricas": {
+                    "time": 58.18155813217163,
+                    "answer_accuracy": 0.0,
+                    "bleu": 0.01914603069010251,
+                    "rouge": 0.005141388174807198,
+                    "non_llm_similarity": 0.005620608899297386,
+                    "tool": 0.0
+                },
+                "description": "RAG Test 2: \u00c1reas Montaje Industrial"
+            },
+            "2": {
+                "metricas": {
+                    "time": 23.518803358078003,
+                    "answer_accuracy": 0.0,
+                    "bleu": 0.0,
+                    "rouge": 0.04687499999999999,
+                    "non_llm_similarity": 0.08870967741935487,
+                    "tool": 0.0
+                },
+                "description": "RAG Test 3: Inversi\u00f3n Proyecto"
+            },
+            "3": {
+                "metricas": {
+                    "time": 31.617489099502563,
+                    "answer_accuracy": 1.0,
+                    "bleu": 0.022869567780619007,
+                    "rouge": 0.08648648648648648,
+                    "non_llm_similarity": 0.03696498054474706,
+                    "tool": 0.0
+                },
+                "description": "RAG Test 4: Mineral m\u00e1s importante Chile"
+            },
+            "4": {
+                "metricas": {
+                    "time": 90.90378928184509,
+                    "answer_accuracy": 0.0,
+                    "bleu": 0.0,
+                    "rouge": 0.0064724919093851144,
+                    "non_llm_similarity": 0.005179856115107961,
+                    "tool": 0.0
+                },
+                "description": "RAG Test 5: PIB Cobre 2023"
+            },
+            "5": {
+                "metricas": {
+                    "time": 22.986746311187744,
+                    "answer_accuracy": 0.25,
+                    "bleu": 0.0,
+                    "rouge": 0.0792079207920792,
+                    "non_llm_similarity": 0.0362595419847328,
+                    "tool": 0.0
+                },
+                "description": "RAG Test 6: Reserva Plata 2016"
+            },
+            "6": {
+                "metricas": {
+                    "time": 67.57115697860718,
+                    "answer_accuracy": 0.0,
+                    "bleu": 0.0053604239598545435,
+                    "rouge": 0.03015075376884422,
+                    "non_llm_similarity": 0.16894018887722984,
+                    "tool": 0.0
+                },
+                "description": "RAG Test 7: Componentes Retroexcavadora"
+            },
+            "7": {
+                "metricas": {
+                    "time": 43.386345863342285,
+                    "answer_accuracy": 1.0,
+                    "bleu": 0.013426247383996715,
+                    "rouge": 0.11818181818181818,
+                    "non_llm_similarity": 0.12532637075718012,
+                    "tool": 0.0
+                },
+                "description": "RAG Test 8: Brazo Telesc\u00f3pico"
+            },
+            "8": {
+                "metricas": {
+                    "time": 35.307451486587524,
+                    "answer_accuracy": 0.0,
+                    "bleu": 0.0,
+                    "rouge": 0.0,
+                    "non_llm_similarity": 0.00837320574162681,
+                    "tool": 0.0
+                },
+                "description": "RAG Test 9: Historia Retroexcavadora"
+            },
+            "9": {
+                "metricas": {
+                    "time": 33.618255376815796,
+                    "answer_accuracy": 0.0,
+                    "bleu": 0.0,
+                    "rouge": 0.033707865168539325,
+                    "non_llm_similarity": 0.02777777777777779,
+                    "tool": 0.0
+                },
+                "description": "RAG Test 10: Producci\u00f3n Cobre Codelco 2022"
+            },
+            "10": {
+                "metricas": {
+                    "time": 48.03227090835571,
+                    "answer_accuracy": 1.0,
+                    "bleu": 0.01693409667719809,
+                    "rouge": 0.15503875968992248,
+                    "non_llm_similarity": 0.14374034003091185,
+                    "tool": 0.6666666666666666
+                },
+                "description": "RAG Test 11: Costos C1 Codelco 2022"
+            },
+            "11": {
+                "metricas": {
+                    "time": 62.62990379333496,
+                    "answer_accuracy": 0.5,
+                    "bleu": 0.021300733682208986,
+                    "rouge": 0.0387409200968523,
+                    "non_llm_similarity": 0.029010989010988975,
+                    "tool": 0.0
+                },
+                "description": "RAG Test 12: Excedentes Codelco 2021-2022"
+            },
+            "12": {
+                "metricas": {
+                    "time": 21.97407865524292,
+                    "answer_accuracy": 0.0,
+                    "bleu": 0.0,
+                    "rouge": 0.0,
+                    "non_llm_similarity": 0.004273504273504258,
+                    "tool": 0.6666666666666666
+                },
+                "description": "RAG Test 13: Ganancia Bruta Codelco 2022"
+            }
+        }
+    }
+}

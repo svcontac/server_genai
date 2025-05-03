@@ -1,0 +1,56 @@
+2025-04-29 10:06:08,424 - INFO - --- Running Test Case 5: Proyecto de la divisón DMH (Log file: logs\recuperador\PetrosStav_gemma3-tools_12b\recuperador_tc_4.log) ---
+2025-04-29 10:06:08,424 - INFO - User Query: Entregame el achivo que menciona el proyecto de la divisón DMH.
+2025-04-29 10:06:08,424 - INFO - Reference: El documento que estás buscando es src\data\Mina_Ministro_Hales.pdf
+2025-04-29 10:06:08,424 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'proyecto de la divisón DMH'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:06:08,424 - INFO - Running test with conversation ID: test-run-e4352a9d-81ee-4d21-889b-00dfd52d2153
+2025-04-29 10:06:45,258 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:06:45,258 - INFO - ================================ Human Message =================================
+
+Entregame el achivo que menciona el proyecto de la divisón DMH.
+2025-04-29 10:06:45,258 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (05d6e3db-0c6a-4543-a4e4-cb46f1a8da4d)
+ Call ID: 05d6e3db-0c6a-4543-a4e4-cb46f1a8da4d
+  Args:
+2025-04-29 10:06:45,259 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-29 10:06:45,259 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (583970df-fc55-4923-b831-da75c289085a)
+ Call ID: 583970df-fc55-4923-b831-da75c289085a
+  Args:
+    query: proyecto división DMH
+2025-04-29 10:06:45,259 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+Error retrieving context from FAISS: 
+2025-04-29 10:06:45,259 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+I am sorry, I was unable to retrieve the file. Please check your query and try again.
+2025-04-29 10:06:45,260 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (faa69384-fad7-4093-851f-d576e3353432)
+ Call ID: faa69384-fad7-4093-851f-d576e3353432
+  Args:
+2025-04-29 10:06:45,260 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:06:45,260 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al recuperar el archivo que mencionas. Por favor verifica tu consulta y vuelve a intentarlo.
+2025-04-29 10:06:45,261 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:06:45,261 - INFO - --- Calculating goal score for Test Case 5: Proyecto de la divisón DMH ---
+2025-04-29 10:06:54,077 - INFO - goal: 0.0000
+2025-04-29 10:06:54,077 - INFO - --- Calculating tool score for Test Case 5: Proyecto de la divisón DMH ---
+2025-04-29 10:06:54,078 - INFO - tool: 0.6667
+2025-04-29 10:06:54,078 - INFO - --- End of Test Case 5: Proyecto de la divisón DMH ---

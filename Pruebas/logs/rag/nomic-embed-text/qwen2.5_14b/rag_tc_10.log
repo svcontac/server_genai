@@ -1,0 +1,133 @@
+2025-04-28 17:51:11,284 - INFO - --- Running RAG Test 11: Costos C1 Codelco 2022 (Log file: logs\rag\qwen2.5_14b\rag_tc_10.log) ---
+2025-04-28 17:51:11,284 - INFO - User Query: ¿Cuáles fueron las razones que explican los aumentos de los costos C1 en los resultados de Codelco del año 2022?
+2025-04-28 17:51:11,284 - INFO - Reference: Se explica principalmente por menos producción de cobre y subproductos y mayor precio de los insumos
+2025-04-28 17:51:11,285 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'razones aumento costos C1 resultados Codelco 2022'})", 'transfer_back_to_supervisor({})']
+2025-04-28 17:51:11,285 - INFO - Running test with conversation ID: test-run-4b4e8f00-7fe2-4f50-b23f-cd861c3829b9
+2025-04-28 17:51:48,466 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:51:48,466 - INFO - ================================ Human Message =================================
+
+¿Cuáles fueron las razones que explican los aumentos de los costos C1 en los resultados de Codelco del año 2022?
+2025-04-28 17:51:48,466 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (7843e059-adb9-4ded-9a95-c757d3c9966f)
+ Call ID: 7843e059-adb9-4ded-9a95-c757d3c9966f
+  Args:
+2025-04-28 17:51:48,467 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 17:51:48,467 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (e461610b-8b80-4a06-9706-75d990b3e295)
+ Call ID: e461610b-8b80-4a06-9706-75d990b3e295
+  Args:
+    k: 3
+    query: razones del aumento de costos C1 en Codelco en 2022
+2025-04-28 17:51:48,467 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nI  ENTREGA DE RESULTADOS 2022 5© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+COSTO 
+DIRECTO (C1) 
+VAR (%)
++ 24,6%
++ 22,5%
+2021
+132,7
+230,7COSTO NETO 
+A CÁTODO (C3)
+•
+ Menor producción de 
+cobre y subproductos
+•
+ Mayor precio de los insumos
+Lo ya mencionado respecto del 
+costo directo, se compensa 
+en forma parcial por menores 
+gastos no operacionales.
+Aumentaron 
+nuestros costos 
+2022
+165,4
+282,5
+Se explica principalmente por:
+AUMENTO DEL COSTO C1
+AUMENTO DEL COSTO C3\n---\n2022
+165,4
+282,5
+Se explica principalmente por:
+AUMENTO DEL COSTO C1
+AUMENTO DEL COSTO C3
+(C1 y C3)\n---\nI  ENTREGA DE RESULTADOS 2022 10© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+GESTIÓN 2022
+Los resultados del período se contextualizan en un 
+escenario de alta volatilidad y altos precios de los insumos
+COSTOS C1
+165,4 c/lb
+22,5%   
+superior
+al año 
+anterior
+COSTOS C3
+282,5 c/lb
+con margen 
+de 33%
+generación 
+de caja 
+operacional 
+(EBITDA) 
+US$ 5.565
+MILLONES
+1.446 MIL
+TONELADAS
+de excedentes, 
+62,9% inferior 
+a enero/
+diciembre 
+de 2021
+US$ 2.746 
+MILLONES
+2025-04-28 17:51:48,469 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Según los resultados de Codelco del año 2022, el aumento del costo directo (C1) se debe principalmente a dos factores:
+
+1. Menor producción de cobre y subproductos.
+2. Mayor precio de los insumos.
+
+Estos factores llevaron al incremento del 24,6% en comparación con el año anterior. A pesar de este aumento, hubo una compensación parcial por menores gastos no operacionales.
+2025-04-28 17:51:48,469 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (ffdb2876-c678-4533-91e3-2b34622713bf)
+ Call ID: ffdb2876-c678-4533-91e3-2b34622713bf
+  Args:
+2025-04-28 17:51:48,470 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 17:51:48,470 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Las razones que explican los aumentos en los costos C1 de Codelco para el año 2022 son principalmente:
+
+- Menor producción de cobre y subproductos.
+- Mayor precio de los insumos.
+
+Esto resultó en un incremento del 24,6% comparado con el año anterior. Aunque hubo una compensación parcial por menores gastos no operacionales, estos factores fueron determinantes para el aumento observado en los costos C1.
+2025-04-28 17:51:48,470 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:51:48,470 - INFO - --- Calculating answer_accuracy score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-28 17:51:49,583 - INFO - answer_accuracy: 1.0000
+2025-04-28 17:51:49,583 - INFO - --- Calculating bleu score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-28 17:51:49,583 - INFO - bleu: 0.1251
+2025-04-28 17:51:49,584 - INFO - --- Calculating rouge score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-28 17:51:49,585 - INFO - rouge: 0.2824
+2025-04-28 17:51:49,585 - INFO - --- Calculating non_llm_similarity score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-28 17:51:49,585 - INFO - non_llm_similarity: 0.2228
+2025-04-28 17:51:49,585 - INFO - --- Calculating tool score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-28 17:51:49,585 - INFO - tool: 0.6667
+2025-04-28 17:51:49,585 - INFO - --- End of RAG Test 11: Costos C1 Codelco 2022 ---

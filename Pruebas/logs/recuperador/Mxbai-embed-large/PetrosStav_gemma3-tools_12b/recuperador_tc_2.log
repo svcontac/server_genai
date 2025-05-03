@@ -1,0 +1,56 @@
+2025-04-29 10:04:30,034 - INFO - --- Running Test Case 3: Diferencia entre una excavadora y la retroexcavadora (Log file: logs\recuperador\PetrosStav_gemma3-tools_12b\recuperador_tc_2.log) ---
+2025-04-29 10:04:30,034 - INFO - User Query: Puedes entregarme el archivo pdf que explique de forma detallada cuál la diferencia entre una excavadora y la retroexcavadora.
+2025-04-29 10:04:30,034 - INFO - Reference: El documento que estás buscando es src\data\Manual_curso_de_maquinaria_pesada-Retroexcavadora.pdf
+2025-04-29 10:04:30,034 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'diferencia entre excavadora y la retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:04:30,034 - INFO - Running test with conversation ID: test-run-8d925ed9-c44c-4852-aa9b-b9e0a874bd11
+2025-04-29 10:05:07,699 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:05:07,699 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que explique de forma detallada cuál la diferencia entre una excavadora y la retroexcavadora.
+2025-04-29 10:05:07,699 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (85f26c7f-52e0-462e-88b7-a32042c6b0a4)
+ Call ID: 85f26c7f-52e0-462e-88b7-a32042c6b0a4
+  Args:
+2025-04-29 10:05:07,700 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-29 10:05:07,700 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (3748b868-4a2d-4ff3-83fe-b34dfb5582a8)
+ Call ID: 3748b868-4a2d-4ff3-83fe-b34dfb5582a8
+  Args:
+    query: diferencia entre excavadora y retroexcavadora
+2025-04-29 10:05:07,700 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+Error retrieving context from FAISS: 
+2025-04-29 10:05:07,700 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+I am sorry, I was unable to retrieve the requested file. Please try again later.
+2025-04-29 10:05:07,700 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (a392d938-f761-4eac-9d0a-0c54db63c661)
+ Call ID: a392d938-f761-4eac-9d0a-0c54db63c661
+  Args:
+2025-04-29 10:05:07,701 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:05:07,701 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al recuperar el archivo que buscabas. Por favor, inténtalo de nuevo más tarde.
+2025-04-29 10:05:07,701 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:05:07,702 - INFO - --- Calculating goal score for Test Case 3: Diferencia entre una excavadora y la retroexcavadora ---
+2025-04-29 10:05:16,921 - INFO - goal: 0.0000
+2025-04-29 10:05:16,921 - INFO - --- Calculating tool score for Test Case 3: Diferencia entre una excavadora y la retroexcavadora ---
+2025-04-29 10:05:16,922 - INFO - tool: 0.6667
+2025-04-29 10:05:16,922 - INFO - --- End of Test Case 3: Diferencia entre una excavadora y la retroexcavadora ---

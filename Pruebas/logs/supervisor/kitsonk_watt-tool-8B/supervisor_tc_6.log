@@ -1,0 +1,18 @@
+2025-04-28 17:31:26,011 - INFO - --- Running TC 7 (RAG): Delegate Inversión Proyecto Query (Log file: logs\supervisor\kitsonk_watt-tool-8B\supervisor_tc_6.log) ---
+2025-04-28 17:31:26,011 - INFO - User Query: ¿Cuál es la inversión que contempló el proyecto de la mina Ministro Hales?
+2025-04-28 17:31:26,011 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:31:26,012 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:31:26,012 - INFO - Running test with conversation ID: test-run-f19e4fe2-f6d9-4500-bd53-f1def798f38c
+2025-04-28 17:31:26,289 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:31:26,291 - INFO - ================================ Human Message =================================
+
+¿Cuál es la inversión que contempló el proyecto de la mina Ministro Hales?
+2025-04-28 17:31:26,291 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_rag_expert, "parameters": {}}
+2025-04-28 17:31:26,291 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:31:26,291 - INFO - --- Calculating tool score for TC 7 (RAG): Delegate Inversión Proyecto Query ---
+2025-04-28 17:31:26,292 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:31:26,292 - INFO - tool: 0.0000
+2025-04-28 17:31:26,292 - INFO - --- End of TC 7 (RAG): Delegate Inversión Proyecto Query ---

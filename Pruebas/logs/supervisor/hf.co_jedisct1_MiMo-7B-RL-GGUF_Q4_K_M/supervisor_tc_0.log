@@ -1,0 +1,22 @@
+2025-05-02 14:41:59,823 - INFO - --- Running TC 1 (Recuperador): Delegate Humectacion Query (Log file: logs\supervisor\hf.co_jedisct1_MiMo-7B-RL-GGUF_Q4_K_M\supervisor_tc_0.log) ---
+2025-05-02 14:41:59,824 - INFO - User Query: Puedes entregarme el archivo pdf que hable sobre el plan de humectación
+2025-05-02 14:41:59,824 - INFO - Reference: The goal is to assign the task to the retriever expert.
+2025-05-02 14:41:59,824 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})']
+2025-05-02 14:41:59,824 - INFO - Running test with conversation ID: test-run-970cb13e-8e1a-4281-b907-10c39be60455
+2025-05-02 14:45:43,889 - ERROR - Error during app.invoke: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+Traceback (most recent call last):
+  File "c:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\metrics_calculator.py", line 130, in run_test_case
+    result = app.invoke(input_data, config=test_config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2795, in invoke
+    for chunk in self.stream(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2453, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-05-02 14:45:43,903 - INFO - --- Workflow Output Messages ---
+2025-05-02 14:45:43,903 - WARNING - Warning: No messages found in the result.
+2025-05-02 14:45:43,903 - INFO - --- Calculating tool score for TC 1 (Recuperador): Delegate Humectacion Query ---
+2025-05-02 14:45:43,903 - WARNING - Skipping multi-turn metric 'tool': Ragas trace unavailable.
+2025-05-02 14:45:43,904 - INFO - --- End of TC 1 (Recuperador): Delegate Humectacion Query ---

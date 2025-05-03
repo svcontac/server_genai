@@ -1,0 +1,67 @@
+2025-04-28 22:59:16,488 - INFO - --- Running RAG Test 6: Reserva Plata 2016 (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_5.log) ---
+2025-04-28 22:59:16,488 - INFO - User Query: ¿Cuál fue la reserva de plata en el Anuario de la Minería de Chile del 2016?
+2025-04-28 22:59:16,488 - INFO - Reference: La reserva fue de 25.542
+2025-04-28 22:59:16,489 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'reserva de plata Anuario Minería Chile 2016'})", 'transfer_back_to_supervisor({})']
+2025-04-28 22:59:16,489 - INFO - Running test with conversation ID: test-run-4935d876-2c2e-4a48-a846-398792eae8a4
+2025-04-28 23:00:03,241 - INFO - --- Workflow Output Messages ---
+2025-04-28 23:00:03,241 - INFO - ================================ Human Message =================================
+
+¿Cuál fue la reserva de plata en el Anuario de la Minería de Chile del 2016?
+2025-04-28 23:00:03,242 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (3a84c831-3ec8-4571-bec8-c321e6d53af8)
+ Call ID: 3a84c831-3ec8-4571-bec8-c321e6d53af8
+  Args:
+2025-04-28 23:00:03,242 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 23:00:03,242 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (2ad0918d-8a84-4ce2-a7b6-284f200e728f)
+ Call ID: 2ad0918d-8a84-4ce2-a7b6-284f200e728f
+  Args:
+    k: 1
+    query: ¿reserva de plata Anuario Minería Chile 2016
+2025-04-28 23:00:03,242 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Error retrieving context from FAISS: 
+2025-04-28 23:00:03,243 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+I'm sorry, but I encountered an error while trying to retrieve the information about the silver reserve in the Chilean Mining Yearbook of 2016. I was unable to access the relevant context. I will try again later.
+
+
+
+Could you please rephrase your question or provide more details?
+2025-04-28 23:00:03,243 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (a03a3802-d695-485a-b8e1-84992c964bfa)
+ Call ID: a03a3802-d695-485a-b8e1-84992c964bfa
+  Args:
+2025-04-28 23:00:03,243 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 23:00:03,243 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al intentar recuperar la información sobre la reserva de plata en el Anuario Minero de Chile del 2016. No pude acceder al contexto relevante. ¿Podrías por favor reformular tu pregunta o proporcionar más detalles?
+2025-04-28 23:00:03,244 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 23:00:03,244 - INFO - --- Calculating answer_accuracy score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 23:00:04,491 - INFO - answer_accuracy: 0.0000
+2025-04-28 23:00:04,491 - INFO - --- Calculating bleu score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 23:00:04,492 - INFO - bleu: 0.0187
+2025-04-28 23:00:04,492 - INFO - --- Calculating rouge score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 23:00:04,492 - INFO - rouge: 0.1250
+2025-04-28 23:00:04,493 - INFO - --- Calculating non_llm_similarity score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 23:00:04,493 - INFO - non_llm_similarity: 0.0792
+2025-04-28 23:00:04,493 - INFO - --- Calculating tool score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 23:00:04,493 - INFO - tool: 0.6667
+2025-04-28 23:00:04,493 - INFO - --- End of RAG Test 6: Reserva Plata 2016 ---

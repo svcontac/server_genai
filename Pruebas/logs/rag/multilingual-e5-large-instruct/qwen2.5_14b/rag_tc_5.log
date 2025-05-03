@@ -1,0 +1,63 @@
+2025-04-28 22:35:50,204 - INFO - --- Running RAG Test 6: Reserva Plata 2016 (Log file: logs\rag\qwen2.5_14b\rag_tc_5.log) ---
+2025-04-28 22:35:50,205 - INFO - User Query: ¿Cuál fue la reserva de plata en el Anuario de la Minería de Chile del 2016?
+2025-04-28 22:35:50,205 - INFO - Reference: La reserva fue de 25.542
+2025-04-28 22:35:50,205 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'reserva de plata Anuario Minería Chile 2016'})", 'transfer_back_to_supervisor({})']
+2025-04-28 22:35:50,205 - INFO - Running test with conversation ID: test-run-6b9725fd-1f96-4ff2-ba11-49e11da58cea
+2025-04-28 22:36:16,779 - INFO - --- Workflow Output Messages ---
+2025-04-28 22:36:16,779 - INFO - ================================ Human Message =================================
+
+¿Cuál fue la reserva de plata en el Anuario de la Minería de Chile del 2016?
+2025-04-28 22:36:16,781 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (d3158eaf-b685-4330-9da8-2ba92155fc24)
+ Call ID: d3158eaf-b685-4330-9da8-2ba92155fc24
+  Args:
+2025-04-28 22:36:16,782 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 22:36:16,782 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (3ebca52e-f096-4c9d-9419-731ea84d5889)
+ Call ID: 3ebca52e-f096-4c9d-9419-731ea84d5889
+  Args:
+    k: 1
+    query: reserva de plata en el Anuario de la Minería de Chile del 2016
+2025-04-28 22:36:16,782 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Error retrieving context from FAISS: 
+2025-04-28 22:36:16,782 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Lo siento, no pude recuperar la información específica sobre la reserva de plata en el Anuario de la Minería de Chile para el año 2016. ¿Podría proporcionar más detalles o buscar en otro recurso?
+2025-04-28 22:36:16,783 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (c1c21cc9-4c95-43a5-b24d-5f29c870db86)
+ Call ID: c1c21cc9-4c95-43a5-b24d-5f29c870db86
+  Args:
+2025-04-28 22:36:16,783 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 22:36:16,783 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al recuperar la información sobre la reserva de plata del Anuario de la Minería de Chile para el año 2016. ¿Podría proporcionar más detalles o sugerir otro recurso donde pueda buscar?
+2025-04-28 22:36:16,784 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 22:36:16,784 - INFO - --- Calculating answer_accuracy score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 22:36:18,001 - INFO - answer_accuracy: 0.0000
+2025-04-28 22:36:18,001 - INFO - --- Calculating bleu score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 22:36:18,002 - INFO - bleu: 0.0172
+2025-04-28 22:36:18,002 - INFO - --- Calculating rouge score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 22:36:18,002 - INFO - rouge: 0.1277
+2025-04-28 22:36:18,002 - INFO - --- Calculating non_llm_similarity score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 22:36:18,003 - INFO - non_llm_similarity: 0.0900
+2025-04-28 22:36:18,003 - INFO - --- Calculating tool score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 22:36:18,003 - INFO - tool: 0.6667
+2025-04-28 22:36:18,003 - INFO - --- End of RAG Test 6: Reserva Plata 2016 ---

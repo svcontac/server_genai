@@ -1,0 +1,18 @@
+2025-04-28 17:31:27,150 - INFO - --- Running TC 11 (RAG): Delegate Componentes Retroexcavadora Query (Log file: logs\supervisor\kitsonk_watt-tool-8B\supervisor_tc_10.log) ---
+2025-04-28 17:31:27,150 - INFO - User Query: ¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-28 17:31:27,151 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:31:27,151 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:31:27,151 - INFO - Running test with conversation ID: test-run-340d7276-b316-40c1-9eed-4d8a7b657335
+2025-04-28 17:31:27,433 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:31:27,434 - INFO - ================================ Human Message =================================
+
+¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-28 17:31:27,434 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_rag_expert, "parameters": {}}
+2025-04-28 17:31:27,434 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:31:27,435 - INFO - --- Calculating tool score for TC 11 (RAG): Delegate Componentes Retroexcavadora Query ---
+2025-04-28 17:31:27,435 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:31:27,435 - INFO - tool: 0.0000
+2025-04-28 17:31:27,435 - INFO - --- End of TC 11 (RAG): Delegate Componentes Retroexcavadora Query ---

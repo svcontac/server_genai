@@ -1,0 +1,51 @@
+2025-04-28 16:54:02,168 - INFO - --- Running Test Case 3: Line Plot - 2 (Log file: logs\graficador\PetrosStav_gemma3-tools_12b\graficador_tc_2.log) ---
+2025-04-28 16:54:02,168 - INFO - User Query: Puedes graficar la primera variable a tráves del tiempo del data.csv
+2025-04-28 16:54:02,168 - INFO - Reference: Gráfico de línea (plot_line) realizado.
+2025-04-28 16:54:02,169 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'line'})", "plot_line({'file_path': 'src/data/data.csv', 'x_col': 0, 'y_col': 'tiempo'})", 'transfer_back_to_supervisor({})']
+2025-04-28 16:54:02,169 - INFO - Running test with conversation ID: test-run-216252ca-209f-4a3a-89d8-5b93ed8de5d7
+2025-04-28 16:54:39,268 - INFO - --- Workflow Output Messages ---
+2025-04-28 16:54:39,268 - INFO - ================================ Human Message =================================
+
+Puedes graficar la primera variable a tráves del tiempo del data.csv
+2025-04-28 16:54:39,268 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_graph_expert (6d665f20-67e2-4490-a59a-1f51f89589ed)
+ Call ID: 6d665f20-67e2-4490-a59a-1f51f89589ed
+  Args:
+2025-04-28 16:54:39,269 - INFO - ================================= Tool Message =================================
+Name: assign_to_graph_expert
+
+Successfully transferred to graph_expert
+2025-04-28 16:54:39,269 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Okay, I'm now in graph expert mode. To plot the first variable against time from `data.csv`, I need to know the column names or indices for both the time variable and the first variable.  Could you please tell me:
+
+1.  What is the name or index of the column representing time?
+2.  What is the name or index of the first variable you want to plot?
+2025-04-28 16:54:39,269 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (19de0b4f-4241-4e2e-8dad-42b4442046c7)
+ Call ID: 19de0b4f-4241-4e2e-8dad-42b4442046c7
+  Args:
+2025-04-28 16:54:39,270 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 16:54:39,270 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El experto en gráficos necesita que especifiques el nombre o índice de la columna que representa el tiempo y también el nombre o índice de la primera variable que deseas graficar. Por favor, proporciona esta información para continuar con la creación del gráfico.
+
+1. ¿Cuál es el nombre o índice de la columna que representa el tiempo?
+2. ¿Cuál es el nombre o índice de la primera variable que deseas graficar?
+2025-04-28 16:54:39,270 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 16:54:39,270 - INFO - --- Calculating goal score for Test Case 3: Line Plot - 2 ---
+2025-04-28 16:54:49,792 - INFO - goal: 0.0000
+2025-04-28 16:54:49,792 - INFO - --- Calculating tool score for Test Case 3: Line Plot - 2 ---
+2025-04-28 16:54:49,793 - INFO - tool: 0.0000
+2025-04-28 16:54:49,793 - INFO - --- End of Test Case 3: Line Plot - 2 ---

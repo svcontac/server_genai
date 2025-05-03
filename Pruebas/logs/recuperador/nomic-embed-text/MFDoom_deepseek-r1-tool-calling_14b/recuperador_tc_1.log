@@ -1,0 +1,47 @@
+2025-04-28 16:29:13,670 - INFO - --- Running Test Case 2: Estrategia Nacional del Litio (Log file: logs\recuperador\MFDoom_deepseek-r1-tool-calling_14b\recuperador_tc_1.log) ---
+2025-04-28 16:29:13,670 - INFO - User Query: Puedes entregarme el archivo pdf que hable sobre la estrategia nacional del Litio
+2025-04-28 16:29:13,670 - INFO - Reference: El documento que estás buscando es src\data\mineria_chilena_removed.pdf
+2025-04-28 16:29:13,671 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'estrategia nacional del Litio'})", 'transfer_back_to_supervisor({})']
+2025-04-28 16:29:13,671 - INFO - Running test with conversation ID: test-run-a737c21c-05ee-4fab-bd2c-5f16e48cc8c0
+2025-04-28 16:29:26,213 - INFO - --- Workflow Output Messages ---
+2025-04-28 16:29:26,213 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que hable sobre la estrategia nacional del Litio
+2025-04-28 16:29:26,213 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (141a05aa-fc06-4159-b491-89834c8242c3)
+ Call ID: 141a05aa-fc06-4159-b491-89834c8242c3
+  Args:
+2025-04-28 16:29:26,214 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-28 16:29:26,214 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+</think>
+
+src/data/32050-2.pdf
+2025-04-28 16:29:26,214 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (6902d72d-044e-4601-90e5-c1a2d200ed34)
+ Call ID: 6902d72d-044e-4601-90e5-c1a2d200ed34
+  Args:
+2025-04-28 16:29:26,215 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 16:29:26,215 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento que estás buscando es src/data/32050-2.pdf.
+2025-04-28 16:29:26,215 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 16:29:26,215 - INFO - --- Calculating goal score for Test Case 2: Estrategia Nacional del Litio ---
+2025-04-28 16:29:35,686 - INFO - goal: 0.0000
+2025-04-28 16:29:35,686 - INFO - --- Calculating tool score for Test Case 2: Estrategia Nacional del Litio ---
+2025-04-28 16:29:35,687 - INFO - tool: 0.0000
+2025-04-28 16:29:35,687 - INFO - --- End of Test Case 2: Estrategia Nacional del Litio ---

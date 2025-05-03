@@ -1,0 +1,49 @@
+2025-04-28 21:28:52,832 - INFO - --- Running RAG Test 2: Áreas Montaje Industrial (Log file: logs\rag\zac_phi4-tools\rag_tc_1.log) ---
+2025-04-28 21:28:52,832 - INFO - User Query: ¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-28 21:28:52,833 - INFO - Reference: áreas 3000, 5000 y 6000.
+2025-04-28 21:28:52,833 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'áreas de montaje industrial proyecto mina Ministro Hales'})", 'transfer_back_to_supervisor({})']
+2025-04-28 21:28:52,833 - INFO - Running test with conversation ID: test-run-15e9eeed-3cb5-4699-8c96-b85a2496c0af
+2025-04-28 21:29:05,427 - INFO - --- Workflow Output Messages ---
+2025-04-28 21:29:05,428 - INFO - ================================ Human Message =================================
+
+¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-28 21:29:05,428 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (7d07cb98-9d5b-4422-abdf-13338f52a0b0)
+ Call ID: 7d07cb98-9d5b-4422-abdf-13338f52a0b0
+  Args:
+2025-04-28 21:29:05,428 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 21:29:05,429 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+2025-04-28 21:29:05,429 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (d557d704-3759-4258-81af-ca709fb96948)
+ Call ID: d557d704-3759-4258-81af-ca709fb96948
+  Args:
+2025-04-28 21:29:05,429 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 21:29:05,429 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El experto en RAG está trabajando en tu solicitud. Espera un momento mientras obtiene la información sobre las áreas de montaje industrial del proyecto de la mina Ministro Hales.
+2025-04-28 21:29:05,430 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 21:29:05,430 - INFO - --- Calculating answer_accuracy score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-28 21:29:06,586 - INFO - answer_accuracy: 0.0000
+2025-04-28 21:29:06,586 - INFO - --- Calculating bleu score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-28 21:29:06,586 - INFO - bleu: 0.0000
+2025-04-28 21:29:06,587 - INFO - --- Calculating rouge score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-28 21:29:06,587 - INFO - rouge: 0.0571
+2025-04-28 21:29:06,587 - INFO - --- Calculating non_llm_similarity score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-28 21:29:06,588 - INFO - non_llm_similarity: 0.0618
+2025-04-28 21:29:06,588 - INFO - --- Calculating tool score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-28 21:29:06,588 - INFO - tool: 0.0000
+2025-04-28 21:29:06,588 - INFO - --- End of RAG Test 2: Áreas Montaje Industrial ---

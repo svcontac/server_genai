@@ -1,0 +1,64 @@
+2025-04-29 10:30:50,138 - INFO - --- Running RAG Test 2: Áreas Montaje Industrial (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_1.log) ---
+2025-04-29 10:30:50,139 - INFO - User Query: ¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-29 10:30:50,139 - INFO - Reference: áreas 3000, 5000 y 6000.
+2025-04-29 10:30:50,139 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'áreas de montaje industrial proyecto mina Ministro Hales'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:30:50,139 - INFO - Running test with conversation ID: test-run-65daf784-f803-4e34-9929-e6b3cf61f7f5
+2025-04-29 10:31:47,558 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:31:47,559 - INFO - ================================ Human Message =================================
+
+¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-29 10:31:47,559 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (8eaa4ea5-caab-441a-aeb8-3f6f1ffef12c)
+ Call ID: 8eaa4ea5-caab-441a-aeb8-3f6f1ffef12c
+  Args:
+2025-04-29 10:31:47,559 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 10:31:47,560 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Las áreas de montaje industrial del proyecto de la mina Ministro Hales incluyen:
+*   **Montaje de la planta de procesamiento:** Incluye la instalación de equipos de trituración, chancado, molienda, flotación y otros equipos de procesamiento de minerales.
+*   **Montaje de la infraestructura de transporte:** Esto abarca la instalación de cintas transportadoras, sistemas de manejo de material y otras infraestructuras necesarias para mover el mineral dentro y fuera de la mina.
+*   **Montaje de la infraestructura de energía:** Incluye la instalación de generadores, subestaciones y líneas de transmisión para proporcionar energía a la mina.
+*   **Montaje de la infraestructura de ventilación:** Esto implica la instalación de ventiladores, conductos y otros equipos para garantizar una ventilación adecuada en la mina.
+*   **Montaje de la infraestructura de agua:** Esto abarca la instalación de sistemas de suministro de agua, tratamiento de aguas residuales y gestión de agua.
+*   **Montaje de la infraestructura de comunicaciones:** Incluye la instalación de sistemas de comunicación, como redes de radio, fibra óptica y sistemas de comunicación de emergencia.
+*   **Montaje de la infraestructura de talleres:** Esto implica la instalación de talleres para el mantenimiento y reparación de equipos mineros.
+2025-04-29 10:31:47,561 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (979ddd08-01a9-4170-b36f-1df03f4882e6)
+ Call ID: 979ddd08-01a9-4170-b36f-1df03f4882e6
+  Args:
+2025-04-29 10:31:47,561 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:31:47,561 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Las áreas de montaje industrial del proyecto de la mina Ministro Hales incluyen:
+
+- Montaje de la planta de procesamiento.
+- Instalación de infraestructura de transporte, energía, ventilación, agua y comunicaciones.
+- Creación de talleres para mantenimiento y reparación.
+
+Para detalles específicos sobre cada área, por favor consulta los documentos relevantes.
+2025-04-29 10:31:47,562 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:31:47,562 - INFO - --- Calculating answer_accuracy score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 10:31:48,606 - INFO - answer_accuracy: 0.0000
+2025-04-29 10:31:48,606 - INFO - --- Calculating bleu score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 10:31:48,607 - INFO - bleu: 0.0085
+2025-04-29 10:31:48,607 - INFO - --- Calculating rouge score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 10:31:48,608 - INFO - rouge: 0.0678
+2025-04-29 10:31:48,608 - INFO - --- Calculating non_llm_similarity score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 10:31:48,609 - INFO - non_llm_similarity: 0.0332
+2025-04-29 10:31:48,609 - INFO - --- Calculating tool score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 10:31:48,609 - INFO - tool: 0.0000
+2025-04-29 10:31:48,609 - INFO - --- End of RAG Test 2: Áreas Montaje Industrial ---

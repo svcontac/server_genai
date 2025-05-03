@@ -1,0 +1,63 @@
+2025-04-29 10:29:57,892 - INFO - --- Running RAG Test 1: Producción Ministro Hales (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_0.log) ---
+2025-04-29 10:29:57,892 - INFO - User Query: ¿Cuál es la producción diaria estimada para la mina Ministro Hales?
+2025-04-29 10:29:57,892 - INFO - Reference: Tendría una producción diaria de 50.000 toneladas de mineral.
+2025-04-29 10:29:57,892 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'producción diaria estimada mina Ministro Hales'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:29:57,892 - INFO - Running test with conversation ID: test-run-73898b53-18c5-4a17-80b8-7ad5d773fbdb
+2025-04-29 10:30:48,857 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:30:48,858 - INFO - ================================ Human Message =================================
+
+¿Cuál es la producción diaria estimada para la mina Ministro Hales?
+2025-04-29 10:30:48,858 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (3de83007-d69b-45a5-9846-393e3c4922bc)
+ Call ID: 3de83007-d69b-45a5-9846-393e3c4922bc
+  Args:
+2025-04-29 10:30:48,858 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 10:30:48,859 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (5d075ef6-c3ba-4c4f-aebe-d2d38bcd6ebc)
+ Call ID: 5d075ef6-c3ba-4c4f-aebe-d2d38bcd6ebc
+  Args:
+    k: 2
+    query: producción diaria estimada Ministro Hales
+2025-04-29 10:30:48,859 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Error retrieving context from FAISS: 
+2025-04-29 10:30:48,859 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+I am sorry, but I encountered an error while trying to retrieve the information about the estimated daily production for the Ministro Hales mine. I am unable to answer your question at this time. Please try again later.
+2025-04-29 10:30:48,859 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (62e85dea-1121-4aef-93e9-0294479d7ef2)
+ Call ID: 62e85dea-1121-4aef-93e9-0294479d7ef2
+  Args:
+2025-04-29 10:30:48,860 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:30:48,860 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un error al intentar recuperar la información sobre la producción diaria estimada para la mina Ministro Hales. No puedo responder a tu pregunta en este momento. Por favor, inténtalo de nuevo más tarde.
+2025-04-29 10:30:48,860 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:30:48,860 - INFO - --- Calculating answer_accuracy score for RAG Test 1: Producción Ministro Hales ---
+2025-04-29 10:30:50,133 - INFO - answer_accuracy: 0.0000
+2025-04-29 10:30:50,133 - INFO - --- Calculating bleu score for RAG Test 1: Producción Ministro Hales ---
+2025-04-29 10:30:50,135 - INFO - bleu: 0.0363
+2025-04-29 10:30:50,135 - INFO - --- Calculating rouge score for RAG Test 1: Producción Ministro Hales ---
+2025-04-29 10:30:50,136 - INFO - rouge: 0.1538
+2025-04-29 10:30:50,136 - INFO - --- Calculating non_llm_similarity score for RAG Test 1: Producción Ministro Hales ---
+2025-04-29 10:30:50,137 - INFO - non_llm_similarity: 0.2074
+2025-04-29 10:30:50,137 - INFO - --- Calculating tool score for RAG Test 1: Producción Ministro Hales ---
+2025-04-29 10:30:50,138 - INFO - tool: 0.6667
+2025-04-29 10:30:50,138 - INFO - --- End of RAG Test 1: Producción Ministro Hales ---

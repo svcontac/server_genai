@@ -1,0 +1,59 @@
+2025-04-28 16:53:03,314 - INFO - --- Running Test Case 2: Histogram (Log file: logs\graficador\PetrosStav_gemma3-tools_12b\graficador_tc_1.log) ---
+2025-04-28 16:53:03,314 - INFO - User Query: Genera un histograma de la columna 1 del archivo data.csv
+2025-04-28 16:53:03,314 - INFO - Reference: Histograma (plot_histogram) realizado exitosamente.
+2025-04-28 16:53:03,314 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'histogram'})", "plot_histogram({'column': 1, 'file_path': 'src/data/data.csv'})", 'transfer_back_to_supervisor({})']
+2025-04-28 16:53:03,314 - INFO - Running test with conversation ID: test-run-3272f55c-c771-4bef-bf9f-ad04e33e427c
+2025-04-28 16:53:50,712 - INFO - --- Workflow Output Messages ---
+2025-04-28 16:53:50,712 - INFO - ================================ Human Message =================================
+
+Genera un histograma de la columna 1 del archivo data.csv
+2025-04-28 16:53:50,712 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_graph_expert (e18c06e7-b6e8-41fe-aa05-0f0fbfbc0635)
+ Call ID: e18c06e7-b6e8-41fe-aa05-0f0fbfbc0635
+  Args:
+2025-04-28 16:53:50,713 - INFO - ================================= Tool Message =================================
+Name: assign_to_graph_expert
+
+Successfully transferred to graph_expert
+2025-04-28 16:53:50,713 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_histogram (ea1ca9a6-3ad5-4194-85da-4124436f94a9)
+ Call ID: ea1ca9a6-3ad5-4194-85da-4124436f94a9
+  Args:
+    column: 1
+    file_path: src\data\data.csv
+2025-04-28 16:53:50,713 - INFO - ================================= Tool Message =================================
+Name: plot_histogram
+
+null
+2025-04-28 16:53:50,713 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+I am sorry, I was unable to generate the histogram. The tool returned a null response, indicating an error. This could be due to several reasons, such as the file not being found or an issue with the data within the file. Could you please verify that the file "src\data\data.csv" exists and is accessible? Also, ensure that the column you specified (column 1) contains numerical data suitable for a histogram. If the problem persists, please provide more details about the file and the expected data.
+2025-04-28 16:53:50,714 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (882aff90-e55a-4b3e-9cae-ee1428342597)
+ Call ID: 882aff90-e55a-4b3e-9cae-ee1428342597
+  Args:
+2025-04-28 16:53:50,714 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 16:53:50,714 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Ha ocurrido un error al intentar generar el histograma. El archivo "src\data\data.csv" o la columna especificada (columna 1) podría no estar disponible o contener datos inapropiados para este tipo de gráfico. Por favor, verifica que el archivo y los datos sean correctos e intenta nuevamente.
+
+Si necesitas más ayuda, por favor proporciona detalles adicionales sobre el archivo y los datos esperados.
+2025-04-28 16:53:50,715 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 16:53:50,715 - INFO - --- Calculating goal score for Test Case 2: Histogram ---
+2025-04-28 16:54:02,166 - INFO - goal: 0.0000
+2025-04-28 16:54:02,166 - INFO - --- Calculating tool score for Test Case 2: Histogram ---
+2025-04-28 16:54:02,167 - INFO - tool: 0.5000
+2025-04-28 16:54:02,167 - INFO - --- End of Test Case 2: Histogram ---

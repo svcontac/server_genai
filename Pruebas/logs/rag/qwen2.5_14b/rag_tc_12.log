@@ -1,0 +1,76 @@
+2025-04-29 17:32:46,387 - INFO - --- Running RAG Test 13: Ganancia Bruta Codelco 2022 (Log file: logs\rag\qwen2.5_14b\rag_tc_12.log) ---
+2025-04-29 17:32:46,387 - INFO - User Query: ¿Cuál fue la ganancia bruta de Codelco del año 2022?
+2025-04-29 17:32:46,388 - INFO - Reference: 4.734
+2025-04-29 17:32:46,388 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'ganancia bruta Codelco 2022'})", 'transfer_back_to_supervisor({})']
+2025-04-29 17:32:46,388 - INFO - Running test with conversation ID: test-run-65b78e39-433e-4de3-90ba-5ce12aef4c38
+2025-04-29 17:33:16,168 - INFO - --- Workflow Output Messages ---
+2025-04-29 17:33:16,168 - INFO - ================================ Human Message =================================
+
+¿Cuál fue la ganancia bruta de Codelco del año 2022?
+2025-04-29 17:33:16,168 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (9fef4806-78de-4fe6-ae10-c0e41c4d9ef8)
+ Call ID: 9fef4806-78de-4fe6-ae10-c0e41c4d9ef8
+  Args:
+2025-04-29 17:33:16,169 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 17:33:16,169 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (971683e4-6a71-4001-be46-eac5654627d0)
+ Call ID: 971683e4-6a71-4001-be46-eac5654627d0
+  Args:
+    k: 3
+    query: ganancia bruta Codelco 2022
+2025-04-29 17:33:16,169 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nI  ENTREGA DE RESULTADOS 2022 3© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+RESULTADOS 2022\n---\nI  ENTREGA DE RESULTADOS 2022 1© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+ENTREGA DE 
+ RESULTADOS 2022
+MARZO 2023\n---\nI  ENTREGA DE RESULTADOS 2022 16© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+ESTADO DE RESULTADOS ENERO
+2022 2021 VAR
+INGRESOS POR VENTA DE COBRE PROPIO 13.848 17.715 -3.867
+COSTOS DE VENTA DE COBRE PROPIO -9.931 -9.611 -320
+GANANCIA BRUTA EN VENTA DE COBRE 3.917 8.104 -4.187
+GANANCIA BRUTA EN VENTAS DE  SUBPRODUCTOS Y OTROS 817 735 82
+GANANCIA BRUTA 4.734 8.839 -4.105
+GANANCIA LÍQUIDA, CODELCO 346 1.943 -1.597
+DICIEMBRE 2022/2021
+2025-04-29 17:33:16,170 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+La ganancia bruta de Codelco en el año 2022 fue de **4.734 mil millones** (en la moneda local, que generalmente es chileno pero no está especificado en este contexto). Este valor se compara con una ganancia bruta de 8.839 mil millones en 2021, lo cual indica una disminución de **4.105 mil millones** entre los años mencionados.
+2025-04-29 17:33:16,170 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (43bd080f-74d3-4a46-bbbc-57907c523a37)
+ Call ID: 43bd080f-74d3-4a46-bbbc-57907c523a37
+  Args:
+2025-04-29 17:33:16,170 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 17:33:16,170 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+La ganancia bruta de Codelco en el año 2022 fue de **4.734 mil millones** (en la moneda local, que generalmente es chileno pero no está especificado en este contexto). Este valor se compara con una ganancia bruta de 8.839 mil millones en 2021, lo cual indica una disminución de **4.105 mil millones** entre los años mencionados.
+2025-04-29 17:33:16,171 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 17:33:16,171 - INFO - --- Calculating answer_accuracy score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 17:33:17,160 - INFO - answer_accuracy: 1.0000
+2025-04-29 17:33:17,160 - INFO - --- Calculating bleu score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 17:33:17,160 - INFO - bleu: 0.0103
+2025-04-29 17:33:17,161 - INFO - --- Calculating rouge score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 17:33:17,161 - INFO - rouge: 0.0625
+2025-04-29 17:33:17,161 - INFO - --- Calculating non_llm_similarity score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 17:33:17,162 - INFO - non_llm_similarity: 0.0152
+2025-04-29 17:33:17,162 - INFO - --- Calculating tool score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 17:33:17,162 - INFO - tool: 1.0000
+2025-04-29 17:33:17,162 - INFO - --- End of RAG Test 13: Ganancia Bruta Codelco 2022 ---

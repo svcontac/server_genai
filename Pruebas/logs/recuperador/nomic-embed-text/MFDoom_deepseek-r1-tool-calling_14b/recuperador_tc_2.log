@@ -1,0 +1,47 @@
+2025-04-28 16:29:35,688 - INFO - --- Running Test Case 3: Diferencia entre una excavadora y la retroexcavadora (Log file: logs\recuperador\MFDoom_deepseek-r1-tool-calling_14b\recuperador_tc_2.log) ---
+2025-04-28 16:29:35,689 - INFO - User Query: Puedes entregarme el archivo pdf que explique de forma detallada cuál la diferencia entre una excavadora y la retroexcavadora.
+2025-04-28 16:29:35,689 - INFO - Reference: El documento que estás buscando es src\data\Manual_curso_de_maquinaria_pesada-Retroexcavadora.pdf
+2025-04-28 16:29:35,689 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'diferencia entre excavadora y la retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-28 16:29:35,690 - INFO - Running test with conversation ID: test-run-e6f0c4b3-e571-4db5-8c71-3d1ee02c7461
+2025-04-28 16:29:48,276 - INFO - --- Workflow Output Messages ---
+2025-04-28 16:29:48,276 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que explique de forma detallada cuál la diferencia entre una excavadora y la retroexcavadora.
+2025-04-28 16:29:48,276 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (b4d5f0df-9961-45b7-9875-75b3739f1583)
+ Call ID: b4d5f0df-9961-45b7-9875-75b3739f1583
+  Args:
+2025-04-28 16:29:48,277 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-28 16:29:48,277 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+</think>
+
+src/data/32050-2.pdf
+2025-04-28 16:29:48,277 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (e4fc849b-68f5-4ec4-9644-8d69ee13d43c)
+ Call ID: e4fc849b-68f5-4ec4-9644-8d69ee13d43c
+  Args:
+2025-04-28 16:29:48,277 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 16:29:48,278 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento que estás buscando es src/data/32050-2.pdf.
+2025-04-28 16:29:48,278 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 16:29:48,278 - INFO - --- Calculating goal score for Test Case 3: Diferencia entre una excavadora y la retroexcavadora ---
+2025-04-28 16:29:58,323 - INFO - goal: 0.0000
+2025-04-28 16:29:58,323 - INFO - --- Calculating tool score for Test Case 3: Diferencia entre una excavadora y la retroexcavadora ---
+2025-04-28 16:29:58,324 - INFO - tool: 0.0000
+2025-04-28 16:29:58,324 - INFO - --- End of Test Case 3: Diferencia entre una excavadora y la retroexcavadora ---

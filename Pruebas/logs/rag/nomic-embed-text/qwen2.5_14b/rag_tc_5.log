@@ -1,0 +1,73 @@
+2025-04-28 17:48:24,351 - INFO - --- Running RAG Test 6: Reserva Plata 2016 (Log file: logs\rag\qwen2.5_14b\rag_tc_5.log) ---
+2025-04-28 17:48:24,351 - INFO - User Query: ¿Cuál fue la reserva de plata en el Anuario de la Minería de Chile del 2016?
+2025-04-28 17:48:24,351 - INFO - Reference: La reserva fue de 25.542
+2025-04-28 17:48:24,351 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'reserva de plata Anuario Minería Chile 2016'})", 'transfer_back_to_supervisor({})']
+2025-04-28 17:48:24,351 - INFO - Running test with conversation ID: test-run-e7eb7884-ceee-4be6-9f1f-837e979c85ad
+2025-04-28 17:48:42,672 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:48:42,672 - INFO - ================================ Human Message =================================
+
+¿Cuál fue la reserva de plata en el Anuario de la Minería de Chile del 2016?
+2025-04-28 17:48:42,673 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (863d13be-98c2-4982-ade3-a9256858f2ba)
+ Call ID: 863d13be-98c2-4982-ade3-a9256858f2ba
+  Args:
+2025-04-28 17:48:42,674 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 17:48:42,674 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (90d4d272-2cff-4278-845b-9d27e1ea40a2)
+ Call ID: 90d4d272-2cff-4278-845b-9d27e1ea40a2
+  Args:
+    k: 1
+    query: reserva de plata en el Anuario de la Minería de Chile del 2016
+2025-04-28 17:48:42,674 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nOro (t) 997,7 1186 
+Plata (t) 25.542 10.271 
+Hierro (Mt) - 539,4 
+Nitratos (Mt) 85,6 - 
+Yodo (miles t) 614,1 - 
+ 
+Fuente: Anuario de la Minería de Chile 2016. 
+ 
+ 
+3 A pesar de existir un Anuario de la Minería en Chile 2022, los datos más actualizados sobre reservas y recursos mineros se encuentran 
+en el de 2016.
+2025-04-28 17:48:42,675 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Según el Anuario de la Minería de Chile del 2016, la reserva de plata es de **25.542 toneladas**.
+2025-04-28 17:48:42,675 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (51e5adf1-a9d0-49bd-87ca-d9c47acb9a88)
+ Call ID: 51e5adf1-a9d0-49bd-87ca-d9c47acb9a88
+  Args:
+2025-04-28 17:48:42,675 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 17:48:42,675 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+La reserva de plata registrada en el Anuario de la Minería de Chile del 2016 es de **25.542 toneladas**.
+2025-04-28 17:48:42,676 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:48:42,676 - INFO - --- Calculating answer_accuracy score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 17:48:43,613 - INFO - answer_accuracy: 1.0000
+2025-04-28 17:48:43,613 - INFO - --- Calculating bleu score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 17:48:43,613 - INFO - bleu: 0.0374
+2025-04-28 17:48:43,614 - INFO - --- Calculating rouge score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 17:48:43,614 - INFO - rouge: 0.3704
+2025-04-28 17:48:43,614 - INFO - --- Calculating non_llm_similarity score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 17:48:43,614 - INFO - non_llm_similarity: 0.2212
+2025-04-28 17:48:43,614 - INFO - --- Calculating tool score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-28 17:48:43,615 - INFO - tool: 0.6667
+2025-04-28 17:48:43,615 - INFO - --- End of RAG Test 6: Reserva Plata 2016 ---

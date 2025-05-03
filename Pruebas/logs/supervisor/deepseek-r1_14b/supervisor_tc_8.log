@@ -1,0 +1,75 @@
+2025-04-28 17:19:38,163 - INFO - --- Running TC 9 (RAG): Delegate PIB Cobre 2023 Query (Log file: logs\supervisor\deepseek-r1_14b\supervisor_tc_8.log) ---
+2025-04-28 17:19:38,163 - INFO - User Query: ¿Cuál fue el porcentaje del PIB nacional correspondiente al cobre en el año 2023?
+2025-04-28 17:19:38,164 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:19:38,164 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:19:38,164 - INFO - Running test with conversation ID: test-run-b7fd8976-dfee-4220-8978-263bbf28c749
+2025-04-28 17:19:38,169 - ERROR - Error during app.invoke: model "deepseek-r1:14b" not found, try pulling it first (status code: 404)
+Traceback (most recent call last):
+  File "c:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\metrics_calculator.py", line 130, in run_test_case
+    result = app.invoke(input_data, config=test_config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2795, in invoke
+    for chunk in self.stream(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2433, in stream
+    for _ in runner.tick(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\runner.py", line 153, in tick
+    run_with_retry(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\utils\runnable.py", line 623, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2795, in invoke
+    for chunk in self.stream(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2433, in stream
+    for _ in runner.tick(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\runner.py", line 153, in tick
+    run_with_retry(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\utils\runnable.py", line 623, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\utils\runnable.py", line 370, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\prebuilt\chat_agent_executor.py", line 745, in call_model
+    response = cast(AIMessage, model_runnable.invoke(state, config))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\runnables\base.py", line 3034, in invoke
+    input = context.run(step.invoke, input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\runnables\base.py", line 5416, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 369, in invoke
+    self.generate_prompt(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 946, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 765, in generate
+    self._generate_with_cache(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1011, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 715, in _generate
+    final_chunk = self._chat_stream_with_aggregation(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 652, in _chat_stream_with_aggregation
+    for chunk in self._iterate_over_stream(messages, stop, **kwargs):
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 737, in _iterate_over_stream
+    for stream_resp in self._create_chat_stream(messages, stop, **kwargs):
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 639, in _create_chat_stream
+    yield from self._client.chat(**chat_params)
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\ollama\_client.py", line 168, in inner
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model "deepseek-r1:14b" not found, try pulling it first (status code: 404)
+During task with name 'agent' and id '5afeeb38-7490-4e2a-0ca1-011a7dc268b8'
+During task with name 'supervisor' and id 'f248a1c6-be83-cee7-d2e4-dbfa31301067'
+2025-04-28 17:19:38,173 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:19:38,173 - WARNING - Warning: No messages found in the result.
+2025-04-28 17:19:38,174 - INFO - --- Calculating tool score for TC 9 (RAG): Delegate PIB Cobre 2023 Query ---
+2025-04-28 17:19:38,174 - WARNING - Skipping multi-turn metric 'tool': Ragas trace unavailable.
+2025-04-28 17:19:38,174 - INFO - --- End of TC 9 (RAG): Delegate PIB Cobre 2023 Query ---

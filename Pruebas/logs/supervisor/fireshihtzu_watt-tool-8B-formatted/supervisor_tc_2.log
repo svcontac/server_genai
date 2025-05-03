@@ -1,0 +1,18 @@
+2025-04-28 17:32:15,295 - INFO - --- Running TC 3 (Graficador): Delegate Line Plot Query (Log file: logs\supervisor\fireshihtzu_watt-tool-8B-formatted\supervisor_tc_2.log) ---
+2025-04-28 17:32:15,295 - INFO - User Query: Genera un gráfico de línea de la primera columna vs la segunda columna del archivo data.csv
+2025-04-28 17:32:15,295 - INFO - Reference: The goal is to assign the task to the graph expert.
+2025-04-28 17:32:15,295 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'line'})"]
+2025-04-28 17:32:15,295 - INFO - Running test with conversation ID: test-run-fb7ce218-a4cf-4f4a-9337-083a8a1c2a4e
+2025-04-28 17:32:15,556 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:32:15,556 - INFO - ================================ Human Message =================================
+
+Genera un gráfico de línea de la primera columna vs la segunda columna del archivo data.csv
+2025-04-28 17:32:15,556 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_graph_expert, "parameters": {}}
+2025-04-28 17:32:15,557 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:32:15,557 - INFO - --- Calculating tool score for TC 3 (Graficador): Delegate Line Plot Query ---
+2025-04-28 17:32:15,557 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:32:15,557 - INFO - tool: 0.0000
+2025-04-28 17:32:15,557 - INFO - --- End of TC 3 (Graficador): Delegate Line Plot Query ---

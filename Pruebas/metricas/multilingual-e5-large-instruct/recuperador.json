@@ -1,0 +1,44 @@
+{
+   "recuperador": {
+      "hf.co/Eddie-3dd13/ToolACE-2-Llama-3.1-8B-Q8_0-GGUF:Q8_0": {
+         "0": {
+            "metricas": {
+               "time": 14.433445930480957,
+               "goal": 0.0,
+               "tool": 0.0
+            },
+            "description": "Test Case 1: Plan de Humectaci\u00f3n"
+         }
+      },
+      "qwen2.5:14b": {
+         "0": {
+            "metricas": {
+               "time": 31.52804136276245,
+               "goal": 0.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 1: Plan de Humectaci\u00f3n"
+         }
+      },
+      "MFDoom/deepseek-r1-tool-calling:14b": {
+         "0": {
+            "metricas": {
+               "time": 21.693430185317993,
+               "goal": 0.0,
+               "tool": 0.0
+            },
+            "description": "Test Case 1: Plan de Humectaci\u00f3n"
+         }
+      },
+      "PetrosStav/gemma3-tools:12b": {
+         "0": {
+            "metricas": {
+               "time": 43.033405780792236,
+               "goal": 0.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 1: Plan de Humectaci\u00f3n"
+         }
+      }
+   }
+}

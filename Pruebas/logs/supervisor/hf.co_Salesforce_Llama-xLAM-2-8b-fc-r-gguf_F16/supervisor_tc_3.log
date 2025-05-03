@@ -1,0 +1,56 @@
+2025-04-28 19:20:49,764 - INFO - --- Running TC 4 (Graficador): Delegate Histogram Query (Log file: logs\supervisor\hf.co_Salesforce_Llama-xLAM-2-8b-fc-r-gguf_F16\supervisor_tc_3.log) ---
+2025-04-28 19:20:49,764 - INFO - User Query: Genera un histograma de la columna 1 del archivo data.csv
+2025-04-28 19:20:49,764 - INFO - Reference: The goal is to assign the task to the graph expert.
+2025-04-28 19:20:49,764 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'histogram'})"]
+2025-04-28 19:20:49,764 - INFO - Running test with conversation ID: test-run-5837555b-0956-4a4a-b8fc-d105e1e9ec3f
+2025-04-28 19:21:13,120 - INFO - --- Workflow Output Messages ---
+2025-04-28 19:21:13,120 - INFO - ================================ Human Message =================================
+
+Genera un histograma de la columna 1 del archivo data.csv
+2025-04-28 19:21:13,120 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_graph_expert (de90423e-265f-4ddf-a5fd-89c05db64870)
+ Call ID: de90423e-265f-4ddf-a5fd-89c05db64870
+  Args:
+2025-04-28 19:21:13,121 - INFO - ================================= Tool Message =================================
+Name: assign_to_graph_expert
+
+Successfully transferred to graph_expert
+2025-04-28 19:21:13,121 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_histogram (cba63623-4c58-48ad-a3f1-791167c63d62)
+ Call ID: cba63623-4c58-48ad-a3f1-791167c63d62
+  Args:
+    column: 1
+    file_path: src/data/data.csv
+2025-04-28 19:21:13,121 - INFO - ================================= Tool Message =================================
+Name: plot_histogram
+
+null
+2025-04-28 19:21:13,122 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+El histograma ha sido generado correctamente a partir de la columna 1 del archivo data.csv.
+2025-04-28 19:21:13,122 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (e9212265-d16c-430d-8239-8a233aa633e6)
+ Call ID: e9212265-d16c-430d-8239-8a233aa633e6
+  Args:
+2025-04-28 19:21:13,122 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 19:21:13,122 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+The histogram has been successfully generated from the first column of the data.csv file.
+2025-04-28 19:21:13,123 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 19:21:13,123 - INFO - --- Calculating tool score for TC 4 (Graficador): Delegate Histogram Query ---
+2025-04-28 19:21:13,123 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 19:21:13,123 - INFO - tool: 0.0000
+2025-04-28 19:21:13,123 - INFO - --- End of TC 4 (Graficador): Delegate Histogram Query ---

@@ -1,0 +1,101 @@
+2025-04-28 21:01:17,537 - INFO - --- Running RAG Test 5: PIB Cobre 2023 (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_4.log) ---
+2025-04-28 21:01:17,537 - INFO - User Query: ¿Cuál fue el porcentaje del PIB nacional correspondiente al cobre en el año 2023?
+2025-04-28 21:01:17,537 - INFO - Reference: El porcentaje fue 73,1%
+2025-04-28 21:01:17,537 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'porcentaje PIB nacional cobre 2023'})", 'transfer_back_to_supervisor({})']
+2025-04-28 21:01:17,537 - INFO - Running test with conversation ID: test-run-2a2f1050-eba9-4d13-995e-41cd043bbcd8
+2025-04-28 21:01:55,903 - INFO - --- Workflow Output Messages ---
+2025-04-28 21:01:55,904 - INFO - ================================ Human Message =================================
+
+¿Cuál fue el porcentaje del PIB nacional correspondiente al cobre en el año 2023?
+2025-04-28 21:01:55,904 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (8f5e11c6-69c3-46d7-9eba-9232d6c24af4)
+ Call ID: 8f5e11c6-69c3-46d7-9eba-9232d6c24af4
+  Args:
+2025-04-28 21:01:55,905 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 21:01:55,905 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (60d2e1ed-d522-4b35-a281-b7f03cda04e1)
+ Call ID: 60d2e1ed-d522-4b35-a281-b7f03cda04e1
+  Args:
+    k: 3
+    query: porcentaje del PIB nacional correspondiente al cobre en 2023
+2025-04-28 21:01:55,905 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nde los doce mayores yacimientos del mundo (El Teniente, Minera Collahuasi, Minera Escondida y 
+Los Pelambres, entre otros).  
+En 2023, el sector minero representó el 11,9 % del PIB nacional, porcentaje 2,3 puntos menor al del 
+año anterior. Esta fluctuación se debe, principalmente, a la bajada en producción de las principales 
+faenas cupríferas del país, fruto de la caída en la ley del mineral. Por su parte, la inversión extranjera\n---\nExcedentes
+2022
+Excedentes 
+2021
+-700
+Efecto Precio 
+Cu, IPC, Mo
+Menor Venta
+de Cu
+Precio de 
+Insumos
+Filiales Menor Venta de 
+Subproductos
+Propios y Terceros
+-2.253
+-1.541
+-181 -176
+Nota: Resultado Individual, antes de Ley Reservada del Cobre.
+Otros Gastos no 
+Operacionales
+202 2.746
+7.394
+I  ENTREGA DE RESULTADOS 2022 6
+© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS    . INFORMACIÓN USO GENERAL |AG\n---\n13 
+ 
+Mirando hacia el futuro, una cartera de proyectos mineros por aproximadamente 90 mil millones de 
+dólares a 2020, sitúa al sector en las puertas de una fase de expansión sin precedentes, que por 
+cierto requiere la superación de diversos desafíos. 
+ 
+La Minería seguirá siendo motor del desarrollo nacional, como se verá en el siguiente recuadro que 
+resume la actividad de la extracción minera de cobre, oro y plata: 
+ 
+COBRE
+2025-04-28 21:01:55,906 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+En 2023, el sector minero representó el 11,9% del PIB nacional.
+2025-04-28 21:01:55,907 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (684c6133-66d3-460a-9dd4-5cfd956e2d73)
+ Call ID: 684c6133-66d3-460a-9dd4-5cfd956e2d73
+  Args:
+2025-04-28 21:01:55,907 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 21:01:55,907 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Según la información disponible, en 2023 el sector minero representó el 11,9 % del PIB nacional. Sin embargo, no se especifica exactamente cuánto de ese porcentaje correspondió específicamente al cobre. La fluctuación en este porcentaje respecto al año anterior fue de 2,3 puntos menos debido principalmente a la disminución en la producción de las principales minas cupríferas del país.
+
+Para obtener un número más preciso sobre el porcentaje del PIB nacional correspondiente específicamente al cobre en 2023, necesitaríamos consultar documentos adicionales o especificar mejor nuestra consulta.
+2025-04-28 21:01:55,908 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 21:01:55,908 - INFO - --- Calculating answer_accuracy score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-28 21:01:57,291 - INFO - answer_accuracy: 0.0000
+2025-04-28 21:01:57,291 - INFO - --- Calculating bleu score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-28 21:01:57,292 - INFO - bleu: 0.0229
+2025-04-28 21:01:57,292 - INFO - --- Calculating rouge score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-28 21:01:57,293 - INFO - rouge: 0.0566
+2025-04-28 21:01:57,293 - INFO - --- Calculating non_llm_similarity score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-28 21:01:57,294 - INFO - non_llm_similarity: 0.0319
+2025-04-28 21:01:57,294 - INFO - --- Calculating tool score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-28 21:01:57,294 - INFO - tool: 0.6667
+2025-04-28 21:01:57,294 - INFO - --- End of RAG Test 5: PIB Cobre 2023 ---

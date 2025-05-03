@@ -1,0 +1,14 @@
+2025-05-02 17:07:47,932 - INFO - --- Running TC 11 (RAG): Delegate Componentes Retroexcavadora Query (Log file: logs\supervisor\hf.co_jedisct1_MiMo-7B-RL-GGUF_Q4_K_M\supervisor_tc_10.log) ---
+2025-05-02 17:07:47,933 - INFO - User Query: ¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-05-02 17:07:47,933 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-05-02 17:07:47,933 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-05-02 17:07:47,933 - INFO - Running test with conversation ID: test-run-24e8b54a-3963-488c-a8a7-7665dfa0296d
+2025-05-02 17:08:12,948 - INFO - --- Workflow Output Messages ---
+2025-05-02 17:08:12,948 - INFO - ================================ Human Message =================================
+
+¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-05-02 17:08:12,955 - INFO - --- Ragas Trace Conversion Successful ---
+2025-05-02 17:08:12,955 - INFO - --- Calculating tool score for TC 11 (RAG): Delegate Componentes Retroexcavadora Query ---
+2025-05-02 17:08:12,955 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-05-02 17:08:12,956 - INFO - tool: 0.0000
+2025-05-02 17:08:12,956 - INFO - --- End of TC 11 (RAG): Delegate Componentes Retroexcavadora Query ---

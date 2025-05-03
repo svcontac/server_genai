@@ -1,0 +1,55 @@
+2025-04-28 19:19:46,366 - INFO - --- Running TC 2 (Recuperador): Delegate Litio Query (Log file: logs\supervisor\hf.co_Salesforce_Llama-xLAM-2-8b-fc-r-gguf_F16\supervisor_tc_1.log) ---
+2025-04-28 19:19:46,366 - INFO - User Query: Puedes entregarme el archivo pdf que hable sobre la estrategia nacional del Litio
+2025-04-28 19:19:46,366 - INFO - Reference: The goal is to assign the task to the retriever expert.
+2025-04-28 19:19:46,366 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})']
+2025-04-28 19:19:46,366 - INFO - Running test with conversation ID: test-run-2f5cc4ba-cd83-4b34-923d-86a9f28cf5b1
+2025-04-28 19:20:18,176 - INFO - --- Workflow Output Messages ---
+2025-04-28 19:20:18,176 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que hable sobre la estrategia nacional del Litio
+2025-04-28 19:20:18,177 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (d4dfae2d-855a-493d-b400-df36779c44f4)
+ Call ID: d4dfae2d-855a-493d-b400-df36779c44f4
+  Args:
+2025-04-28 19:20:18,177 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-28 19:20:18,177 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (f98fc764-f50f-4a32-940d-02b2f722fbf2)
+ Call ID: f98fc764-f50f-4a32-940d-02b2f722fbf2
+  Args:
+    query: estrategia nacional del Litio
+2025-04-28 19:20:18,178 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+src\data\mineria_chilena_removed.pdf
+2025-04-28 19:20:18,178 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+src/data/mineria_chilena_removed.pdf
+2025-04-28 19:20:18,178 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (d4bd460a-a810-4a3d-bde3-31b18698cb7c)
+ Call ID: d4bd460a-a810-4a3d-bde3-31b18698cb7c
+  Args:
+2025-04-28 19:20:18,178 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 19:20:18,179 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El archivo PDF que habla sobre la estrategia nacional del Litio es "mineria_chilena_removed.pdf". Puedes encontrarlo en la carpeta "src/data".
+2025-04-28 19:20:18,179 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 19:20:18,179 - INFO - --- Calculating tool score for TC 2 (Recuperador): Delegate Litio Query ---
+2025-04-28 19:20:18,179 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 19:20:18,180 - INFO - tool: 1.0000
+2025-04-28 19:20:18,180 - INFO - --- End of TC 2 (Recuperador): Delegate Litio Query ---

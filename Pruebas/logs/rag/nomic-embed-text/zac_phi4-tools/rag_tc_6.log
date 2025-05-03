@@ -1,0 +1,49 @@
+2025-04-28 21:30:02,418 - INFO - --- Running RAG Test 7: Componentes Retroexcavadora (Log file: logs\rag\zac_phi4-tools\rag_tc_6.log) ---
+2025-04-28 21:30:02,418 - INFO - User Query: ¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-28 21:30:02,418 - INFO - Reference: Chasis o bastidor, cabina, ruedas u orugas, estabilizadores, brazo principal (boom), brazo secundario (dipper stick), cucharón (bucket), cargador frontal (front loader), sistemas hidráulicos, motor, sistema de escape, luces y espejos, placa de contrapeso.
+2025-04-28 21:30:02,418 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'componentes externos retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-28 21:30:02,419 - INFO - Running test with conversation ID: test-run-1abf861f-ce38-4983-9e76-5d4013c64a0f
+2025-04-28 21:30:31,884 - INFO - --- Workflow Output Messages ---
+2025-04-28 21:30:31,884 - INFO - ================================ Human Message =================================
+
+¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-28 21:30:31,884 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (ba4e3c0c-5e81-437a-a71d-047759a0dd4d)
+ Call ID: ba4e3c0c-5e81-437a-a71d-047759a0dd4d
+  Args:
+2025-04-28 21:30:31,885 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 21:30:31,885 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+2025-04-28 21:30:31,885 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (19f38b1e-8b59-4d17-aca0-4cebcc2d1957)
+ Call ID: 19f38b1e-8b59-4d17-aca0-4cebcc2d1957
+  Args:
+2025-04-28 21:30:31,885 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 21:30:31,886 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El experto RAG ha sido consultado para obtener la información sobre los componentes externos de una retroexcavadora. Por favor, espere mientras recibo la respuesta detallada.
+2025-04-28 21:30:31,886 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 21:30:31,886 - INFO - --- Calculating answer_accuracy score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-28 21:30:32,851 - INFO - answer_accuracy: 0.0000
+2025-04-28 21:30:32,851 - INFO - --- Calculating bleu score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-28 21:30:32,852 - INFO - bleu: 0.0026
+2025-04-28 21:30:32,852 - INFO - --- Calculating rouge score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-28 21:30:32,853 - INFO - rouge: 0.0656
+2025-04-28 21:30:32,853 - INFO - --- Calculating non_llm_similarity score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-28 21:30:32,853 - INFO - non_llm_similarity: 0.2588
+2025-04-28 21:30:32,853 - INFO - --- Calculating tool score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-28 21:30:32,854 - INFO - tool: 0.0000
+2025-04-28 21:30:32,854 - INFO - --- End of RAG Test 7: Componentes Retroexcavadora ---

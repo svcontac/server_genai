@@ -1,0 +1,56 @@
+2025-04-29 10:02:48,994 - INFO - --- Running Test Case 1: Plan de Humectación (Log file: logs\recuperador\PetrosStav_gemma3-tools_12b\recuperador_tc_0.log) ---
+2025-04-29 10:02:48,994 - INFO - User Query: Puedes entregarme el archivo pdf que hable sobre el plan de humectación
+2025-04-29 10:02:48,994 - INFO - Reference: El documento que estás buscando es src\data\Mina_Ministro_Hales.pdf
+2025-04-29 10:02:48,994 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'plan de humectación'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:02:48,994 - INFO - Running test with conversation ID: test-run-02fc76f5-e892-4b78-86c9-ceb7bfd536bb
+2025-04-29 10:03:32,021 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:03:32,022 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que hable sobre el plan de humectación
+2025-04-29 10:03:32,022 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (b7d86005-4538-43e0-ab9c-96b896cdbb8f)
+ Call ID: b7d86005-4538-43e0-ab9c-96b896cdbb8f
+  Args:
+2025-04-29 10:03:32,022 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-29 10:03:32,023 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (58ef4718-aed3-4a9f-aa4a-06898cbba9af)
+ Call ID: 58ef4718-aed3-4a9f-aa4a-06898cbba9af
+  Args:
+    query: plan de humectación
+2025-04-29 10:03:32,023 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+Error retrieving context from FAISS: 
+2025-04-29 10:03:32,023 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+I am sorry, I was unable to retrieve the file. Please check your query and try again.
+2025-04-29 10:03:32,023 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (f298abab-6072-4ec5-b705-f56396a9e003)
+ Call ID: f298abab-6072-4ec5-b705-f56396a9e003
+  Args:
+2025-04-29 10:03:32,024 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:03:32,024 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al recuperar el archivo que buscabas. Por favor, verifica tu consulta y vuelve a intentarlo. Si continúas teniendo problemas, ponte en contacto con soporte técnico.
+2025-04-29 10:03:32,024 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:03:32,024 - INFO - --- Calculating goal score for Test Case 1: Plan de Humectación ---
+2025-04-29 10:03:41,297 - INFO - goal: 0.0000
+2025-04-29 10:03:41,297 - INFO - --- Calculating tool score for Test Case 1: Plan de Humectación ---
+2025-04-29 10:03:41,297 - INFO - tool: 1.0000
+2025-04-29 10:03:41,298 - INFO - --- End of Test Case 1: Plan de Humectación ---

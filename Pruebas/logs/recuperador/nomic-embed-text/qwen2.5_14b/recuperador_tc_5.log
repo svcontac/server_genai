@@ -1,0 +1,56 @@
+2025-04-28 15:23:34,990 - INFO - --- Running Test Case 6: Significado de RMI (Log file: logs\recuperador\qwen2.5_14b\recuperador_tc_5.log) ---
+2025-04-28 15:23:34,990 - INFO - User Query: ¿Qué archivo menciona el significado de RMI?
+2025-04-28 15:23:34,990 - INFO - Reference: El documento que estás buscando es src\data\mineria_chilena_removed.pdf
+2025-04-28 15:23:34,990 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'significado de RMI'})", 'transfer_back_to_supervisor({})']
+2025-04-28 15:23:34,990 - INFO - Running test with conversation ID: test-run-3555ca5e-c3ab-4a9e-a4ff-34268e5ca4a4
+2025-04-28 15:23:47,321 - INFO - --- Workflow Output Messages ---
+2025-04-28 15:23:47,321 - INFO - ================================ Human Message =================================
+
+¿Qué archivo menciona el significado de RMI?
+2025-04-28 15:23:47,321 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (9805f79a-bbeb-4d87-ad8f-e85421011b8c)
+ Call ID: 9805f79a-bbeb-4d87-ad8f-e85421011b8c
+  Args:
+2025-04-28 15:23:47,322 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-28 15:23:47,322 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (1a43a83b-9c97-461c-98f4-4fc67c676543)
+ Call ID: 1a43a83b-9c97-461c-98f4-4fc67c676543
+  Args:
+    query: significado de RMI
+2025-04-28 15:23:47,322 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+src\data\mineria_chilena_removed.pdf
+2025-04-28 15:23:47,323 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+src/data/mineria_chilena_removed.pdf
+2025-04-28 15:23:47,323 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (8007f6e7-c27f-4e6d-a14d-9b733658fab5)
+ Call ID: 8007f6e7-c27f-4e6d-a14d-9b733658fab5
+  Args:
+2025-04-28 15:23:47,323 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 15:23:47,323 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento que estás buscando es src/data/mineria_chilena_removed.pdf.
+2025-04-28 15:23:47,324 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 15:23:47,324 - INFO - --- Calculating goal score for Test Case 6: Significado de RMI ---
+2025-04-28 15:23:57,036 - INFO - goal: 0.0000
+2025-04-28 15:23:57,036 - INFO - --- Calculating tool score for Test Case 6: Significado de RMI ---
+2025-04-28 15:23:57,037 - INFO - tool: 1.0000
+2025-04-28 15:23:57,037 - INFO - --- End of Test Case 6: Significado de RMI ---

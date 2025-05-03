@@ -1,0 +1,51 @@
+2025-04-28 22:35:15,854 - INFO - --- Running RAG Test 4: Mineral más importante Chile (Log file: logs\rag\qwen2.5_14b\rag_tc_3.log) ---
+2025-04-28 22:35:15,855 - INFO - User Query: ¿Cuál es el mineral más importante en la producción minera de Chile?
+2025-04-28 22:35:15,855 - INFO - Reference: El mineral más importante es el cobre.
+2025-04-28 22:35:15,855 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'mineral más importante producción minera Chile'})", 'transfer_back_to_supervisor({})']
+2025-04-28 22:35:15,855 - INFO - Running test with conversation ID: test-run-7b19dbd9-1ac6-4c4d-9497-b7edc25cb32e
+2025-04-28 22:35:30,631 - INFO - --- Workflow Output Messages ---
+2025-04-28 22:35:30,631 - INFO - ================================ Human Message =================================
+
+¿Cuál es el mineral más importante en la producción minera de Chile?
+2025-04-28 22:35:30,632 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (02390bab-4d15-4d32-b583-248cded73999)
+ Call ID: 02390bab-4d15-4d32-b583-248cded73999
+  Args:
+2025-04-28 22:35:30,632 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 22:35:30,632 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+El mineral más importante en la producción minera de Chile es el cobre. Chile es el principal productor y exportador de cobre a nivel mundial. Otros minerales importantes incluyen litio, que ha ganado relevancia recientemente debido a su creciente demanda en la industria de baterías para vehículos eléctricos y tecnologías verdes.
+2025-04-28 22:35:30,633 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (3b253249-47c7-4d27-a1bf-4c3a47a9ddcf)
+ Call ID: 3b253249-47c7-4d27-a1bf-4c3a47a9ddcf
+  Args:
+2025-04-28 22:35:30,633 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 22:35:30,633 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El RAG expert ha proporcionado información sobre el mineral más importante en la producción minera de Chile. Si necesitas detalles específicos o datos adicionales, por favor indícalo.
+2025-04-28 22:35:30,634 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 22:35:30,634 - INFO - --- Calculating answer_accuracy score for RAG Test 4: Mineral más importante Chile ---
+2025-04-28 22:35:31,547 - INFO - answer_accuracy: 0.0000
+2025-04-28 22:35:31,547 - INFO - --- Calculating bleu score for RAG Test 4: Mineral más importante Chile ---
+2025-04-28 22:35:31,548 - INFO - bleu: 0.0967
+2025-04-28 22:35:31,548 - INFO - --- Calculating rouge score for RAG Test 4: Mineral más importante Chile ---
+2025-04-28 22:35:31,548 - INFO - rouge: 0.2500
+2025-04-28 22:35:31,548 - INFO - --- Calculating non_llm_similarity score for RAG Test 4: Mineral más importante Chile ---
+2025-04-28 22:35:31,549 - INFO - non_llm_similarity: 0.1967
+2025-04-28 22:35:31,549 - INFO - --- Calculating tool score for RAG Test 4: Mineral más importante Chile ---
+2025-04-28 22:35:31,549 - INFO - tool: 0.0000
+2025-04-28 22:35:31,549 - INFO - --- End of RAG Test 4: Mineral más importante Chile ---

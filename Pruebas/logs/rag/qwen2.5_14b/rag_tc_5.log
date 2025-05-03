@@ -1,0 +1,86 @@
+2025-04-29 17:28:19,433 - INFO - --- Running RAG Test 6: Reserva Plata 2016 (Log file: logs\rag\qwen2.5_14b\rag_tc_5.log) ---
+2025-04-29 17:28:19,434 - INFO - User Query: ¿Cuál fue la reserva de plata en el Anuario de la Minería de Chile del 2016?
+2025-04-29 17:28:19,434 - INFO - Reference: La reserva fue de 25.542
+2025-04-29 17:28:19,434 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'reserva de plata Anuario Minería Chile 2016'})", 'transfer_back_to_supervisor({})']
+2025-04-29 17:28:19,434 - INFO - Running test with conversation ID: test-run-05a78186-330e-42fe-b1db-eb1fa9f5757a
+2025-04-29 17:28:38,189 - INFO - --- Workflow Output Messages ---
+2025-04-29 17:28:38,189 - INFO - ================================ Human Message =================================
+
+¿Cuál fue la reserva de plata en el Anuario de la Minería de Chile del 2016?
+2025-04-29 17:28:38,189 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (8bfd2278-a4a7-4215-bdc9-fec4c2f1da22)
+ Call ID: 8bfd2278-a4a7-4215-bdc9-fec4c2f1da22
+  Args:
+2025-04-29 17:28:38,189 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 17:28:38,189 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (544d3ec5-6de7-4e61-9967-a41888b46ebd)
+ Call ID: 544d3ec5-6de7-4e61-9967-a41888b46ebd
+  Args:
+    k: 3
+    query: reserva de plata en el Anuario de la Minería de Chile del 2016
+2025-04-29 17:28:38,190 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nOro (t) 997,7 1186 
+Plata (t) 25.542 10.271 
+Hierro (Mt) - 539,4 
+Nitratos (Mt) 85,6 - 
+Yodo (miles t) 614,1 - 
+ 
+Fuente: Anuario de la Minería de Chile 2016. 
+ 
+ 
+3 A pesar de existir un Anuario de la Minería en Chile 2022, los datos más actualizados sobre reservas y recursos mineros se encuentran 
+en el de 2016.\n---\nmedida por la pequeña y mediana minería.  
+A continuación, se muestra una tabla relativa a las reservas y recursos disponibles en Chile, tanto de 
+carácter metálico como no metálico, de acuerdo con el Anuario de la Minería de Chile del 20163. 
+RECURSOS Y RESERVAS DE LOS PRINCIPALES MINERALES EN CHILE 
+Millones de toneladas (Mt) o toneladas (t) 
+Mineral Reserva  Recurso 
+Cobre (Mt) 167,2 288,5 
+Molibdeno (Mt) 1,4 2,1 
+Oro (t) 997,7 1186 
+Plata (t) 25.542 10.271 
+Hierro (Mt) - 539,4 
+Nitratos (Mt) 85,6 -\n---\n16 
+ 
+Principales yacimientos de la minería metálica en Chile y su ubicación por regiones:
+2025-04-29 17:28:38,191 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Según el Anuario de la Minería de Chile del 2016, la reserva de plata es de **25.542 toneladas** (t).
+2025-04-29 17:28:38,191 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (33a99945-1ccd-4ab5-ba69-6b03eda097d3)
+ Call ID: 33a99945-1ccd-4ab5-ba69-6b03eda097d3
+  Args:
+2025-04-29 17:28:38,191 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 17:28:38,191 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+La reserva de plata registrada en el Anuario de la Minería de Chile del 2016 es de **25.542 toneladas** (t).
+2025-04-29 17:28:38,192 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 17:28:38,192 - INFO - --- Calculating answer_accuracy score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-29 17:28:39,058 - INFO - answer_accuracy: 1.0000
+2025-04-29 17:28:39,058 - INFO - --- Calculating bleu score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-29 17:28:39,059 - INFO - bleu: 0.0330
+2025-04-29 17:28:39,059 - INFO - --- Calculating rouge score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-29 17:28:39,059 - INFO - rouge: 0.3571
+2025-04-29 17:28:39,059 - INFO - --- Calculating non_llm_similarity score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-29 17:28:39,060 - INFO - non_llm_similarity: 0.2130
+2025-04-29 17:28:39,060 - INFO - --- Calculating tool score for RAG Test 6: Reserva Plata 2016 ---
+2025-04-29 17:28:39,060 - INFO - tool: 0.6667
+2025-04-29 17:28:39,060 - INFO - --- End of RAG Test 6: Reserva Plata 2016 ---

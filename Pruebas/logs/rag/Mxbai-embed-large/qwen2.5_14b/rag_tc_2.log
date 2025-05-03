@@ -1,0 +1,59 @@
+2025-04-29 16:10:14,048 - INFO - --- Running RAG Test 3: Inversión Proyecto (Log file: logs\rag\qwen2.5_14b\rag_tc_2.log) ---
+2025-04-29 16:10:14,048 - INFO - User Query: ¿Cuál es la inversión que contempló el proyecto de la mina Ministro Hales?
+2025-04-29 16:10:14,048 - INFO - Reference: El proyecto tuvo una inversión superior a los US $ 3.000 millones
+2025-04-29 16:10:14,048 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'inversión proyecto mina Ministro Hales'})", 'transfer_back_to_supervisor({})']
+2025-04-29 16:10:14,048 - INFO - Running test with conversation ID: test-run-7f2f25e4-8dac-4890-ab8c-bc10c5d1b781
+2025-04-29 16:10:50,025 - INFO - --- Workflow Output Messages ---
+2025-04-29 16:10:50,025 - INFO - ================================ Human Message =================================
+
+¿Cuál es la inversión que contempló el proyecto de la mina Ministro Hales?
+2025-04-29 16:10:50,025 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (5dd51074-1735-4b3f-af53-4c4c8de64c3c)
+ Call ID: 5dd51074-1735-4b3f-af53-4c4c8de64c3c
+  Args:
+2025-04-29 16:10:50,026 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 16:10:50,026 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (f6a5267d-6f22-4bda-abdb-24f576e07dc2)
+ Call ID: f6a5267d-6f22-4bda-abdb-24f576e07dc2
+  Args:
+    k: 5
+    query: inversión proyecto mina Ministro Hales
+2025-04-29 16:10:50,032 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+El proyecto de la mina Ministro Hales contempló una inversión de más de US$ 3 mil millones. Este proyecto, que comenzó a concebirse en el año 2010, incluye la explotación de sulfuros de cobre con reservas económicamente explotables estimadas en 289 millones de toneladas.
+2025-04-29 16:10:50,033 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (4f7c07a8-7a0e-4109-9dcc-a471e413c112)
+ Call ID: 4f7c07a8-7a0e-4109-9dcc-a471e413c112
+  Args:
+2025-04-29 16:10:50,033 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 16:10:50,033 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El proyecto de la mina Ministro Hales contempló una inversión de más de US$ 3 mil millones. Este proyecto, que comenzó a concebirse en el año 2010, incluye la explotación de sulfuros de cobre con reservas económicamente explotables estimadas en 289 millones de toneladas.
+2025-04-29 16:10:50,034 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 16:10:50,034 - INFO - --- Calculating answer_accuracy score for RAG Test 3: Inversión Proyecto ---
+2025-04-29 16:10:51,024 - INFO - answer_accuracy: 1.0000
+2025-04-29 16:10:51,024 - INFO - --- Calculating bleu score for RAG Test 3: Inversión Proyecto ---
+2025-04-29 16:10:51,025 - INFO - bleu: 0.0773
+2025-04-29 16:10:51,025 - INFO - --- Calculating rouge score for RAG Test 3: Inversión Proyecto ---
+2025-04-29 16:10:51,026 - INFO - rouge: 0.2581
+2025-04-29 16:10:51,026 - INFO - --- Calculating non_llm_similarity score for RAG Test 3: Inversión Proyecto ---
+2025-04-29 16:10:51,026 - INFO - non_llm_similarity: 0.1956
+2025-04-29 16:10:51,026 - INFO - --- Calculating tool score for RAG Test 3: Inversión Proyecto ---
+2025-04-29 16:10:51,026 - INFO - tool: 1.0000
+2025-04-29 16:10:51,027 - INFO - --- End of RAG Test 3: Inversión Proyecto ---

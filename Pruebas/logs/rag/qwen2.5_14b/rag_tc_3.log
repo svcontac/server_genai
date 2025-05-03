@@ -1,0 +1,84 @@
+2025-04-29 17:27:12,145 - INFO - --- Running RAG Test 4: Mineral más importante Chile (Log file: logs\rag\qwen2.5_14b\rag_tc_3.log) ---
+2025-04-29 17:27:12,145 - INFO - User Query: ¿Cuál es el mineral más importante en la producción minera de Chile?
+2025-04-29 17:27:12,145 - INFO - Reference: El mineral más importante es el cobre.
+2025-04-29 17:27:12,145 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'mineral más importante producción minera Chile'})", 'transfer_back_to_supervisor({})']
+2025-04-29 17:27:12,145 - INFO - Running test with conversation ID: test-run-002d75a3-4152-4f88-9713-d7d1b2f2f2d9
+2025-04-29 17:27:42,862 - INFO - --- Workflow Output Messages ---
+2025-04-29 17:27:42,862 - INFO - ================================ Human Message =================================
+
+¿Cuál es el mineral más importante en la producción minera de Chile?
+2025-04-29 17:27:42,862 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (3cb14bd7-4bee-49b4-8c6d-88b13750f226)
+ Call ID: 3cb14bd7-4bee-49b4-8c6d-88b13750f226
+  Args:
+2025-04-29 17:27:42,863 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 17:27:42,863 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (ea773c11-635f-46cb-a585-6a70cb41a46b)
+ Call ID: ea773c11-635f-46cb-a585-6a70cb41a46b
+  Args:
+    k: 3
+    query: mineral más importante en la producción minera de Chile
+2025-04-29 17:27:42,863 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nOD
+ 
+ 
+10 Oficina Económica y Comercial de la 
+Embajada de España en Santiago de Chile 
+EL SECTOR DE LA MINERÍA EN CHILE 2024 
+De entre estos destaca principalmente la producción de los dos primeros. Además, Chile cuenta con 
+una mineralización de diferentes magnitudes y relevancia de cobalto, tungsteno, titanio, cromo, 
+uranio y mercurio aún por explotar.  
+• Minería no metálica  
+ 
+Dentro de este grupo, también denominado Rocas y Minerales Industriales (en adelante RMI), está\n---\nde la producción mundial), siendo éste el producto de exportación más importante de su economía. 
+El boom también llevó un fuerte componente de exploración minera, aumentando  las reservas 
+conocidas de mineral a 150 millones de toneladas el 2010. Eso representa el 24% de las reservas de 
+este mineral en el mundo.  Al 2010 Chile era el origen del 38,2% del  cobre que se exportaba en el 
+mundo.\n---\nChile, así como su evolución en los últimos años.  
+En el año 2023, el sector de la minería representó una participación del 11,9 % sobre el PIB nacional, 
+del cual el 73,1 % correspondió al cobre (8,7 % sobre el PIB de 2023) y el 26,9 % a otras actividades 
+mineras (3,2 %)1. Chile es el mayor productor y exportador de este mineral, alcanzando en torno al 
+24 % de su producción mundial anual2. Además, es uno de los principales productores de otros varios 
+minerales. 
+2.2. Patrimonio minero y producción
+2025-04-29 17:27:42,864 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+El mineral más importante en la producción minera de Chile es el cobre. En 2010, Chile era el origen del 38,2% del cobre que se exportaba a nivel mundial y actualmente representa aproximadamente el 24% de la producción mundial anual de este mineral. Además, en 2023, el sector minero representó un 11,9% sobre el PIB nacional, siendo el 73,1% correspondiente al cobre.
+2025-04-29 17:27:42,864 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (1d32628d-7367-49ed-b919-e10fb24cbea9)
+ Call ID: 1d32628d-7367-49ed-b919-e10fb24cbea9
+  Args:
+2025-04-29 17:27:42,865 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 17:27:42,865 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El mineral más importante en la producción minera de Chile es el cobre. En 2010, Chile era el origen del 38,2% del cobre que se exportaba a nivel mundial y actualmente representa aproximadamente el 24% de la producción mundial anual de este mineral. Además, en 2023, el sector minero representó un 11,9% sobre el PIB nacional, siendo el 73,1% correspondiente al cobre.
+2025-04-29 17:27:42,865 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 17:27:42,865 - INFO - --- Calculating answer_accuracy score for RAG Test 4: Mineral más importante Chile ---
+2025-04-29 17:27:43,867 - INFO - answer_accuracy: 1.0000
+2025-04-29 17:27:43,867 - INFO - --- Calculating bleu score for RAG Test 4: Mineral más importante Chile ---
+2025-04-29 17:27:43,867 - INFO - bleu: 0.2797
+2025-04-29 17:27:43,868 - INFO - --- Calculating rouge score for RAG Test 4: Mineral más importante Chile ---
+2025-04-29 17:27:43,868 - INFO - rouge: 0.2078
+2025-04-29 17:27:43,868 - INFO - --- Calculating non_llm_similarity score for RAG Test 4: Mineral más importante Chile ---
+2025-04-29 17:27:43,869 - INFO - non_llm_similarity: 0.1033
+2025-04-29 17:27:43,869 - INFO - --- Calculating tool score for RAG Test 4: Mineral más importante Chile ---
+2025-04-29 17:27:43,869 - INFO - tool: 0.6667
+2025-04-29 17:27:43,869 - INFO - --- End of RAG Test 4: Mineral más importante Chile ---

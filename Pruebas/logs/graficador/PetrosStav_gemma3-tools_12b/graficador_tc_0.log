@@ -1,0 +1,75 @@
+2025-04-28 16:51:42,256 - INFO - --- Running Test Case 1: Line Plot (Log file: logs\graficador\PetrosStav_gemma3-tools_12b\graficador_tc_0.log) ---
+2025-04-28 16:51:42,256 - INFO - User Query: Genera un gráfico de línea de la primera columna vs la segunda columna del archivo data.csv
+2025-04-28 16:51:42,256 - INFO - Reference: Gráfico de línea (plot_line) realizado.
+2025-04-28 16:51:42,256 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'line'})", "plot_line({'file_path': 'src/data/data.csv', 'x_col': 0, 'y_col': 1})", 'transfer_back_to_supervisor({})']
+2025-04-28 16:51:42,256 - INFO - Running test with conversation ID: test-run-12aaa736-13dc-4713-ab81-e6f81dcf2707
+2025-04-28 16:52:51,603 - INFO - --- Workflow Output Messages ---
+2025-04-28 16:52:51,604 - INFO - ================================ Human Message =================================
+
+Genera un gráfico de línea de la primera columna vs la segunda columna del archivo data.csv
+2025-04-28 16:52:51,604 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_graph_expert (d984aa98-d659-49c4-ae83-355624271e00)
+ Call ID: d984aa98-d659-49c4-ae83-355624271e00
+  Args:
+    type_of_graph: line plot
+2025-04-28 16:52:51,604 - INFO - ================================= Tool Message =================================
+Name: assign_to_graph_expert
+
+Successfully transferred to graph_expert
+2025-04-28 16:52:51,604 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_line (15af3341-b21f-4bd0-8d32-503b84a31665)
+ Call ID: 15af3341-b21f-4bd0-8d32-503b84a31665
+  Args:
+    file_path: src\data\data.csv
+    x_col: 0
+    y_col: 1
+2025-04-28 16:52:51,605 - INFO - ================================= Tool Message =================================
+Name: plot_line
+
+null
+2025-04-28 16:52:51,605 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+I am sorry, I was unable to generate the plot. The tool returned a null response, indicating an error occurred. This could be due to several reasons, such as an issue with the file path, incorrect column names/indices, or a problem with the tool itself.
+
+Could you please verify the following:
+
+1.  **File Path:** Ensure that "src\\data\\data.csv" is the correct path to your file.
+2.  **Column Names/Indices:** Double-check that the first and second columns exist in the CSV file and that 0 and 1 are the correct indices to refer to them.
+3.  **File Format:** Confirm that the file is indeed a valid CSV file.
+
+If the problem persists, please provide more details about the file (e.g., its contents, format) so I can assist you further.
+2025-04-28 16:52:51,605 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (4e65878b-c8b1-47b0-a10f-18b8da4c160b)
+ Call ID: 4e65878b-c8b1-47b0-a10f-18b8da4c160b
+  Args:
+2025-04-28 16:52:51,606 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 16:52:51,606 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Ha ocurrido un error al intentar generar el gráfico. El camino de archivo proporcionado o las columnas especificadas pueden no ser correctos, o puede haber un problema con la herramienta en sí misma.
+
+Por favor, verifique lo siguiente:
+
+1.  **Ruta del Archivo:** Asegúrese de que "src\\data\\data.csv" sea el camino correcto al archivo.
+2.  **Nombres/Índices de Columnas:** Verifique que las primeras y segundas columnas existan en el archivo CSV y que los índices 0 y 1 sean correctos para referirse a ellas.
+3.  **Formato del Archivo:** Confirme que el archivo es un archivo CSV válido.
+
+Si el problema persiste, por favor proporcione más detalles sobre el archivo (por ejemplo, su contenido, formato) para poder ayudarlo mejor.
+2025-04-28 16:52:51,607 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 16:52:51,607 - INFO - --- Calculating goal score for Test Case 1: Line Plot ---
+2025-04-28 16:53:03,312 - INFO - goal: 0.0000
+2025-04-28 16:53:03,312 - INFO - --- Calculating tool score for Test Case 1: Line Plot ---
+2025-04-28 16:53:03,313 - INFO - tool: 0.5556
+2025-04-28 16:53:03,313 - INFO - --- End of Test Case 1: Line Plot ---

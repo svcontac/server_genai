@@ -1,0 +1,47 @@
+2025-04-28 16:30:22,210 - INFO - --- Running Test Case 5: Proyecto de la divisón DMH (Log file: logs\recuperador\MFDoom_deepseek-r1-tool-calling_14b\recuperador_tc_4.log) ---
+2025-04-28 16:30:22,210 - INFO - User Query: Entregame el achivo que menciona el proyecto de la divisón DMH.
+2025-04-28 16:30:22,211 - INFO - Reference: El documento que estás buscando es src\data\Mina_Ministro_Hales.pdf
+2025-04-28 16:30:22,211 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'proyecto de la divisón DMH'})", 'transfer_back_to_supervisor({})']
+2025-04-28 16:30:22,211 - INFO - Running test with conversation ID: test-run-09ae3ae0-6d9c-4e53-9782-c1453178083b
+2025-04-28 16:30:34,793 - INFO - --- Workflow Output Messages ---
+2025-04-28 16:30:34,793 - INFO - ================================ Human Message =================================
+
+Entregame el achivo que menciona el proyecto de la divisón DMH.
+2025-04-28 16:30:34,793 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (d84ebc91-27b3-4b6b-ac12-72fbbf764bcd)
+ Call ID: d84ebc91-27b3-4b6b-ac12-72fbbf764bcd
+  Args:
+2025-04-28 16:30:34,794 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-28 16:30:34,794 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+</think>
+
+src/data/32050-2.pdf
+2025-04-28 16:30:34,794 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (e126b4ec-c178-457d-b309-e4058941b53b)
+ Call ID: e126b4ec-c178-457d-b309-e4058941b53b
+  Args:
+2025-04-28 16:30:34,794 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 16:30:34,795 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento que estás buscando es src/data/32050-2.pdf.
+2025-04-28 16:30:34,795 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 16:30:34,795 - INFO - --- Calculating goal score for Test Case 5: Proyecto de la divisón DMH ---
+2025-04-28 16:30:45,475 - INFO - goal: 0.0000
+2025-04-28 16:30:45,475 - INFO - --- Calculating tool score for Test Case 5: Proyecto de la divisón DMH ---
+2025-04-28 16:30:45,476 - INFO - tool: 0.0000
+2025-04-28 16:30:45,476 - INFO - --- End of Test Case 5: Proyecto de la divisón DMH ---

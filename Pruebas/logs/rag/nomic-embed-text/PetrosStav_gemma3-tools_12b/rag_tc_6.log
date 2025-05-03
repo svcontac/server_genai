@@ -1,0 +1,75 @@
+2025-04-28 21:02:26,470 - INFO - --- Running RAG Test 7: Componentes Retroexcavadora (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_6.log) ---
+2025-04-28 21:02:26,470 - INFO - User Query: ¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-28 21:02:26,470 - INFO - Reference: Chasis o bastidor, cabina, ruedas u orugas, estabilizadores, brazo principal (boom), brazo secundario (dipper stick), cucharón (bucket), cargador frontal (front loader), sistemas hidráulicos, motor, sistema de escape, luces y espejos, placa de contrapeso.
+2025-04-28 21:02:26,470 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'componentes externos retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-28 21:02:26,471 - INFO - Running test with conversation ID: test-run-f105ab12-2ddd-4fd0-a26d-063c150cde7f
+2025-04-28 21:03:52,030 - INFO - --- Workflow Output Messages ---
+2025-04-28 21:03:52,030 - INFO - ================================ Human Message =================================
+
+¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-28 21:03:52,031 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (01570bad-1457-4136-962f-b473ebffab80)
+ Call ID: 01570bad-1457-4136-962f-b473ebffab80
+  Args:
+2025-04-28 21:03:52,031 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 21:03:52,031 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Los componentes externos de una retroexcavadora incluyen:
+
+*   **Contenedor:** Es la estructura principal que alberga todos los demás componentes.
+*   **Pluma:** Es el brazo largo que se extiende desde el contenedor y se utiliza para excavar.
+*   **Cubeta:** Es la herramienta en el extremo de la pluma que se utiliza para cavar y cargar materiales.
+*   **Brazo:** Conecta la pluma al contenedor y proporciona la fuerza para excavar.
+*   **Varillas:** Son cilindros hidráulicos que controlan el movimiento de la pluma y la cubeta.
+*   **Asiento del operador:** Es donde el operador controla la retroexcavadora.
+*   **Motor:** Proporciona la energía para operar la retroexcavadora.
+*   **Neumáticos:** Permiten que la retroexcavadora se mueva.
+*   **Contrapesos:** Ayudan a estabilizar la retroexcavadora durante la excavación.
+*   **Sistema hidráulico:** Proporciona la potencia para mover los componentes de la retroexcavadora.
+2025-04-28 21:03:52,032 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (ea50d094-728b-4708-8214-f73221230f6e)
+ Call ID: ea50d094-728b-4708-8214-f73221230f6e
+  Args:
+2025-04-28 21:03:52,032 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 21:03:52,032 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Aquí están los componentes externos principales de una retroexcavadora:
+
+- Contenedor: Estructura principal que alberga todos los demás componentes.
+- Pluma: Brazo largo que se extiende desde el contenedor para excavar.
+- Cubeta: Herramienta en el extremo de la pluma utilizada para cavar y cargar materiales.
+- Brazo: Conecta la pluma con el contenedor, proporcionando fuerza para excavar.
+- Varillas hidráulicas: Controlan el movimiento de la pluma y cubeta.
+- Asiento del operador: Donde se controla la retroexcavadora.
+- Motor: Proporciona energía para su funcionamiento.
+- Neumáticos: Permiten su movilidad.
+- Contrapesos: Ayudan a estabilizarla durante la excavación.
+- Sistema hidráulico: Proporciona potencia para mover los componentes.
+
+Si necesitas más detalles sobre alguno de estos elementos, por favor avísame.
+2025-04-28 21:03:52,033 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 21:03:52,033 - INFO - --- Calculating answer_accuracy score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-28 21:03:53,392 - INFO - answer_accuracy: 0.5000
+2025-04-28 21:03:53,392 - INFO - --- Calculating bleu score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-28 21:03:53,393 - INFO - bleu: 0.0041
+2025-04-28 21:03:53,393 - INFO - --- Calculating rouge score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-28 21:03:53,395 - INFO - rouge: 0.0915
+2025-04-28 21:03:53,395 - INFO - --- Calculating non_llm_similarity score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-28 21:03:53,396 - INFO - non_llm_similarity: 0.1932
+2025-04-28 21:03:53,396 - INFO - --- Calculating tool score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-28 21:03:53,396 - INFO - tool: 0.0000
+2025-04-28 21:03:53,396 - INFO - --- End of RAG Test 7: Componentes Retroexcavadora ---

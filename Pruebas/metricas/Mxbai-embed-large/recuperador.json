@@ -1,0 +1,136 @@
+{
+   "recuperador": {
+      "PetrosStav/gemma3-tools:12b": {
+         "0": {
+            "metricas": {
+               "time": 43.02578949928284,
+               "goal": 0.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 1: Plan de Humectaci\u00f3n"
+         },
+         "1": {
+            "metricas": {
+               "time": 39.09115505218506,
+               "goal": 0.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 2: Estrategia Nacional del Litio"
+         },
+         "2": {
+            "metricas": {
+               "time": 37.663835763931274,
+               "goal": 0.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 3: Diferencia entre una excavadora y la retroexcavadora"
+         },
+         "3": {
+            "metricas": {
+               "time": 41.23687744140625,
+               "goal": 0.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 4: Proyecto de Chuquicamata Subterr\u00e1nea"
+         },
+         "4": {
+            "metricas": {
+               "time": 36.83304286003113,
+               "goal": 0.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 5: Proyecto de la divis\u00f3n DMH"
+         },
+         "5": {
+            "metricas": {
+               "time": 39.099613666534424,
+               "goal": 0.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 6: Significado de RMI"
+         },
+         "6": {
+            "metricas": {
+               "time": 40.999358892440796,
+               "goal": 0.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 7: Partes de un sistema de frenos"
+         },
+         "7": {
+            "metricas": {
+               "time": 40.0778489112854,
+               "goal": 0.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 8: Ganancia bruta del cobre"
+         }
+      },
+      "qwen2.5:14b": {
+         "0": {
+            "metricas": {
+               "time": 30.183878421783447,
+               "goal": 0.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 1: Plan de Humectaci\u00f3n"
+         },
+         "1": {
+            "metricas": {
+               "time": 30.147196054458618,
+               "goal": 0.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 2: Estrategia Nacional del Litio"
+         },
+         "2": {
+            "metricas": {
+               "time": 29.974263429641724,
+               "goal": 0.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 3: Diferencia entre una excavadora y la retroexcavadora"
+         },
+         "3": {
+            "metricas": {
+               "time": 20.099219799041748,
+               "goal": 0.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 4: Proyecto de Chuquicamata Subterr\u00e1nea"
+         },
+         "4": {
+            "metricas": {
+               "time": 19.33164668083191,
+               "goal": 0.0,
+               "tool": 0.6666666666666666
+            },
+            "description": "Test Case 5: Proyecto de la divis\u00f3n DMH"
+         },
+         "5": {
+            "metricas": {
+               "time": 28.08521866798401,
+               "goal": 0.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 6: Significado de RMI"
+         },
+         "6": {
+            "metricas": {
+               "time": 32.437854051589966,
+               "goal": 0.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 7: Partes de un sistema de frenos"
+         },
+         "7": {
+            "metricas": {
+               "time": 30.945126056671143,
+               "goal": 0.0,
+               "tool": 1.0
+            },
+            "description": "Test Case 8: Ganancia bruta del cobre"
+         }
+      }
+   }
+}

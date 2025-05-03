@@ -1,0 +1,18 @@
+2025-04-28 17:32:16,664 - INFO - --- Running TC 8 (RAG): Delegate Mineral Importante Query (Log file: logs\supervisor\fireshihtzu_watt-tool-8B-formatted\supervisor_tc_7.log) ---
+2025-04-28 17:32:16,664 - INFO - User Query: ¿Cuál es el mineral más importante en la producción minera de Chile?
+2025-04-28 17:32:16,664 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:32:16,664 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:32:16,664 - INFO - Running test with conversation ID: test-run-8f5f7226-e0f0-4ad1-a6af-7c5755fa6a1e
+2025-04-28 17:32:16,940 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:32:16,941 - INFO - ================================ Human Message =================================
+
+¿Cuál es el mineral más importante en la producción minera de Chile?
+2025-04-28 17:32:16,941 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_rag_expert, "parameters": {}}
+2025-04-28 17:32:16,941 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:32:16,941 - INFO - --- Calculating tool score for TC 8 (RAG): Delegate Mineral Importante Query ---
+2025-04-28 17:32:16,941 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:32:16,942 - INFO - tool: 0.0000
+2025-04-28 17:32:16,942 - INFO - --- End of TC 8 (RAG): Delegate Mineral Importante Query ---

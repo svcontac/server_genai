@@ -1,0 +1,97 @@
+2025-04-29 12:29:13,484 - INFO - --- Running Test Case 3: Line Plot - 2 (Log file: logs\graficador\qwen3_14b\graficador_tc_2.log) ---
+2025-04-29 12:29:13,484 - INFO - User Query: Puedes graficar la primera variable a tráves del tiempo del data.csv
+2025-04-29 12:29:13,484 - INFO - Reference: Gráfico de línea (plot_line) realizado exitosamente.
+2025-04-29 12:29:13,484 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'line'})", "plot_line({'file_path': 'src/data/data.csv', 'x_col': 0, 'y_col': 'tiempo'})", 'transfer_back_to_supervisor({})']
+2025-04-29 12:29:13,484 - INFO - Running test with conversation ID: test-run-4cb85a98-79d5-4cd7-849f-bb7965785a19
+2025-04-29 12:29:41,638 - INFO - --- Workflow Output Messages ---
+2025-04-29 12:29:41,638 - INFO - ================================ Human Message =================================
+
+Puedes graficar la primera variable a tráves del tiempo del data.csv
+2025-04-29 12:29:41,638 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_graph_expert (5f6c7ca6-fb89-4279-8870-e60b26c17814)
+ Call ID: 5f6c7ca6-fb89-4279-8870-e60b26c17814
+  Args:
+    data_file: data.csv
+    type: line
+    variable: primera variable
+2025-04-29 12:29:41,639 - INFO - ================================= Tool Message =================================
+Name: assign_to_graph_expert
+
+Successfully transferred to graph_expert
+2025-04-29 12:29:41,639 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_line (c42ac928-7d76-4086-bdfd-9dac1ee9efa9)
+ Call ID: c42ac928-7d76-4086-bdfd-9dac1ee9efa9
+  Args:
+    file_path: src/data/data.csv
+    x_col: time
+    y_col: 0
+2025-04-29 12:29:41,639 - INFO - ================================= Tool Message =================================
+Name: plot_line
+
+Error: KeyError('time')
+ Please fix your mistakes.
+2025-04-29 12:29:41,639 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_line (1a48a831-366f-48b1-89b5-0006d9e32a68)
+ Call ID: 1a48a831-366f-48b1-89b5-0006d9e32a68
+  Args:
+    file_path: src/data/data.csv
+    x_col: 0
+    y_col: 0
+2025-04-29 12:29:41,640 - INFO - ================================= Tool Message =================================
+Name: plot_line
+
+Error: KeyError('0')
+ Please fix your mistakes.
+2025-04-29 12:29:41,640 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_line (2e90df98-64d8-4b19-a701-4e62aec933fc)
+ Call ID: 2e90df98-64d8-4b19-a701-4e62aec933fc
+  Args:
+    file_path: src/data/data.csv
+    x_col: 0
+    y_col: 1
+2025-04-29 12:29:41,640 - INFO - ================================= Tool Message =================================
+Name: plot_line
+
+Gráfico de línea (plot_line) realizado exitosamente
+2025-04-29 12:29:41,641 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+<think>
+
+</think>
+
+¡El gráfico de línea se ha realizado exitosamente! Si necesitas realizar más gráficos o ajustar algo en este, no dudes en decírmelo.
+2025-04-29 12:29:41,641 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (24bc5af0-01ca-4fe2-a456-6177e872c611)
+ Call ID: 24bc5af0-01ca-4fe2-a456-6177e872c611
+  Args:
+2025-04-29 12:29:41,641 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 12:29:41,641 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+<think>
+
+</think>
+
+¡Listo para ayudarte con lo siguiente! Si tienes más preguntas o necesitas más gráficos, estaré encantado de asistirte.
+2025-04-29 12:29:41,642 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 12:29:41,642 - INFO - --- Calculating goal score for Test Case 3: Line Plot - 2 ---
+2025-04-29 12:29:53,571 - INFO - goal: 1.0000
+2025-04-29 12:29:53,571 - INFO - --- Calculating tool score for Test Case 3: Line Plot - 2 ---
+2025-04-29 12:29:53,572 - INFO - tool: 0.8889
+2025-04-29 12:29:53,572 - INFO - --- End of Test Case 3: Line Plot - 2 ---

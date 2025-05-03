@@ -1,0 +1,47 @@
+2025-04-28 16:29:58,325 - INFO - --- Running Test Case 4: Proyecto de Chuquicamata Subterránea (Log file: logs\recuperador\MFDoom_deepseek-r1-tool-calling_14b\recuperador_tc_3.log) ---
+2025-04-28 16:29:58,325 - INFO - User Query: Puedes entregarme el archivo pdf que mencione el proyecto de Chuquicamata Subterránea.
+2025-04-28 16:29:58,325 - INFO - Reference: El documento que estás buscando es src\data\2023_03_31_codelco_entrega_resultados_4t_2022.pdf
+2025-04-28 16:29:58,325 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'proyecto de Chuquicamata Subterránea'})", 'transfer_back_to_supervisor({})']
+2025-04-28 16:29:58,327 - INFO - Running test with conversation ID: test-run-0ea49f29-7456-472f-943f-4de3d81a5cb4
+2025-04-28 16:30:12,843 - INFO - --- Workflow Output Messages ---
+2025-04-28 16:30:12,843 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que mencione el proyecto de Chuquicamata Subterránea.
+2025-04-28 16:30:12,843 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (3d19d2c4-8a4d-4c40-ae93-7ceb007fda69)
+ Call ID: 3d19d2c4-8a4d-4c40-ae93-7ceb007fda69
+  Args:
+2025-04-28 16:30:12,844 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-28 16:30:12,844 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+</think>
+
+src/data/32050-2.pdf
+2025-04-28 16:30:12,844 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (0403f4a1-d686-4010-8310-1012f0a4ab96)
+ Call ID: 0403f4a1-d686-4010-8310-1012f0a4ab96
+  Args:
+2025-04-28 16:30:12,844 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 16:30:12,845 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento que estás buscando es src/data/32050-2.pdf.
+2025-04-28 16:30:12,845 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 16:30:12,845 - INFO - --- Calculating goal score for Test Case 4: Proyecto de Chuquicamata Subterránea ---
+2025-04-28 16:30:22,209 - INFO - goal: 0.0000
+2025-04-28 16:30:22,209 - INFO - --- Calculating tool score for Test Case 4: Proyecto de Chuquicamata Subterránea ---
+2025-04-28 16:30:22,209 - INFO - tool: 0.0000
+2025-04-28 16:30:22,209 - INFO - --- End of Test Case 4: Proyecto de Chuquicamata Subterránea ---

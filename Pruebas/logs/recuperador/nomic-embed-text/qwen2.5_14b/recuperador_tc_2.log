@@ -1,0 +1,56 @@
+2025-04-28 15:22:11,777 - INFO - --- Running Test Case 3: Diferencia entre una excavadora y la retroexcavadora (Log file: logs\recuperador\qwen2.5_14b\recuperador_tc_2.log) ---
+2025-04-28 15:22:11,777 - INFO - User Query: Puedes entregarme el archivo pdf que explique de forma detallada cuál la diferencia entre una excavadora y la retroexcavadora.
+2025-04-28 15:22:11,777 - INFO - Reference: El documento que estás buscando es src\data\Manual_curso_de_maquinaria_pesada-Retroexcavadora.pdf
+2025-04-28 15:22:11,777 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'diferencia entre excavadora y la retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-28 15:22:11,777 - INFO - Running test with conversation ID: test-run-3a9ffe09-0c94-4ede-9654-5ec9009359d5
+2025-04-28 15:22:26,793 - INFO - --- Workflow Output Messages ---
+2025-04-28 15:22:26,793 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que explique de forma detallada cuál la diferencia entre una excavadora y la retroexcavadora.
+2025-04-28 15:22:26,794 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (deb8f44d-8b19-4ed8-a7c1-b18b54ab8406)
+ Call ID: deb8f44d-8b19-4ed8-a7c1-b18b54ab8406
+  Args:
+2025-04-28 15:22:26,794 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-28 15:22:26,794 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (08ae3b55-153d-42cb-aaf0-46051d66f7ac)
+ Call ID: 08ae3b55-153d-42cb-aaf0-46051d66f7ac
+  Args:
+    query: diferencia entre excavadora y retroexcavadora
+2025-04-28 15:22:26,794 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+src\data\Manual_curso_de_maquinaria_pesada-Retroexcavadora.pdf
+2025-04-28 15:22:26,795 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+src\data\Manual_curso_de_maquinaria_pesada-Retroexcavadora.pdf
+2025-04-28 15:22:26,795 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (6a17cd87-803e-428b-8b7d-ba24d3a6304d)
+ Call ID: 6a17cd87-803e-428b-8b7d-ba24d3a6304d
+  Args:
+2025-04-28 15:22:26,795 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 15:22:26,795 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento que estás buscando es src\data\Manual_curso_de_maquinaria_pesada-Retroexcavadora.pdf.
+2025-04-28 15:22:26,796 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 15:22:26,796 - INFO - --- Calculating goal score for Test Case 3: Diferencia entre una excavadora y la retroexcavadora ---
+2025-04-28 15:22:37,914 - INFO - goal: 1.0000
+2025-04-28 15:22:37,914 - INFO - --- Calculating tool score for Test Case 3: Diferencia entre una excavadora y la retroexcavadora ---
+2025-04-28 15:22:37,915 - INFO - tool: 0.6667
+2025-04-28 15:22:37,915 - INFO - --- End of Test Case 3: Diferencia entre una excavadora y la retroexcavadora ---

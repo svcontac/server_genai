@@ -1,0 +1,56 @@
+2025-04-29 10:03:41,299 - INFO - --- Running Test Case 2: Estrategia Nacional del Litio (Log file: logs\recuperador\PetrosStav_gemma3-tools_12b\recuperador_tc_1.log) ---
+2025-04-29 10:03:41,299 - INFO - User Query: Puedes entregarme el archivo pdf que hable sobre la estrategia nacional del Litio
+2025-04-29 10:03:41,299 - INFO - Reference: El documento que estás buscando es src\data\mineria_chilena_removed.pdf
+2025-04-29 10:03:41,299 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'estrategia nacional del Litio'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:03:41,299 - INFO - Running test with conversation ID: test-run-fec1a3ac-3140-48ae-aa3a-cc8028bd1cc1
+2025-04-29 10:04:20,390 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:04:20,390 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que hable sobre la estrategia nacional del Litio
+2025-04-29 10:04:20,391 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (e44ba962-beef-4e38-af6f-7a1f32e69002)
+ Call ID: e44ba962-beef-4e38-af6f-7a1f32e69002
+  Args:
+2025-04-29 10:04:20,391 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-29 10:04:20,391 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (d5bab34c-f522-498e-ac41-f8f67e98149f)
+ Call ID: d5bab34c-f522-498e-ac41-f8f67e98149f
+  Args:
+    query: estrategia nacional del Litio
+2025-04-29 10:04:20,391 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+Error retrieving context from FAISS: 
+2025-04-29 10:04:20,391 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+I am sorry, I was unable to retrieve the file. Please check your query and try again.
+2025-04-29 10:04:20,392 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (87f92a20-e152-49f1-9cf4-7bd6994bbf34)
+ Call ID: 87f92a20-e152-49f1-9cf4-7bd6994bbf34
+  Args:
+2025-04-29 10:04:20,392 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:04:20,392 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al recuperar el archivo que buscabas. Por favor verifica tu consulta y vuelve a intentarlo. Si continúas teniendo problemas, ponte en contacto con soporte técnico.
+2025-04-29 10:04:20,393 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:04:20,393 - INFO - --- Calculating goal score for Test Case 2: Estrategia Nacional del Litio ---
+2025-04-29 10:04:30,032 - INFO - goal: 0.0000
+2025-04-29 10:04:30,032 - INFO - --- Calculating tool score for Test Case 2: Estrategia Nacional del Litio ---
+2025-04-29 10:04:30,033 - INFO - tool: 1.0000
+2025-04-29 10:04:30,033 - INFO - --- End of Test Case 2: Estrategia Nacional del Litio ---

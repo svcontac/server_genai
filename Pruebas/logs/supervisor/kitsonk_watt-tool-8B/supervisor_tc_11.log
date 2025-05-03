@@ -1,0 +1,18 @@
+2025-04-28 17:31:27,436 - INFO - --- Running TC 12 (RAG): Delegate Brazo Telescópico Query (Log file: logs\supervisor\kitsonk_watt-tool-8B\supervisor_tc_11.log) ---
+2025-04-28 17:31:27,436 - INFO - User Query: ¿Qué es un brazo telescópico para la retroexcavadora?
+2025-04-28 17:31:27,436 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:31:27,436 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:31:27,437 - INFO - Running test with conversation ID: test-run-7b4d9bae-39b8-4ef0-ac5c-7bf6a41715f3
+2025-04-28 17:31:27,712 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:31:27,712 - INFO - ================================ Human Message =================================
+
+¿Qué es un brazo telescópico para la retroexcavadora?
+2025-04-28 17:31:27,713 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_rag_expert, "parameters": {}}
+2025-04-28 17:31:27,713 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:31:27,713 - INFO - --- Calculating tool score for TC 12 (RAG): Delegate Brazo Telescópico Query ---
+2025-04-28 17:31:27,713 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:31:27,714 - INFO - tool: 0.0000
+2025-04-28 17:31:27,714 - INFO - --- End of TC 12 (RAG): Delegate Brazo Telescópico Query ---

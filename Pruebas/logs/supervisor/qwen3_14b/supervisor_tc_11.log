@@ -1,0 +1,44 @@
+2025-04-29 14:59:25,700 - INFO - --- Running TC 12 (RAG): Delegate Brazo Telescópico Query (Log file: logs\supervisor\qwen3_14b\supervisor_tc_11.log) ---
+2025-04-29 14:59:25,701 - INFO - User Query: ¿Qué es un brazo telescópico para la retroexcavadora?
+2025-04-29 14:59:25,701 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-29 14:59:25,701 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-29 14:59:25,701 - INFO - Running test with conversation ID: test-run-8d0fe024-e485-4d54-b457-b03bbb3ee13e
+2025-04-29 14:59:59,398 - INFO - --- Workflow Output Messages ---
+2025-04-29 14:59:59,398 - INFO - ================================ Human Message =================================
+
+¿Qué es un brazo telescópico para la retroexcavadora?
+2025-04-29 14:59:59,399 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (aa7109ea-8308-4229-8fb1-f061824ef2bb)
+ Call ID: aa7109ea-8308-4229-8fb1-f061824ef2bb
+  Args:
+2025-04-29 14:59:59,399 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 14:59:59,402 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (2caade5d-5361-4a1c-a0b0-56420fc388ed)
+ Call ID: 2caade5d-5361-4a1c-a0b0-56420fc388ed
+  Args:
+2025-04-29 14:59:59,402 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 14:59:59,402 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+<think>
+
+</think>
+
+Un brazo telescópico en una retroexcavadora es como un brazo que puede alargarse y acortarse. Esto le permite a la máquina alcanzar lugares más lejos sin tener que moverse, lo que la hace más útil y eficiente al trabajar.
+2025-04-29 14:59:59,403 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 14:59:59,403 - INFO - --- Calculating tool score for TC 12 (RAG): Delegate Brazo Telescópico Query ---
+2025-04-29 14:59:59,403 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-29 14:59:59,403 - INFO - tool: 1.0000
+2025-04-29 14:59:59,403 - INFO - --- End of TC 12 (RAG): Delegate Brazo Telescópico Query ---

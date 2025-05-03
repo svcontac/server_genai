@@ -1,0 +1,44 @@
+2025-04-29 15:10:46,989 - INFO - --- Running TC 12 (RAG): Delegate Brazo Telescópico Query (Log file: logs\supervisor\qwen2.5_14b\supervisor_tc_11.log) ---
+2025-04-29 15:10:46,989 - INFO - User Query: ¿Qué es un brazo telescópico para la retroexcavadora?
+2025-04-29 15:10:46,989 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-29 15:10:46,989 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-29 15:10:46,989 - INFO - Running test with conversation ID: test-run-8a1bfa06-a6a2-44e4-88f4-44d81c7a1109
+2025-04-29 15:11:05,593 - INFO - --- Workflow Output Messages ---
+2025-04-29 15:11:05,593 - INFO - ================================ Human Message =================================
+
+¿Qué es un brazo telescópico para la retroexcavadora?
+2025-04-29 15:11:05,593 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (77cf10c3-b08f-42a8-9ba2-93154e1c448d)
+ Call ID: 77cf10c3-b08f-42a8-9ba2-93154e1c448d
+  Args:
+2025-04-29 15:11:05,593 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 15:11:05,594 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Un brazo telescópico en una retroexcavadora es un tipo de mecanismo que permite al equipo extender y contraer su brazo principal. Esto proporciona mayor alcance para la máquina, permitiéndole alcanzar objetos o áreas a distancias más largas sin necesidad de mover el vehículo mismo. Este diseño mejora significativamente la versatilidad y eficiencia operativa de la retroexcavadora en diversos entornos de trabajo.
+2025-04-29 15:11:05,594 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (93436b7c-51ff-4484-a481-015c40a98e64)
+ Call ID: 93436b7c-51ff-4484-a481-015c40a98e64
+  Args:
+2025-04-29 15:11:05,594 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 15:11:05,594 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El RAG expert ha proporcionado una explicación sobre lo que es un brazo telescópico para la retroexcavadora. Un brazo telescópico permite a la máquina extender y contraer su brazo principal, mejorando así el alcance y la eficiencia operativa en diversos entornos de trabajo.
+2025-04-29 15:11:05,595 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 15:11:05,595 - INFO - --- Calculating tool score for TC 12 (RAG): Delegate Brazo Telescópico Query ---
+2025-04-29 15:11:05,595 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-29 15:11:05,595 - INFO - tool: 1.0000
+2025-04-29 15:11:05,595 - INFO - --- End of TC 12 (RAG): Delegate Brazo Telescópico Query ---

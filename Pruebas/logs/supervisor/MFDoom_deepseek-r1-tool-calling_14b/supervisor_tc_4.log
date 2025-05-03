@@ -1,0 +1,54 @@
+2025-04-28 17:23:58,610 - INFO - --- Running TC 5 (RAG): Delegate Producción Ministro Hales Query (Log file: logs\supervisor\MFDoom_deepseek-r1-tool-calling_14b\supervisor_tc_4.log) ---
+2025-04-28 17:23:58,610 - INFO - User Query: ¿Cuál es la producción diaria estimada para la mina Ministro Hales?
+2025-04-28 17:23:58,610 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:23:58,611 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:23:58,611 - INFO - Running test with conversation ID: test-run-ecec3b19-0acf-417a-b6ae-3d1090319aa6
+2025-04-28 17:24:27,069 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:24:27,069 - INFO - ================================ Human Message =================================
+
+¿Cuál es la producción diaria estimada para la mina Ministro Hales?
+2025-04-28 17:24:27,069 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (8b6a2794-ee87-494d-80f3-4335b204614d)
+ Call ID: 8b6a2794-ee87-494d-80f3-4335b204614d
+  Args:
+2025-04-28 17:24:27,070 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 17:24:27,070 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (1d40724f-2703-43d1-852f-bc6858bdc3f8)
+ Call ID: 1d40724f-2703-43d1-852f-bc6858bdc3f8
+  Args:
+    k: 3
+    query: producción diaria estimada mina Ministro Hales
+2025-04-28 17:24:27,075 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+La producción diaria estimada para la mina Ministro Hales es de 50,000 toneladas de mineral por día. Este proceso incluye una línea de chancado primario, molienda y dos molinos de bolas.
+2025-04-28 17:24:27,075 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (7b8ae982-abfd-4eb7-8221-053fd58cc277)
+ Call ID: 7b8ae982-abfd-4eb7-8221-053fd58cc277
+  Args:
+2025-04-28 17:24:27,075 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 17:24:27,076 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+</think>
+
+La producción diaria estimada para la mina Ministro Hales es de 50,000 toneladas de mineral por día.
+2025-04-28 17:24:27,076 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:24:27,076 - INFO - --- Calculating tool score for TC 5 (RAG): Delegate Producción Ministro Hales Query ---
+2025-04-28 17:24:27,076 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:24:27,077 - INFO - tool: 1.0000
+2025-04-28 17:24:27,077 - INFO - --- End of TC 5 (RAG): Delegate Producción Ministro Hales Query ---

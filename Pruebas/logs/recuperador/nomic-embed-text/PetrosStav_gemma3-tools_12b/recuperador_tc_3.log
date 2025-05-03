@@ -1,0 +1,56 @@
+2025-04-28 16:44:27,682 - INFO - --- Running Test Case 4: Proyecto de Chuquicamata Subterránea (Log file: logs\recuperador\PetrosStav_gemma3-tools_12b\recuperador_tc_3.log) ---
+2025-04-28 16:44:27,682 - INFO - User Query: Puedes entregarme el archivo pdf que mencione el proyecto de Chuquicamata Subterránea.
+2025-04-28 16:44:27,682 - INFO - Reference: El documento que estás buscando es src\data\2023_03_31_codelco_entrega_resultados_4t_2022.pdf
+2025-04-28 16:44:27,682 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'proyecto de Chuquicamata Subterránea'})", 'transfer_back_to_supervisor({})']
+2025-04-28 16:44:27,683 - INFO - Running test with conversation ID: test-run-d62fcf43-1b74-4273-8c32-1fb888bc1caf
+2025-04-28 16:44:57,726 - INFO - --- Workflow Output Messages ---
+2025-04-28 16:44:57,726 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que mencione el proyecto de Chuquicamata Subterránea.
+2025-04-28 16:44:57,726 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (047a282c-597d-45c1-ba69-5adb38a79d12)
+ Call ID: 047a282c-597d-45c1-ba69-5adb38a79d12
+  Args:
+2025-04-28 16:44:57,727 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-28 16:44:57,727 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (dcd7ce4c-ef48-48c1-8ff3-5c9b4411387b)
+ Call ID: dcd7ce4c-ef48-48c1-8ff3-5c9b4411387b
+  Args:
+    query: proyecto Chuquicamata Subterránea
+2025-04-28 16:44:57,727 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+src\data\Manual_curso_de_maquinaria_pesada-Retroexcavadora.pdf
+2025-04-28 16:44:57,727 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+src\data\Manual_curso_de_maquinaria_pesada-Retroexcavadora.pdf
+2025-04-28 16:44:57,728 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (399e63a4-e6f0-4cb8-81a6-6429d8849951)
+ Call ID: 399e63a4-e6f0-4cb8-81a6-6429d8849951
+  Args:
+2025-04-28 16:44:57,728 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 16:44:57,728 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento que estás buscando es src\data\Manual_curso_de_maquinaria_pesada-Retroexcavadora.pdf. Por favor, ten en cuenta si este es el archivo correcto relacionado con el proyecto de Chuquicamata Subterránea o necesitas otro específico.
+2025-04-28 16:44:57,729 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 16:44:57,729 - INFO - --- Calculating goal score for Test Case 4: Proyecto de Chuquicamata Subterránea ---
+2025-04-28 16:45:11,921 - INFO - goal: 0.0000
+2025-04-28 16:45:11,921 - INFO - --- Calculating tool score for Test Case 4: Proyecto de Chuquicamata Subterránea ---
+2025-04-28 16:45:11,922 - INFO - tool: 0.6667
+2025-04-28 16:45:11,922 - INFO - --- End of Test Case 4: Proyecto de Chuquicamata Subterránea ---

@@ -1,0 +1,72 @@
+2025-04-29 14:26:28,889 - INFO - --- Running RAG Test 7: Componentes Retroexcavadora (Log file: logs\rag\qwen3_14b\rag_tc_6.log) ---
+2025-04-29 14:26:28,890 - INFO - User Query: ¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-29 14:26:28,890 - INFO - Reference: Chasis o bastidor, cabina, ruedas u orugas, estabilizadores, brazo principal (boom), brazo secundario (dipper stick), cucharón (bucket), cargador frontal (front loader), sistemas hidráulicos, motor, sistema de escape, luces y espejos, placa de contrapeso.
+2025-04-29 14:26:28,890 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'componentes externos retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-29 14:26:28,890 - INFO - Running test with conversation ID: test-run-c7ac788b-4ae5-407e-9716-e8202e4b2137
+2025-04-29 14:27:22,134 - INFO - --- Workflow Output Messages ---
+2025-04-29 14:27:22,134 - INFO - ================================ Human Message =================================
+
+¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-29 14:27:22,134 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (5be8c2e5-ef80-40f5-831d-5a6e9eabb4b9)
+ Call ID: 5be8c2e5-ef80-40f5-831d-5a6e9eabb4b9
+  Args:
+2025-04-29 14:27:22,134 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 14:27:22,135 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+<think>
+
+</think>
+
+Los componentes externos de una retroexcavadora incluyen:
+
+1. **Cabezal de excavación (cucharón)**: Es la parte frontal de la máquina que se utiliza para excavar y manipular materiales.
+2. **Brazo hidráulico**: Es el brazo articulado que conecta el cabezal de excavación con el cuerpo de la máquina y permite el movimiento de elevación y rotación.
+3. **Ruedas o orugas**: Son las partes de apoyo que permiten el desplazamiento de la retroexcavadora sobre el terreno.
+4. **Chasis**: Es el marco estructural de la máquina que soporta todos los componentes y proporciona estabilidad.
+5. **Cabina de operación**: Es el lugar donde se encuentra el operador para controlar la máquina.
+6. **Sistema de hidráulica externa**: Incluye las tuberías, válvulas y otros componentes que permiten el movimiento de los brazos y el cabezal de excavación.
+7. **Sistema de dirección**: Permite al operador controlar la dirección de la retroexcavadora durante su movimiento.
+
+Estos componentes trabajan en conjunto para garantizar el correcto funcionamiento de la retroexcavadora en diferentes condiciones de trabajo.
+2025-04-29 14:27:22,135 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (c866a463-2794-474b-9cad-b04650f83985)
+ Call ID: c866a463-2794-474b-9cad-b04650f83985
+  Args:
+2025-04-29 14:27:22,135 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 14:27:22,136 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+<think>
+
+Okay, the user asked for the external components of a backhoe, and the RAG expert provided a detailed list. Now, I need to check if there's anything else the user might need. The response seems comprehensive, but maybe they want a visual representation? Let me see the history again.
+
+The user's initial query was about components, which is factual information. The RAG expert answered correctly. Since there's no mention of needing a graph or file path, I should just confirm the answer and offer further help. No need to call any tools here. Just a friendly response to ensure they're satisfied.
+</think>
+
+La respuesta proporcionada por el experto en RAG incluye una descripción completa de los componentes externos de una retroexcavadora. Si necesitas una representación visual, como un diagrama o esquema, puedes solicitarlo y asignaré la tarea al experto en gráficos. De lo contrario, ¿hay algo más en lo que pueda ayudarte?
+2025-04-29 14:27:22,137 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 14:27:22,137 - INFO - --- Calculating answer_accuracy score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 14:27:32,285 - INFO - answer_accuracy: 0.0000
+2025-04-29 14:27:32,285 - INFO - --- Calculating bleu score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 14:27:32,286 - INFO - bleu: 0.0054
+2025-04-29 14:27:32,286 - INFO - --- Calculating rouge score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 14:27:32,289 - INFO - rouge: 0.0408
+2025-04-29 14:27:32,289 - INFO - --- Calculating non_llm_similarity score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 14:27:32,289 - INFO - non_llm_similarity: 0.1727
+2025-04-29 14:27:32,289 - INFO - --- Calculating tool score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 14:27:32,290 - INFO - tool: 0.0000
+2025-04-29 14:27:32,290 - INFO - --- End of RAG Test 7: Componentes Retroexcavadora ---

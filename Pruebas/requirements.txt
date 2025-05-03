@@ -1,0 +1,14 @@
+asyncio
+ragas
+langchain
+langgraph
+langgraph-supervisor
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-ollama
+IPython
+faiss-cpu
+pandas
+openpyxl
+plotly

@@ -1,0 +1,18 @@
+2025-04-28 17:31:26,293 - INFO - --- Running TC 8 (RAG): Delegate Mineral Importante Query (Log file: logs\supervisor\kitsonk_watt-tool-8B\supervisor_tc_7.log) ---
+2025-04-28 17:31:26,293 - INFO - User Query: ¿Cuál es el mineral más importante en la producción minera de Chile?
+2025-04-28 17:31:26,293 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:31:26,293 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:31:26,293 - INFO - Running test with conversation ID: test-run-96fcf842-e342-49df-8563-60cbd7a21866
+2025-04-28 17:31:26,572 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:31:26,572 - INFO - ================================ Human Message =================================
+
+¿Cuál es el mineral más importante en la producción minera de Chile?
+2025-04-28 17:31:26,572 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_rag_expert, "parameters": {}}
+2025-04-28 17:31:26,573 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:31:26,573 - INFO - --- Calculating tool score for TC 8 (RAG): Delegate Mineral Importante Query ---
+2025-04-28 17:31:26,573 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:31:26,573 - INFO - tool: 0.0000
+2025-04-28 17:31:26,574 - INFO - --- End of TC 8 (RAG): Delegate Mineral Importante Query ---

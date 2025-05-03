@@ -1,0 +1,71 @@
+2025-04-29 17:27:43,870 - INFO - --- Running RAG Test 5: PIB Cobre 2023 (Log file: logs\rag\qwen2.5_14b\rag_tc_4.log) ---
+2025-04-29 17:27:43,870 - INFO - User Query: ¿Cuál fue el porcentaje del PIB nacional correspondiente al cobre en el año 2023?
+2025-04-29 17:27:43,870 - INFO - Reference: El porcentaje fue 73,1%
+2025-04-29 17:27:43,870 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'porcentaje PIB nacional cobre 2023'})", 'transfer_back_to_supervisor({})']
+2025-04-29 17:27:43,871 - INFO - Running test with conversation ID: test-run-b2508b9a-157d-4dd8-a7ae-9fde60d54504
+2025-04-29 17:28:18,147 - INFO - --- Workflow Output Messages ---
+2025-04-29 17:28:18,147 - INFO - ================================ Human Message =================================
+
+¿Cuál fue el porcentaje del PIB nacional correspondiente al cobre en el año 2023?
+2025-04-29 17:28:18,147 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (a63f3828-4aaa-4791-9878-8e46f5786368)
+ Call ID: a63f3828-4aaa-4791-9878-8e46f5786368
+  Args:
+2025-04-29 17:28:18,147 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 17:28:18,148 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (6bd908f0-3aa9-4cc0-8d04-695e96365195)
+ Call ID: 6bd908f0-3aa9-4cc0-8d04-695e96365195
+  Args:
+    k: 1
+    query: El porcentaje del PIB nacional correspondiente al cobre en el año 2023.
+2025-04-29 17:28:18,148 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nde los doce mayores yacimientos del mundo (El Teniente, Minera Collahuasi, Minera Escondida y 
+Los Pelambres, entre otros).  
+En 2023, el sector minero representó el 11,9 % del PIB nacional, porcentaje 2,3 puntos menor al del 
+año anterior. Esta fluctuación se debe, principalmente, a la bajada en producción de las principales 
+faenas cupríferas del país, fruto de la caída en la ley del mineral. Por su parte, la inversión extranjera
+2025-04-29 17:28:18,148 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Según el contexto recuperado, en 2023 el sector minero representó un 11,9% del PIB nacional. Sin embargo, no se especifica exactamente cuánto de este porcentaje corresponde específicamente al cobre. La información indica que hubo una disminución en la producción cuprífera debido a la caída en la ley del mineral, lo cual afectó el porcentaje del año anterior.
+
+Para obtener un número más preciso sobre el porcentaje específico del PIB nacional correspondiente solo al cobre, necesitaríamos información más detallada que no está incluida en este contexto.
+2025-04-29 17:28:18,148 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (6ce43545-1c57-4b82-8634-1ab6d1f188d0)
+ Call ID: 6ce43545-1c57-4b82-8634-1ab6d1f188d0
+  Args:
+2025-04-29 17:28:18,149 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 17:28:18,149 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento proporciona información general sobre la contribución del sector minero al PIB nacional en 2023, pero no especifica el porcentaje exacto correspondiente solo al cobre. La disminución en la producción cuprífera afectó este porcentaje, pero no se da un número específico para el cobre en particular.
+
+Si necesitas más detalles o una fuente específica sobre la contribución del cobre al PIB nacional en 2023, por favor indícalo y podré buscar información adicional.
+2025-04-29 17:28:18,150 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 17:28:18,150 - INFO - --- Calculating answer_accuracy score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-29 17:28:19,430 - INFO - answer_accuracy: 0.0000
+2025-04-29 17:28:19,430 - INFO - --- Calculating bleu score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-29 17:28:19,431 - INFO - bleu: 0.0165
+2025-04-29 17:28:19,431 - INFO - --- Calculating rouge score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-29 17:28:19,432 - INFO - rouge: 0.0444
+2025-04-29 17:28:19,432 - INFO - --- Calculating non_llm_similarity score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-29 17:28:19,432 - INFO - non_llm_similarity: 0.0421
+2025-04-29 17:28:19,432 - INFO - --- Calculating tool score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-29 17:28:19,432 - INFO - tool: 0.6667
+2025-04-29 17:28:19,433 - INFO - --- End of RAG Test 5: PIB Cobre 2023 ---

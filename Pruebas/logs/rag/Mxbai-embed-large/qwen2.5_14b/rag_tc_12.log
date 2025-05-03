@@ -1,0 +1,131 @@
+2025-04-29 16:15:53,111 - INFO - --- Running RAG Test 13: Ganancia Bruta Codelco 2022 (Log file: logs\rag\qwen2.5_14b\rag_tc_12.log) ---
+2025-04-29 16:15:53,111 - INFO - User Query: ¿Cuál fue la ganancia bruta de Codelco del año 2022?
+2025-04-29 16:15:53,111 - INFO - Reference: 4.734
+2025-04-29 16:15:53,112 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'ganancia bruta Codelco 2022'})", 'transfer_back_to_supervisor({})']
+2025-04-29 16:15:53,112 - INFO - Running test with conversation ID: test-run-b7c15f59-affc-4159-b000-e24ecbc63aa1
+2025-04-29 16:16:44,222 - INFO - --- Workflow Output Messages ---
+2025-04-29 16:16:44,223 - INFO - ================================ Human Message =================================
+
+¿Cuál fue la ganancia bruta de Codelco del año 2022?
+2025-04-29 16:16:44,223 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (5b4aea90-1656-42fa-bac0-7937174913e1)
+ Call ID: 5b4aea90-1656-42fa-bac0-7937174913e1
+  Args:
+2025-04-29 16:16:44,224 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 16:16:44,224 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (218fc1ec-8992-4820-9f2a-6b728529268d)
+ Call ID: 218fc1ec-8992-4820-9f2a-6b728529268d
+  Args:
+    k: 3
+    query: ganancia bruta Codelco año 2022
+2025-04-29 16:16:44,224 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nI  ENTREGA DE RESULTADOS 2022 10© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+GESTIÓN 2022
+Los resultados del período se contextualizan en un 
+escenario de alta volatilidad y altos precios de los insumos
+COSTOS C1
+165,4 c/lb
+22,5%   
+superior
+al año 
+anterior
+COSTOS C3
+282,5 c/lb
+con margen 
+de 33%
+generación 
+de caja 
+operacional 
+(EBITDA) 
+US$ 5.565
+MILLONES
+1.446 MIL
+TONELADAS
+de excedentes, 
+62,9% inferior 
+a enero/
+diciembre 
+de 2021
+US$ 2.746 
+MILLONES\n---\nI  ENTREGA DE RESULTADOS 2022 8© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+PROYECTOS ESTRUCTURALES 
+para el futuro de Codelco
+Inversión inicial finalizada
+Se completaron las obras de inversión 
+para la apertura de mina subterránea, que 
+ya está en operaciones desde 2019, mientras 
+que la primera fase de la infraestructura de 
+continuidad del Nivel 1 alcanzó un avance 
+de 32,2%. Durante 2023 se autorizarán 
+fondos para avanzar en la segunda fase.\n---\nI  ENTREGA DE RESULTADOS 2022 2© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+SEGURIDAD = VALOR ESENCIAL
+TASA DE FRECUENCIA
+27% bajo la meta 2022
+TASA DE GRAVEDAD
+8% sobre la meta de 130 para el 2022
+223
+248 230
+145
+263
+145
+243
+128 128 123 140
+0
+50
+100
+150
+200
+250
+300
+2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022
+1,35 1,26 1,32
+0,91 0,94 0,87 0,86
+0,70 0,83 0,75 0,61
+0,0
+0,5
+1,0
+1,5
+2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022
+2025-04-29 16:16:44,227 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+El documento proporcionado no contiene información específica sobre la ganancia bruta de Codelco para el año 2022. Sin embargo, se menciona que en 2022 hubo una generación de caja operacional (EBITDA) de US$5,565 millones y un margen de 33% con costos C3 de 282,5 centavos por libra. Para obtener la ganancia bruta exacta, necesitaríamos información más detallada sobre los ingresos totales y los costos directamente asociados a la producción en ese año. Te recomendaría buscar un informe financiero completo de Codelco para el año 2022 que detalle estos aspectos financieros específicos.
+2025-04-29 16:16:44,227 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (b41e78a1-cdd6-4b96-a7a0-4750c2a14014)
+ Call ID: b41e78a1-cdd6-4b96-a7a0-4750c2a14014
+  Args:
+2025-04-29 16:16:44,227 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 16:16:44,227 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento revisado no proporciona la ganancia bruta específica de Codelco para el año 2022. Sin embargo, se menciona que en ese año hubo una generación de caja operacional (EBITDA) de US$5,565 millones y un margen de 33% con costos C3 de 282,5 centavos por libra. Para obtener la ganancia bruta exacta, necesitaríamos información más detallada sobre los ingresos totales y los costos directamente asociados a la producción en ese año. Te recomendaría buscar un informe financiero completo de Codelco para el año 2022 que detalle estos aspectos financieros específicos.
+
+Si deseas obtener más detalles o localizar el documento exacto, por favor indícame y podré asignar esta tarea a uno de los expertos correspondientes.
+2025-04-29 16:16:44,228 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 16:16:44,228 - INFO - --- Calculating answer_accuracy score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 16:16:45,606 - INFO - answer_accuracy: 0.0000
+2025-04-29 16:16:45,606 - INFO - --- Calculating bleu score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 16:16:45,607 - INFO - bleu: 0.0000
+2025-04-29 16:16:45,607 - INFO - --- Calculating rouge score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 16:16:45,608 - INFO - rouge: 0.0000
+2025-04-29 16:16:45,608 - INFO - --- Calculating non_llm_similarity score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 16:16:45,609 - INFO - non_llm_similarity: 0.0028
+2025-04-29 16:16:45,609 - INFO - --- Calculating tool score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 16:16:45,609 - INFO - tool: 0.6667
+2025-04-29 16:16:45,609 - INFO - --- End of RAG Test 13: Ganancia Bruta Codelco 2022 ---

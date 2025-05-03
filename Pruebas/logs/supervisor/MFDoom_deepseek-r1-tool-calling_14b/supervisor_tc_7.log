@@ -1,0 +1,46 @@
+2025-04-28 17:26:02,598 - INFO - --- Running TC 8 (RAG): Delegate Mineral Importante Query (Log file: logs\supervisor\MFDoom_deepseek-r1-tool-calling_14b\supervisor_tc_7.log) ---
+2025-04-28 17:26:02,599 - INFO - User Query: ¿Cuál es el mineral más importante en la producción minera de Chile?
+2025-04-28 17:26:02,599 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:26:02,599 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:26:02,599 - INFO - Running test with conversation ID: test-run-7be6224e-ea51-4226-ae3f-8915b224e32c
+2025-04-28 17:26:30,083 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:26:30,084 - INFO - ================================ Human Message =================================
+
+¿Cuál es el mineral más importante en la producción minera de Chile?
+2025-04-28 17:26:30,084 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (3975920f-4dd3-4021-aa40-fb818394e509)
+ Call ID: 3975920f-4dd3-4021-aa40-fb818394e509
+  Args:
+2025-04-28 17:26:30,084 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 17:26:30,084 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+El mineral más importante en la producción minera de Chile es el cobre. Chile es el principal productor y exportador de cobre a nivel mundial. Otros minerales importantes incluyen litio, que ha ganado relevancia recientemente debido a su creciente demanda en la industria de baterías para vehículos eléctricos y tecnologías limpias.
+2025-04-28 17:26:30,085 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (812afe20-b98e-4985-9e27-ac5c770554ec)
+ Call ID: 812afe20-b98e-4985-9e27-ac5c770554ec
+  Args:
+2025-04-28 17:26:30,085 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 17:26:30,085 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+</think>
+
+El mineral más importante en la producción minera de Chile es el **cobre**. Chile es el principal productor y exportador de cobre a nivel mundial. Otros minerales importantes incluyen **litio**, que ha ganado relevancia recientemente debido a su creciente demanda en la industria de baterías para vehículos eléctricos y tecnologías limpias.
+2025-04-28 17:26:30,086 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:26:30,086 - INFO - --- Calculating tool score for TC 8 (RAG): Delegate Mineral Importante Query ---
+2025-04-28 17:26:30,086 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:26:30,086 - INFO - tool: 1.0000
+2025-04-28 17:26:30,086 - INFO - --- End of TC 8 (RAG): Delegate Mineral Importante Query ---

@@ -1,0 +1,18 @@
+2025-04-28 17:32:14,186 - INFO - --- Running TC 1 (Recuperador): Delegate Humectacion Query (Log file: logs\supervisor\fireshihtzu_watt-tool-8B-formatted\supervisor_tc_0.log) ---
+2025-04-28 17:32:14,186 - INFO - User Query: Puedes entregarme el archivo pdf que hable sobre el plan de humectación
+2025-04-28 17:32:14,186 - INFO - Reference: The goal is to assign the task to the retriever expert.
+2025-04-28 17:32:14,187 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})']
+2025-04-28 17:32:14,187 - INFO - Running test with conversation ID: test-run-3f0e963e-df38-4531-9e73-598e78549b57
+2025-04-28 17:32:14,988 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:32:14,988 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que hable sobre el plan de humectación
+2025-04-28 17:32:14,988 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_retriever_expert, "parameters": {}}
+2025-04-28 17:32:14,988 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:32:14,988 - INFO - --- Calculating tool score for TC 1 (Recuperador): Delegate Humectacion Query ---
+2025-04-28 17:32:14,989 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:32:14,992 - INFO - tool: 0.0000
+2025-04-28 17:32:14,992 - INFO - --- End of TC 1 (Recuperador): Delegate Humectacion Query ---

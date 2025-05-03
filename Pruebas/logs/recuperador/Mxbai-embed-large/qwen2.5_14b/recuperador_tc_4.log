@@ -1,0 +1,56 @@
+2025-04-29 10:14:07,027 - INFO - --- Running Test Case 5: Proyecto de la divisón DMH (Log file: logs\recuperador\qwen2.5_14b\recuperador_tc_4.log) ---
+2025-04-29 10:14:07,027 - INFO - User Query: Entregame el achivo que menciona el proyecto de la divisón DMH.
+2025-04-29 10:14:07,027 - INFO - Reference: El documento que estás buscando es src\data\Mina_Ministro_Hales.pdf
+2025-04-29 10:14:07,027 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'proyecto de la divisón DMH'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:14:07,027 - INFO - Running test with conversation ID: test-run-18c3efbb-47a9-4696-be01-54600a3470a2
+2025-04-29 10:14:26,360 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:14:26,360 - INFO - ================================ Human Message =================================
+
+Entregame el achivo que menciona el proyecto de la divisón DMH.
+2025-04-29 10:14:26,361 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (8412d3f7-4255-4bad-95f6-dcd0dc3e5fb3)
+ Call ID: 8412d3f7-4255-4bad-95f6-dcd0dc3e5fb3
+  Args:
+2025-04-29 10:14:26,361 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-29 10:14:26,361 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (cae4bcba-b447-4eb5-b197-20c0e95a7e10)
+ Call ID: cae4bcba-b447-4eb5-b197-20c0e95a7e10
+  Args:
+    query: proyecto division DMH
+2025-04-29 10:14:26,361 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+Error retrieving context from FAISS: 
+2025-04-29 10:14:26,362 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+None
+2025-04-29 10:14:26,362 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (86475f5c-f4b3-435d-a22c-f07675bacd2a)
+ Call ID: 86475f5c-f4b3-435d-a22c-f07675bacd2a
+  Args:
+2025-04-29 10:14:26,362 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:14:26,362 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al recuperar el archivo que menciona el proyecto de la división DMH. Por favor, intenta reformular tu solicitud o proporciona más detalles para ayudarnos a encontrarlo.
+2025-04-29 10:14:26,363 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:14:26,363 - INFO - --- Calculating goal score for Test Case 5: Proyecto de la divisón DMH ---
+2025-04-29 10:14:36,167 - INFO - goal: 0.0000
+2025-04-29 10:14:36,167 - INFO - --- Calculating tool score for Test Case 5: Proyecto de la divisón DMH ---
+2025-04-29 10:14:36,168 - INFO - tool: 0.6667
+2025-04-29 10:14:36,168 - INFO - --- End of Test Case 5: Proyecto de la divisón DMH ---

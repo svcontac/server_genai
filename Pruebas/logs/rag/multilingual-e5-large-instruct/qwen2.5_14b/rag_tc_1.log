@@ -1,0 +1,63 @@
+2025-04-28 22:34:14,701 - INFO - --- Running RAG Test 2: Áreas Montaje Industrial (Log file: logs\rag\qwen2.5_14b\rag_tc_1.log) ---
+2025-04-28 22:34:14,701 - INFO - User Query: ¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-28 22:34:14,701 - INFO - Reference: áreas 3000, 5000 y 6000.
+2025-04-28 22:34:14,702 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'áreas de montaje industrial proyecto mina Ministro Hales'})", 'transfer_back_to_supervisor({})']
+2025-04-28 22:34:14,702 - INFO - Running test with conversation ID: test-run-bd1a1914-8a87-44c7-b561-f9ed10225c17
+2025-04-28 22:34:46,795 - INFO - --- Workflow Output Messages ---
+2025-04-28 22:34:46,796 - INFO - ================================ Human Message =================================
+
+¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-28 22:34:46,796 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (2f07de72-9ba2-46bb-a63a-edfaf3e60847)
+ Call ID: 2f07de72-9ba2-46bb-a63a-edfaf3e60847
+  Args:
+2025-04-28 22:34:46,796 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 22:34:46,796 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (72a6a0fb-ccad-4fe6-8e0f-b0c7cda59925)
+ Call ID: 72a6a0fb-ccad-4fe6-8e0f-b0c7cda59925
+  Args:
+    k: 3
+    query: áreas de montaje industrial del proyecto mina Ministro Hales
+2025-04-28 22:34:46,797 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Error retrieving context from FAISS: 
+2025-04-28 22:34:46,797 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Lo siento, no pude encontrar información específica sobre las áreas de montaje industrial para el proyecto de la mina Ministro Hales en los documentos disponibles. Por favor proporciona más detalles o verifica si hay un error en el nombre del proyecto o la ubicación geográfica. Si tienes alguna otra pregunta relacionada, estaré encantado de ayudarte.
+2025-04-28 22:34:46,797 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (404ab797-902c-42a8-9b61-4989dedcbcf2)
+ Call ID: 404ab797-902c-42a8-9b61-4989dedcbcf2
+  Args:
+2025-04-28 22:34:46,798 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 22:34:46,798 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, no se pudo recuperar información sobre las áreas de montaje industrial para el proyecto de la mina Ministro Hales en los documentos disponibles. Por favor proporciona más detalles o verifica si hay un error en el nombre del proyecto o la ubicación geográfica. Si tienes alguna otra pregunta relacionada, estaré encantado de ayudarte.
+2025-04-28 22:34:46,798 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 22:34:46,798 - INFO - --- Calculating answer_accuracy score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-28 22:34:48,084 - INFO - answer_accuracy: 0.0000
+2025-04-28 22:34:48,084 - INFO - --- Calculating bleu score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-28 22:34:48,085 - INFO - bleu: 0.0172
+2025-04-28 22:34:48,085 - INFO - --- Calculating rouge score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-28 22:34:48,085 - INFO - rouge: 0.0312
+2025-04-28 22:34:48,086 - INFO - --- Calculating non_llm_similarity score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-28 22:34:48,086 - INFO - non_llm_similarity: 0.0320
+2025-04-28 22:34:48,086 - INFO - --- Calculating tool score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-28 22:34:48,086 - INFO - tool: 0.6667
+2025-04-28 22:34:48,086 - INFO - --- End of RAG Test 2: Áreas Montaje Industrial ---

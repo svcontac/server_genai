@@ -1,0 +1,75 @@
+2025-04-28 17:17:57,764 - INFO - --- Running TC 8 (RAG): Delegate Mineral Importante Query (Log file: logs\supervisor\hengwen_watt-tool-8B_latest\supervisor_tc_7.log) ---
+2025-04-28 17:17:57,764 - INFO - User Query: ¿Cuál es el mineral más importante en la producción minera de Chile?
+2025-04-28 17:17:57,764 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:17:57,764 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:17:57,765 - INFO - Running test with conversation ID: test-run-69954eae-4c18-461c-8574-8a029c179cf4
+2025-04-28 17:17:57,789 - ERROR - Error during app.invoke: registry.ollama.ai/hengwen/watt-tool-8B:latest does not support tools (status code: 400)
+Traceback (most recent call last):
+  File "c:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\metrics_calculator.py", line 130, in run_test_case
+    result = app.invoke(input_data, config=test_config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2795, in invoke
+    for chunk in self.stream(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2433, in stream
+    for _ in runner.tick(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\runner.py", line 153, in tick
+    run_with_retry(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\utils\runnable.py", line 623, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2795, in invoke
+    for chunk in self.stream(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2433, in stream
+    for _ in runner.tick(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\runner.py", line 153, in tick
+    run_with_retry(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\utils\runnable.py", line 623, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\utils\runnable.py", line 370, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\prebuilt\chat_agent_executor.py", line 745, in call_model
+    response = cast(AIMessage, model_runnable.invoke(state, config))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\runnables\base.py", line 3034, in invoke
+    input = context.run(step.invoke, input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\runnables\base.py", line 5416, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 369, in invoke
+    self.generate_prompt(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 946, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 765, in generate
+    self._generate_with_cache(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1011, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 715, in _generate
+    final_chunk = self._chat_stream_with_aggregation(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 652, in _chat_stream_with_aggregation
+    for chunk in self._iterate_over_stream(messages, stop, **kwargs):
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 737, in _iterate_over_stream
+    for stream_resp in self._create_chat_stream(messages, stop, **kwargs):
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 639, in _create_chat_stream
+    yield from self._client.chat(**chat_params)
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\ollama\_client.py", line 168, in inner
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: registry.ollama.ai/hengwen/watt-tool-8B:latest does not support tools (status code: 400)
+During task with name 'agent' and id '8e34d9b9-f681-6e6e-5939-1bc4d8c1249d'
+During task with name 'supervisor' and id '594b9ac5-e84f-8a8f-9146-7599526b32b3'
+2025-04-28 17:17:57,792 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:17:57,793 - WARNING - Warning: No messages found in the result.
+2025-04-28 17:17:57,793 - INFO - --- Calculating tool score for TC 8 (RAG): Delegate Mineral Importante Query ---
+2025-04-28 17:17:57,793 - WARNING - Skipping multi-turn metric 'tool': Ragas trace unavailable.
+2025-04-28 17:17:57,793 - INFO - --- End of TC 8 (RAG): Delegate Mineral Importante Query ---

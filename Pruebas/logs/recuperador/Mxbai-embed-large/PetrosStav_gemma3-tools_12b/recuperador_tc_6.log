@@ -1,0 +1,56 @@
+2025-04-29 10:07:42,431 - INFO - --- Running Test Case 7: Partes de un sistema de frenos (Log file: logs\recuperador\PetrosStav_gemma3-tools_12b\recuperador_tc_6.log) ---
+2025-04-29 10:07:42,431 - INFO - User Query: Retorna algún archivo que menciones las partes de un sistema de frenos.
+2025-04-29 10:07:42,431 - INFO - Reference: El documento que estás buscando es src\data\Manual_curso_de_maquinaria_pesada-Retroexcavadora.pdf
+2025-04-29 10:07:42,431 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'partes de un sistema de frenos'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:07:42,431 - INFO - Running test with conversation ID: test-run-71ee8b3d-96fa-48e1-a0ca-e1028df40c96
+2025-04-29 10:08:23,432 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:08:23,432 - INFO - ================================ Human Message =================================
+
+Retorna algún archivo que menciones las partes de un sistema de frenos.
+2025-04-29 10:08:23,432 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (f5a634f3-0ca2-41c2-a1b5-d71872e57bd3)
+ Call ID: f5a634f3-0ca2-41c2-a1b5-d71872e57bd3
+  Args:
+2025-04-29 10:08:23,433 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-29 10:08:23,433 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (4e1f96bd-0bdb-4144-b0ae-a3dfe3ef28f9)
+ Call ID: 4e1f96bd-0bdb-4144-b0ae-a3dfe3ef28f9
+  Args:
+    query: partes sistema de frenos
+2025-04-29 10:08:23,433 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+Error retrieving context from FAISS: 
+2025-04-29 10:08:23,433 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+I am sorry, I was unable to retrieve a file based on your request. Please try again with a different query.
+2025-04-29 10:08:23,434 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (401956b3-00cc-4285-989a-e289966da5f0)
+ Call ID: 401956b3-00cc-4285-989a-e289966da5f0
+  Args:
+2025-04-29 10:08:23,434 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:08:23,434 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, no he podido encontrar el documento que buscas sobre las partes de un sistema de frenos. Prueba con otra consulta o proporciona más detalles para ayudar a la búsqueda.
+2025-04-29 10:08:23,435 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:08:23,435 - INFO - --- Calculating goal score for Test Case 7: Partes de un sistema de frenos ---
+2025-04-29 10:08:33,494 - INFO - goal: 0.0000
+2025-04-29 10:08:33,494 - INFO - --- Calculating tool score for Test Case 7: Partes de un sistema de frenos ---
+2025-04-29 10:08:33,495 - INFO - tool: 0.6667
+2025-04-29 10:08:33,495 - INFO - --- End of Test Case 7: Partes de un sistema de frenos ---

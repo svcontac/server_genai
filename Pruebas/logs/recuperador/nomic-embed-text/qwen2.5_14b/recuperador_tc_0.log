@@ -1,0 +1,56 @@
+2025-04-28 17:42:38,504 - INFO - --- Running Test Case 1: Plan de Humectación (Log file: logs\recuperador\qwen2.5_14b\recuperador_tc_0.log) ---
+2025-04-28 17:42:38,504 - INFO - User Query: Puedes entregarme el archivo pdf que hable sobre el plan de humectación
+2025-04-28 17:42:38,505 - INFO - Reference: El documento que estás buscando es src\data\Mina_Ministro_Hales.pdf
+2025-04-28 17:42:38,505 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'plan de humectación'})", 'transfer_back_to_supervisor({})']
+2025-04-28 17:42:38,505 - INFO - Running test with conversation ID: test-run-556267cc-b3ca-479d-88bf-c3a99ca7b9d3
+2025-04-28 17:42:55,069 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:42:55,069 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que hable sobre el plan de humectación
+2025-04-28 17:42:55,069 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (38ddf6cc-bfa2-4343-ae1d-2935ad3bf9a9)
+ Call ID: 38ddf6cc-bfa2-4343-ae1d-2935ad3bf9a9
+  Args:
+2025-04-28 17:42:55,070 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-28 17:42:55,070 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (da59f328-1287-47c1-9354-b306538b3d57)
+ Call ID: da59f328-1287-47c1-9354-b306538b3d57
+  Args:
+    query: plan de humectación
+2025-04-28 17:42:55,070 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+src\data\Mina_Ministro_Hales.pdf
+2025-04-28 17:42:55,071 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+src\data\Mina_Ministro_Hales.pdf
+2025-04-28 17:42:55,071 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (a602f47a-c27e-485e-817e-320060e39dcf)
+ Call ID: a602f47a-c27e-485e-817e-320060e39dcf
+  Args:
+2025-04-28 17:42:55,071 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 17:42:55,071 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento que estás buscando es src\data\Mina_Ministro_Hales.pdf.
+2025-04-28 17:42:55,072 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:42:55,072 - INFO - --- Calculating goal score for Test Case 1: Plan de Humectación ---
+2025-04-28 17:43:04,193 - INFO - goal: 0.0000
+2025-04-28 17:43:04,193 - INFO - --- Calculating tool score for Test Case 1: Plan de Humectación ---
+2025-04-28 17:43:04,194 - INFO - tool: 1.0000
+2025-04-28 17:43:04,194 - INFO - --- End of Test Case 1: Plan de Humectación ---

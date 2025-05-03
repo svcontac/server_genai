@@ -1,0 +1,49 @@
+2025-04-28 21:31:37,878 - INFO - --- Running RAG Test 12: Excedentes Codelco 2021-2022 (Log file: logs\rag\zac_phi4-tools\rag_tc_11.log) ---
+2025-04-28 21:31:37,878 - INFO - User Query: ¿Cuáles fueron los excedentes de los años 2022, 2021 y la variación respectiva (VAR) en los resultados de Codelco?
+2025-04-28 21:31:37,878 - INFO - Reference: El año 2022 excedentes de 2.769, el año 2021 de 7.478, se tiene una variación de –4.710
+2025-04-28 21:31:37,879 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'excedentes 2022 2021 variación resultados Codelco'})", 'transfer_back_to_supervisor({})']
+2025-04-28 21:31:37,880 - INFO - Running test with conversation ID: test-run-63f12ec0-bb7b-4f01-b8cc-c0a9e59e15f0
+2025-04-28 21:31:52,675 - INFO - --- Workflow Output Messages ---
+2025-04-28 21:31:52,675 - INFO - ================================ Human Message =================================
+
+¿Cuáles fueron los excedentes de los años 2022, 2021 y la variación respectiva (VAR) en los resultados de Codelco?
+2025-04-28 21:31:52,675 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (822f8f4e-021e-4247-8f4a-22ee6c86dd91)
+ Call ID: 822f8f4e-021e-4247-8f4a-22ee6c86dd91
+  Args:
+2025-04-28 21:31:52,676 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 21:31:52,676 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+2025-04-28 21:31:52,676 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (cc247f50-88cd-48b6-9b2e-758ebfd25135)
+ Call ID: cc247f50-88cd-48b6-9b2e-758ebfd25135
+  Args:
+2025-04-28 21:31:52,676 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 21:31:52,677 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El experto RAG está trabajando en tu solicitud para obtener los excedentes de Codelco de los años 2022 y 2021, así como la variación respectiva (VAR) en los resultados. Te proporcionará la información solicitada basada en los documentos indexados.
+2025-04-28 21:31:52,677 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 21:31:52,677 - INFO - --- Calculating answer_accuracy score for RAG Test 12: Excedentes Codelco 2021-2022 ---
+2025-04-28 21:31:53,712 - INFO - answer_accuracy: 0.2500
+2025-04-28 21:31:53,712 - INFO - --- Calculating bleu score for RAG Test 12: Excedentes Codelco 2021-2022 ---
+2025-04-28 21:31:53,713 - INFO - bleu: 0.0328
+2025-04-28 21:31:53,713 - INFO - --- Calculating rouge score for RAG Test 12: Excedentes Codelco 2021-2022 ---
+2025-04-28 21:31:53,714 - INFO - rouge: 0.2154
+2025-04-28 21:31:53,714 - INFO - --- Calculating non_llm_similarity score for RAG Test 12: Excedentes Codelco 2021-2022 ---
+2025-04-28 21:31:53,714 - INFO - non_llm_similarity: 0.2348
+2025-04-28 21:31:53,714 - INFO - --- Calculating tool score for RAG Test 12: Excedentes Codelco 2021-2022 ---
+2025-04-28 21:31:53,714 - INFO - tool: 0.0000
+2025-04-28 21:31:53,714 - INFO - --- End of RAG Test 12: Excedentes Codelco 2021-2022 ---

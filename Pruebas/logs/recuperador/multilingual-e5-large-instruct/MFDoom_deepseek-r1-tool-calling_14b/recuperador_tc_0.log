@@ -1,0 +1,47 @@
+2025-04-28 23:48:12,262 - INFO - --- Running Test Case 1: Plan de Humectación (Log file: logs\recuperador\MFDoom_deepseek-r1-tool-calling_14b\recuperador_tc_0.log) ---
+2025-04-28 23:48:12,262 - INFO - User Query: Puedes entregarme el archivo pdf que hable sobre el plan de humectación
+2025-04-28 23:48:12,262 - INFO - Reference: El documento que estás buscando es src\data\Mina_Ministro_Hales.pdf
+2025-04-28 23:48:12,263 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'plan de humectación'})", 'transfer_back_to_supervisor({})']
+2025-04-28 23:48:12,263 - INFO - Running test with conversation ID: test-run-6047078f-42bc-4de4-ae0b-b65ec2c44b3d
+2025-04-28 23:48:33,957 - INFO - --- Workflow Output Messages ---
+2025-04-28 23:48:33,957 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que hable sobre el plan de humectación
+2025-04-28 23:48:33,958 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (80acef1a-ffb7-425c-9262-09f9716d7a15)
+ Call ID: 80acef1a-ffb7-425c-9262-09f9716d7a15
+  Args:
+2025-04-28 23:48:33,958 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-28 23:48:33,958 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+</think>
+
+src/data/32050-2.pdf
+2025-04-28 23:48:33,958 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (d50f0f26-b89c-4821-91d2-a52a37d1a495)
+ Call ID: d50f0f26-b89c-4821-91d2-a52a37d1a495
+  Args:
+2025-04-28 23:48:33,959 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 23:48:33,959 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento que estás buscando es src/data/32050-2.pdf.
+2025-04-28 23:48:33,959 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 23:48:33,959 - INFO - --- Calculating goal score for Test Case 1: Plan de Humectación ---
+2025-04-28 23:48:42,568 - INFO - goal: 0.0000
+2025-04-28 23:48:42,568 - INFO - --- Calculating tool score for Test Case 1: Plan de Humectación ---
+2025-04-28 23:48:42,569 - INFO - tool: 0.0000
+2025-04-28 23:48:42,569 - INFO - --- End of Test Case 1: Plan de Humectación ---

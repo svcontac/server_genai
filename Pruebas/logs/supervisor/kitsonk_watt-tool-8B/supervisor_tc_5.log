@@ -1,0 +1,18 @@
+2025-04-28 17:31:25,729 - INFO - --- Running TC 6 (RAG): Delegate Áreas Montaje Query (Log file: logs\supervisor\kitsonk_watt-tool-8B\supervisor_tc_5.log) ---
+2025-04-28 17:31:25,729 - INFO - User Query: ¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-28 17:31:25,729 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-28 17:31:25,729 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-28 17:31:25,729 - INFO - Running test with conversation ID: test-run-2fb7fcd6-df90-4152-8f5d-c3a8ed6f590f
+2025-04-28 17:31:26,009 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:31:26,009 - INFO - ================================ Human Message =================================
+
+¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-28 17:31:26,009 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_rag_expert, "parameters": {}}
+2025-04-28 17:31:26,010 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:31:26,010 - INFO - --- Calculating tool score for TC 6 (RAG): Delegate Áreas Montaje Query ---
+2025-04-28 17:31:26,010 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:31:26,010 - INFO - tool: 0.0000
+2025-04-28 17:31:26,010 - INFO - --- End of TC 6 (RAG): Delegate Áreas Montaje Query ---

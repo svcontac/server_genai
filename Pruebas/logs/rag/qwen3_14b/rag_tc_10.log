@@ -1,0 +1,71 @@
+2025-04-29 14:29:04,051 - INFO - --- Running RAG Test 11: Costos C1 Codelco 2022 (Log file: logs\rag\qwen3_14b\rag_tc_10.log) ---
+2025-04-29 14:29:04,051 - INFO - User Query: ¿Cuáles fueron las razones que explican los aumentos de los costos C1 en los resultados de Codelco del año 2022?
+2025-04-29 14:29:04,052 - INFO - Reference: Se explica principalmente por menos producción de cobre y subproductos y mayor precio de los insumos
+2025-04-29 14:29:04,052 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'razones aumento costos C1 resultados Codelco 2022'})", 'transfer_back_to_supervisor({})']
+2025-04-29 14:29:04,052 - INFO - Running test with conversation ID: test-run-b65eb88f-242f-488a-b614-a19240803cb4
+2025-04-29 14:29:31,705 - INFO - --- Workflow Output Messages ---
+2025-04-29 14:29:31,705 - INFO - ================================ Human Message =================================
+
+¿Cuáles fueron las razones que explican los aumentos de los costos C1 en los resultados de Codelco del año 2022?
+2025-04-29 14:29:31,706 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (cc490f2f-61d6-4da9-a500-a965d2ff28bd)
+ Call ID: cc490f2f-61d6-4da9-a500-a965d2ff28bd
+  Args:
+2025-04-29 14:29:31,706 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 14:29:31,706 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (33661b85-cd2e-448f-94a0-38e0ac7ad46b)
+ Call ID: 33661b85-cd2e-448f-94a0-38e0ac7ad46b
+  Args:
+    k: 5
+    query: razones que explican los aumentos de los costos C1 en los resultados de Codelco del año 2022
+2025-04-29 14:29:31,706 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Error retrieving context from FAISS: 
+2025-04-29 14:29:31,707 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+<think>
+
+</think>
+
+Lo siento, no se pudo recuperar la información necesaria del vector store. Por favor, intenta reformular tu pregunta o proporciona más detalles para poder ayudarte mejor.
+2025-04-29 14:29:31,707 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (0da703b6-cb55-4af0-be57-fa51cabe3153)
+ Call ID: 0da703b6-cb55-4af0-be57-fa51cabe3153
+  Args:
+2025-04-29 14:29:31,707 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 14:29:31,707 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+<think>
+
+</think>
+
+Lo siento, no se pudo recuperar la información necesaria del vector store. Por favor, intenta reformular tu pregunta o proporciona más detalles para poder ayudarte mejor.
+2025-04-29 14:29:31,708 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 14:29:31,708 - INFO - --- Calculating answer_accuracy score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-29 14:29:35,770 - INFO - answer_accuracy: 0.0000
+2025-04-29 14:29:35,770 - INFO - --- Calculating bleu score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-29 14:29:35,770 - INFO - bleu: 0.0000
+2025-04-29 14:29:35,771 - INFO - --- Calculating rouge score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-29 14:29:35,771 - INFO - rouge: 0.0851
+2025-04-29 14:29:35,771 - INFO - --- Calculating non_llm_similarity score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-29 14:29:35,772 - INFO - non_llm_similarity: 0.2540
+2025-04-29 14:29:35,772 - INFO - --- Calculating tool score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-29 14:29:35,772 - INFO - tool: 0.6667
+2025-04-29 14:29:35,772 - INFO - --- End of RAG Test 11: Costos C1 Codelco 2022 ---

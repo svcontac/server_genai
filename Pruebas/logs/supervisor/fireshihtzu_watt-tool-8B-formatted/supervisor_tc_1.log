@@ -1,0 +1,18 @@
+2025-04-28 17:32:14,993 - INFO - --- Running TC 2 (Recuperador): Delegate Litio Query (Log file: logs\supervisor\fireshihtzu_watt-tool-8B-formatted\supervisor_tc_1.log) ---
+2025-04-28 17:32:14,993 - INFO - User Query: Puedes entregarme el archivo pdf que hable sobre la estrategia nacional del Litio
+2025-04-28 17:32:14,993 - INFO - Reference: The goal is to assign the task to the retriever expert.
+2025-04-28 17:32:14,994 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})']
+2025-04-28 17:32:14,994 - INFO - Running test with conversation ID: test-run-d7a5df35-4c44-4df8-ad37-8167b4b4df49
+2025-04-28 17:32:15,292 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:32:15,292 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que hable sobre la estrategia nacional del Litio
+2025-04-28 17:32:15,292 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_retriever_expert, "parameters": {}}
+2025-04-28 17:32:15,293 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:32:15,293 - INFO - --- Calculating tool score for TC 2 (Recuperador): Delegate Litio Query ---
+2025-04-28 17:32:15,293 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:32:15,293 - INFO - tool: 0.0000
+2025-04-28 17:32:15,293 - INFO - --- End of TC 2 (Recuperador): Delegate Litio Query ---

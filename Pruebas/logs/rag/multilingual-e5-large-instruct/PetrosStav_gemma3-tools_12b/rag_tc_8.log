@@ -1,0 +1,63 @@
+2025-04-28 23:01:57,732 - INFO - --- Running RAG Test 9: Historia Retroexcavadora (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_8.log) ---
+2025-04-28 23:01:57,732 - INFO - User Query: ¿Qué país estuve involucrado en la historia de la retroexcavadora?
+2025-04-28 23:01:57,733 - INFO - Reference: Los EE.UU.
+2025-04-28 23:01:57,733 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'país involucrado historia retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-28 23:01:57,733 - INFO - Running test with conversation ID: test-run-af3f6e34-d054-4f89-9ffe-c8988b529ea1
+2025-04-28 23:02:44,679 - INFO - --- Workflow Output Messages ---
+2025-04-28 23:02:44,679 - INFO - ================================ Human Message =================================
+
+¿Qué país estuve involucrado en la historia de la retroexcavadora?
+2025-04-28 23:02:44,681 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (0c3736e7-528f-47a5-b842-0615855858cc)
+ Call ID: 0c3736e7-528f-47a5-b842-0615855858cc
+  Args:
+2025-04-28 23:02:44,681 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 23:02:44,681 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (63a22e5a-e0f4-4399-af30-6959b2ef9063)
+ Call ID: 63a22e5a-e0f4-4399-af30-6959b2ef9063
+  Args:
+    k: 1
+    query: history of the backhoe
+2025-04-28 23:02:44,682 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Error retrieving context from FAISS: 
+2025-04-28 23:02:44,682 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+I apologize, but I encountered an error retrieving the information about the history of the backhoe. I am unable to answer your question at this time. Please try again later.
+2025-04-28 23:02:44,682 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (1680ea71-8912-46f9-8da6-93305cd7e6f7)
+ Call ID: 1680ea71-8912-46f9-8da6-93305cd7e6f7
+  Args:
+2025-04-28 23:02:44,682 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 23:02:44,683 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un error al intentar recuperar la información sobre la historia de la retroexcavadora. No puedo responder a tu pregunta en este momento. Por favor, inténtalo nuevamente más tarde.
+2025-04-28 23:02:44,683 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 23:02:44,683 - INFO - --- Calculating answer_accuracy score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 23:02:45,831 - INFO - answer_accuracy: 0.0000
+2025-04-28 23:02:45,831 - INFO - --- Calculating bleu score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 23:02:45,831 - INFO - bleu: 0.0000
+2025-04-28 23:02:45,832 - INFO - --- Calculating rouge score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 23:02:45,832 - INFO - rouge: 0.0000
+2025-04-28 23:02:45,832 - INFO - --- Calculating non_llm_similarity score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 23:02:45,832 - INFO - non_llm_similarity: 0.0308
+2025-04-28 23:02:45,833 - INFO - --- Calculating tool score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 23:02:45,833 - INFO - tool: 0.6667
+2025-04-28 23:02:45,833 - INFO - --- End of RAG Test 9: Historia Retroexcavadora ---

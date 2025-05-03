@@ -1,0 +1,49 @@
+2025-04-28 21:31:22,406 - INFO - --- Running RAG Test 11: Costos C1 Codelco 2022 (Log file: logs\rag\zac_phi4-tools\rag_tc_10.log) ---
+2025-04-28 21:31:22,406 - INFO - User Query: ¿Cuáles fueron las razones que explican los aumentos de los costos C1 en los resultados de Codelco del año 2022?
+2025-04-28 21:31:22,406 - INFO - Reference: Se explica principalmente por menos producción de cobre y subproductos y mayor precio de los insumos
+2025-04-28 21:31:22,406 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'razones aumento costos C1 resultados Codelco 2022'})", 'transfer_back_to_supervisor({})']
+2025-04-28 21:31:22,407 - INFO - Running test with conversation ID: test-run-411708b6-fa43-47c3-85e9-aff2cd8ec434
+2025-04-28 21:31:36,865 - INFO - --- Workflow Output Messages ---
+2025-04-28 21:31:36,865 - INFO - ================================ Human Message =================================
+
+¿Cuáles fueron las razones que explican los aumentos de los costos C1 en los resultados de Codelco del año 2022?
+2025-04-28 21:31:36,865 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (6847b556-7520-4f49-b03f-1bf0d0ec00c7)
+ Call ID: 6847b556-7520-4f49-b03f-1bf0d0ec00c7
+  Args:
+2025-04-28 21:31:36,866 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 21:31:36,866 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+2025-04-28 21:31:36,866 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (9693bcc1-b51f-44b6-a31b-97f3a36e450f)
+ Call ID: 9693bcc1-b51f-44b6-a31b-97f3a36e450f
+  Args:
+2025-04-28 21:31:36,866 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 21:31:36,867 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El experto RAG está revisando los documentos para proporcionar la información sobre las razones que explican el aumento de los costos C1 en los resultados de Codelco del año 2022. Por favor, espere un momento mientras obtiene la respuesta detallada.
+2025-04-28 21:31:36,867 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 21:31:36,867 - INFO - --- Calculating answer_accuracy score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-28 21:31:37,875 - INFO - answer_accuracy: 0.0000
+2025-04-28 21:31:37,875 - INFO - --- Calculating bleu score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-28 21:31:37,875 - INFO - bleu: 0.0275
+2025-04-28 21:31:37,876 - INFO - --- Calculating rouge score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-28 21:31:37,876 - INFO - rouge: 0.1017
+2025-04-28 21:31:37,876 - INFO - --- Calculating non_llm_similarity score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-28 21:31:37,877 - INFO - non_llm_similarity: 0.2369
+2025-04-28 21:31:37,877 - INFO - --- Calculating tool score for RAG Test 11: Costos C1 Codelco 2022 ---
+2025-04-28 21:31:37,877 - INFO - tool: 0.0000
+2025-04-28 21:31:37,877 - INFO - --- End of RAG Test 11: Costos C1 Codelco 2022 ---

@@ -1,0 +1,56 @@
+2025-04-29 10:05:16,923 - INFO - --- Running Test Case 4: Proyecto de Chuquicamata Subterránea (Log file: logs\recuperador\PetrosStav_gemma3-tools_12b\recuperador_tc_3.log) ---
+2025-04-29 10:05:16,923 - INFO - User Query: Puedes entregarme el archivo pdf que mencione el proyecto de Chuquicamata Subterránea.
+2025-04-29 10:05:16,923 - INFO - Reference: El documento que estás buscando es src\data\2023_03_31_codelco_entrega_resultados_4t_2022.pdf
+2025-04-29 10:05:16,923 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'proyecto de Chuquicamata Subterránea'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:05:16,923 - INFO - Running test with conversation ID: test-run-3ff1966f-6221-4b9f-bf35-c64647698078
+2025-04-29 10:05:58,161 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:05:58,161 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que mencione el proyecto de Chuquicamata Subterránea.
+2025-04-29 10:05:58,161 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (b098e09b-be5f-4552-aa6b-92f1ef55f176)
+ Call ID: b098e09b-be5f-4552-aa6b-92f1ef55f176
+  Args:
+2025-04-29 10:05:58,162 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-29 10:05:58,162 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (c39af2bb-e073-4e8a-bb3d-808f084b3b13)
+ Call ID: c39af2bb-e073-4e8a-bb3d-808f084b3b13
+  Args:
+    query: proyecto Chuquicamata Subterránea
+2025-04-29 10:05:58,162 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+Error retrieving context from FAISS: 
+2025-04-29 10:05:58,163 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+I am sorry, I was unable to retrieve the file. Please check your query and try again.
+2025-04-29 10:05:58,163 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (ad2c9382-c0ce-4fb1-a358-12d5d40bf817)
+ Call ID: ad2c9382-c0ce-4fb1-a358-12d5d40bf817
+  Args:
+2025-04-29 10:05:58,163 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:05:58,163 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al recuperar el archivo que estás buscando. Por favor verifica tu consulta y vuelve a intentarlo. Si continúas teniendo problemas, ponte en contacto con soporte técnico.
+2025-04-29 10:05:58,164 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:05:58,164 - INFO - --- Calculating goal score for Test Case 4: Proyecto de Chuquicamata Subterránea ---
+2025-04-29 10:06:08,422 - INFO - goal: 0.0000
+2025-04-29 10:06:08,422 - INFO - --- Calculating tool score for Test Case 4: Proyecto de Chuquicamata Subterránea ---
+2025-04-29 10:06:08,423 - INFO - tool: 0.6667
+2025-04-29 10:06:08,423 - INFO - --- End of Test Case 4: Proyecto de Chuquicamata Subterránea ---

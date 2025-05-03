@@ -1,0 +1,18 @@
+2025-04-28 17:31:25,187 - INFO - --- Running TC 4 (Graficador): Delegate Histogram Query (Log file: logs\supervisor\kitsonk_watt-tool-8B\supervisor_tc_3.log) ---
+2025-04-28 17:31:25,187 - INFO - User Query: Genera un histograma de la columna 1 del archivo data.csv
+2025-04-28 17:31:25,187 - INFO - Reference: The goal is to assign the task to the graph expert.
+2025-04-28 17:31:25,187 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'histogram'})"]
+2025-04-28 17:31:25,187 - INFO - Running test with conversation ID: test-run-378bc768-830b-4425-a8ea-95e2ea886429
+2025-04-28 17:31:25,448 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:31:25,448 - INFO - ================================ Human Message =================================
+
+Genera un histograma de la columna 1 del archivo data.csv
+2025-04-28 17:31:25,448 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+{"name": assign_to_graph_expert, "parameters": {}}
+2025-04-28 17:31:25,449 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:31:25,449 - INFO - --- Calculating tool score for TC 4 (Graficador): Delegate Histogram Query ---
+2025-04-28 17:31:25,449 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-28 17:31:25,449 - INFO - tool: 0.0000
+2025-04-28 17:31:25,449 - INFO - --- End of TC 4 (Graficador): Delegate Histogram Query ---

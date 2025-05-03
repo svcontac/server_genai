@@ -1,0 +1,74 @@
+2025-04-28 21:05:10,144 - INFO - --- Running RAG Test 10: Producción Cobre Codelco 2022 (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_9.log) ---
+2025-04-28 21:05:10,144 - INFO - User Query: ¿Cuál fue la producción de toneladas de cobre fino de Codelco el año 2022?
+2025-04-28 21:05:10,144 - INFO - Reference: 1.445.662 toneladas de cobre fino.
+2025-04-28 21:05:10,144 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'producción toneladas cobre fino Codelco 2022'})", 'transfer_back_to_supervisor({})']
+2025-04-28 21:05:10,144 - INFO - Running test with conversation ID: test-run-cfa3d309-987c-4517-80b7-3d8c4bfaec7b
+2025-04-28 21:05:51,814 - INFO - --- Workflow Output Messages ---
+2025-04-28 21:05:51,815 - INFO - ================================ Human Message =================================
+
+¿Cuál fue la producción de toneladas de cobre fino de Codelco el año 2022?
+2025-04-28 21:05:51,815 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (a8d8badb-3c9b-4d31-a480-4b6c22451edf)
+ Call ID: a8d8badb-3c9b-4d31-a480-4b6c22451edf
+  Args:
+2025-04-28 21:05:51,815 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 21:05:51,815 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (917e2a94-a0a2-48ef-aab5-1adaf8fc7772)
+ Call ID: 917e2a94-a0a2-48ef-aab5-1adaf8fc7772
+  Args:
+    k: 1
+    query: producción de toneladas de cobre fino de Codelco el año 2022
+2025-04-28 21:05:51,816 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nI  ENTREGA DE RESULTADOS 2022 16© 2023 CODELCO CHILE. TODOS LOS DERECHOS RESERVADOS.        INFORMACIÓN USO GENERAL |
+ESTADO DE RESULTADOS ENERO
+2022 2021 VAR
+INGRESOS POR VENTA DE COBRE PROPIO 13.848 17.715 -3.867
+COSTOS DE VENTA DE COBRE PROPIO -9.931 -9.611 -320
+GANANCIA BRUTA EN VENTA DE COBRE 3.917 8.104 -4.187
+GANANCIA BRUTA EN VENTAS DE  SUBPRODUCTOS Y OTROS 817 735 82
+GANANCIA BRUTA 4.734 8.839 -4.105
+GANANCIA LÍQUIDA, CODELCO 346 1.943 -1.597
+DICIEMBRE 2022/2021
+2025-04-28 21:05:51,816 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Según el documento proporcionado, los ingresos por venta de cobre propio de Codelco fueron de 13.848 millones de toneladas en 2022.
+2025-04-28 21:05:51,816 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (dbdc5f47-32f1-4584-9aef-876a7c7c1829)
+ Call ID: dbdc5f47-32f1-4584-9aef-876a7c7c1829
+  Args:
+2025-04-28 21:05:51,817 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 21:05:51,817 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento indica que los ingresos por venta de cobre propio de Codelco fueron de 13.848 millones en el año 2022, lo cual puede ser una referencia a la producción de toneladas de cobre fino. Sin embargo, para obtener un número exacto de las toneladas producidas, es necesario buscar directamente esa información específica en los documentos disponibles. Te recomendaría revisar el documento completo o solicitar específicamente la sección que contiene los datos sobre la producción de cobre fino.
+
+Si necesitas el archivo específico donde se encuentra esta información detallada, por favor indícame y usaré al experto encargado de recuperar archivos para proporcionarte la ruta del archivo.
+2025-04-28 21:05:51,818 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 21:05:51,818 - INFO - --- Calculating answer_accuracy score for RAG Test 10: Producción Cobre Codelco 2022 ---
+2025-04-28 21:05:53,255 - INFO - answer_accuracy: 0.0000
+2025-04-28 21:05:53,255 - INFO - --- Calculating bleu score for RAG Test 10: Producción Cobre Codelco 2022 ---
+2025-04-28 21:05:53,256 - INFO - bleu: 0.0642
+2025-04-28 21:05:53,256 - INFO - --- Calculating rouge score for RAG Test 10: Producción Cobre Codelco 2022 ---
+2025-04-28 21:05:53,257 - INFO - rouge: 0.0635
+2025-04-28 21:05:53,257 - INFO - --- Calculating non_llm_similarity score for RAG Test 10: Producción Cobre Codelco 2022 ---
+2025-04-28 21:05:53,257 - INFO - non_llm_similarity: 0.0419
+2025-04-28 21:05:53,257 - INFO - --- Calculating tool score for RAG Test 10: Producción Cobre Codelco 2022 ---
+2025-04-28 21:05:53,258 - INFO - tool: 0.6667
+2025-04-28 21:05:53,258 - INFO - --- End of RAG Test 10: Producción Cobre Codelco 2022 ---

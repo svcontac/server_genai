@@ -1,0 +1,48 @@
+2025-04-29 14:56:09,136 - INFO - --- Running TC 6 (RAG): Delegate Áreas Montaje Query (Log file: logs\supervisor\qwen3_14b\supervisor_tc_5.log) ---
+2025-04-29 14:56:09,136 - INFO - User Query: ¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-29 14:56:09,136 - INFO - Reference: The goal is to assign the task to the RAG expert.
+2025-04-29 14:56:09,136 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})']
+2025-04-29 14:56:09,136 - INFO - Running test with conversation ID: test-run-2c801b5c-b4e1-4f41-ab1f-c298ece4ea30
+2025-04-29 14:56:30,275 - INFO - --- Workflow Output Messages ---
+2025-04-29 14:56:30,276 - INFO - ================================ Human Message =================================
+
+¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-29 14:56:30,276 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (2cdd86e8-5443-4a34-ab7f-ec7dc31a59a8)
+ Call ID: 2cdd86e8-5443-4a34-ab7f-ec7dc31a59a8
+  Args:
+2025-04-29 14:56:30,276 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 14:56:30,276 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Lo siento, no tengo información específica sobre las áreas de montaje industrial del proyecto de la mina Ministro Hales en los documentos consultados. Por favor proporciona más detalles o verifica si has especificado correctamente el nombre del proyecto y la información que buscas. Si tienes archivos específicos relacionados con este tema, por favor guíame hacia ellos para poder ayudarte mejor.
+2025-04-29 14:56:30,276 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (de8daa93-27b8-44c0-b60e-ca9364869b05)
+ Call ID: de8daa93-27b8-44c0-b60e-ca9364869b05
+  Args:
+2025-04-29 14:56:30,277 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 14:56:30,277 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+<think>
+
+</think>
+
+Voy a intentar ayudarte mejor. Si tienes información adicional o documentos específicos relacionados con el proyecto de la mina Ministro Hales, por favor compártelos o guíame hacia ellos. Esto me permitirá proporcionarte una respuesta más precisa.
+2025-04-29 14:56:30,278 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 14:56:30,278 - INFO - --- Calculating tool score for TC 6 (RAG): Delegate Áreas Montaje Query ---
+2025-04-29 14:56:30,278 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-29 14:56:30,278 - INFO - tool: 1.0000
+2025-04-29 14:56:30,278 - INFO - --- End of TC 6 (RAG): Delegate Áreas Montaje Query ---

@@ -1,0 +1,63 @@
+2025-04-28 22:58:30,356 - INFO - --- Running RAG Test 5: PIB Cobre 2023 (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_4.log) ---
+2025-04-28 22:58:30,356 - INFO - User Query: ¿Cuál fue el porcentaje del PIB nacional correspondiente al cobre en el año 2023?
+2025-04-28 22:58:30,356 - INFO - Reference: El porcentaje fue 73,1%
+2025-04-28 22:58:30,356 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'porcentaje PIB nacional cobre 2023'})", 'transfer_back_to_supervisor({})']
+2025-04-28 22:58:30,356 - INFO - Running test with conversation ID: test-run-a7f1b690-d3e2-43fc-a89e-40a291b5dd72
+2025-04-28 22:59:15,250 - INFO - --- Workflow Output Messages ---
+2025-04-28 22:59:15,250 - INFO - ================================ Human Message =================================
+
+¿Cuál fue el porcentaje del PIB nacional correspondiente al cobre en el año 2023?
+2025-04-28 22:59:15,252 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (4524b615-36fd-4dfa-aa7d-313a6a8e8431)
+ Call ID: 4524b615-36fd-4dfa-aa7d-313a6a8e8431
+  Args:
+2025-04-28 22:59:15,252 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 22:59:15,252 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (c54f2d4b-c5d8-4929-879c-8cc4e076fba3)
+ Call ID: c54f2d4b-c5d8-4929-879c-8cc4e076fba3
+  Args:
+    k: 3
+    query: porcentaje del PIB nacional correspondiente al cobre en 2023
+2025-04-28 22:59:15,253 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Error retrieving context from FAISS: 
+2025-04-28 22:59:15,253 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+I'm sorry, but I encountered an error while trying to retrieve the information about the percentage of the national GDP corresponding to copper in 2023. I am unable to answer your question at this time. Please try again later.
+2025-04-28 22:59:15,253 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (d93e60ac-220b-4d57-b9bf-840f411018e9)
+ Call ID: d93e60ac-220b-4d57-b9bf-840f411018e9
+  Args:
+2025-04-28 22:59:15,254 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 22:59:15,254 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un error al intentar recuperar la información sobre el porcentaje del PIB nacional correspondiente al cobre en 2023. No puedo responder a tu pregunta en este momento. Por favor, inténtalo de nuevo más tarde.
+2025-04-28 22:59:15,254 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 22:59:15,254 - INFO - --- Calculating answer_accuracy score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-28 22:59:16,485 - INFO - answer_accuracy: 0.0000
+2025-04-28 22:59:16,485 - INFO - --- Calculating bleu score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-28 22:59:16,486 - INFO - bleu: 0.0173
+2025-04-28 22:59:16,486 - INFO - --- Calculating rouge score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-28 22:59:16,486 - INFO - rouge: 0.0889
+2025-04-28 22:59:16,486 - INFO - --- Calculating non_llm_similarity score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-28 22:59:16,487 - INFO - non_llm_similarity: 0.0762
+2025-04-28 22:59:16,487 - INFO - --- Calculating tool score for RAG Test 5: PIB Cobre 2023 ---
+2025-04-28 22:59:16,487 - INFO - tool: 0.6667
+2025-04-28 22:59:16,487 - INFO - --- End of RAG Test 5: PIB Cobre 2023 ---

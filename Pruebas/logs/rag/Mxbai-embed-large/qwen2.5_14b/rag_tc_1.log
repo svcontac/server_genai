@@ -1,0 +1,97 @@
+2025-04-29 16:09:29,270 - INFO - --- Running RAG Test 2: Áreas Montaje Industrial (Log file: logs\rag\qwen2.5_14b\rag_tc_1.log) ---
+2025-04-29 16:09:29,270 - INFO - User Query: ¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-29 16:09:29,270 - INFO - Reference: áreas 3000, 5000 y 6000.
+2025-04-29 16:09:29,270 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'áreas de montaje industrial proyecto mina Ministro Hales'})", 'transfer_back_to_supervisor({})']
+2025-04-29 16:09:29,270 - INFO - Running test with conversation ID: test-run-2dbc39d4-1539-4abc-8343-f4caceaa292c
+2025-04-29 16:10:12,669 - INFO - --- Workflow Output Messages ---
+2025-04-29 16:10:12,670 - INFO - ================================ Human Message =================================
+
+¿Cuáles son las áreas de montaje industrial del proyecto de la mina Ministro Hales? Menciónalas
+2025-04-29 16:10:12,670 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (f471b7fc-0ce8-4916-9908-616aedb73a83)
+ Call ID: f471b7fc-0ce8-4916-9908-616aedb73a83
+  Args:
+2025-04-29 16:10:12,670 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 16:10:12,670 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (8dfce43e-42df-4190-a370-6342c8fb969f)
+ Call ID: 8dfce43e-42df-4190-a370-6342c8fb969f
+  Args:
+    k: 3
+    query: áreas de montaje industrial del proyecto de la mina Ministro Hales
+2025-04-29 16:10:12,671 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\nmunidad de calama y se cumple con los principios susten-
+tables establecidos y declarados por la división.
+es la división ministro Hales, uno de los avances que 
+presenta la cuprífera estatal. una nueva mina que pronto 
+entrará en funcionamiento con tecnología de punta, cum-
+pliendo con las expectativas impuestas. //
+Camión minero y 
+una pala 
+electromecánica en 
+las labores de 
+prestripping en la 
+mina de cobre a 
+rajo abierto de 
+Ministro Hales, a 
+10 km al norte de 
+la localidad de 
+Calama en la región\n---\n42  construcción minera nº 3  •  noviembre 2013
+proyEcto
+la división ministro Hales se emplaza en la región de an-
+tofagasta, a 5 km de calama, y su concepción se remonta 
+al 2010 cuando codelco decide expandir el número de 
+sus divisiones. para fraguar esta tarea, la cuprífera manda-
+tó a su vicepresidencia de proyectos (vp), quien se en-
+cargó de crear y operar las instalaciones.
+ministro Hales contempla la explotación de sulfuros de 
+cobre “con reservas económicamente explotables de 289\n---\nrajo abierto de 
+Ministro Hales, a 
+10 km al norte de 
+la localidad de 
+Calama en la región 
+de Antofagasta. 
+Construcción de la planta stockpile del proyecto 
+Ministro Hales.
+2025-04-29 16:10:12,672 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+El documento no proporciona información específica sobre las áreas de montaje industrial del proyecto de la mina Ministro Hales. Sin embargo, menciona que el proyecto incluye la construcción de una planta stockpile y labores de prestripping con camiones mineros y palas electromecánicas en un yacimiento a cielo abierto cerca de Calama en la región de Antofagasta. Para obtener detalles específicos sobre las áreas de montaje industrial, se necesitaría información más detallada del proyecto.
+2025-04-29 16:10:12,672 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (5544f3dc-eaf9-4d78-b49a-b238866b7b59)
+ Call ID: 5544f3dc-eaf9-4d78-b49a-b238866b7b59
+  Args:
+2025-04-29 16:10:12,672 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 16:10:12,672 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El documento no proporciona información específica sobre las áreas de montaje industrial del proyecto de la mina Ministro Hales. Sin embargo, menciona que el proyecto incluye la construcción de una planta stockpile y labores de prestripping con camiones mineros y palas electromecánicas en un yacimiento a cielo abierto cerca de Calama en la región de Antofagasta. Para obtener detalles específicos sobre las áreas de montaje industrial, se necesitaría información más detallada del proyecto.
+
+Si requieres una lista específica de las áreas de montaje industrial, por favor proporciona más detalles o consulta directamente con el equipo encargado del proyecto para obtener la información precisa que buscas.
+2025-04-29 16:10:12,673 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 16:10:12,673 - INFO - --- Calculating answer_accuracy score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 16:10:14,044 - INFO - answer_accuracy: 0.0000
+2025-04-29 16:10:14,044 - INFO - --- Calculating bleu score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 16:10:14,045 - INFO - bleu: 0.0202
+2025-04-29 16:10:14,045 - INFO - --- Calculating rouge score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 16:10:14,046 - INFO - rouge: 0.0328
+2025-04-29 16:10:14,046 - INFO - --- Calculating non_llm_similarity score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 16:10:14,046 - INFO - non_llm_similarity: 0.0170
+2025-04-29 16:10:14,047 - INFO - --- Calculating tool score for RAG Test 2: Áreas Montaje Industrial ---
+2025-04-29 16:10:14,047 - INFO - tool: 0.6667
+2025-04-29 16:10:14,047 - INFO - --- End of RAG Test 2: Áreas Montaje Industrial ---

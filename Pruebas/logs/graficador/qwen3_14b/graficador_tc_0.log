@@ -1,0 +1,84 @@
+2025-04-29 12:28:03,557 - INFO - --- Running Test Case 1: Line Plot (Log file: logs\graficador\qwen3_14b\graficador_tc_0.log) ---
+2025-04-29 12:28:03,558 - INFO - User Query: Genera un gráfico de línea de la primera columna vs la segunda columna del archivo data.csv
+2025-04-29 12:28:03,558 - INFO - Reference: Gráfico de línea (plot_line) realizado exitosamente.
+2025-04-29 12:28:03,558 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'line'})", "plot_line({'file_path': 'src/data/data.csv', 'x_col': 0, 'y_col': 1})", 'transfer_back_to_supervisor({})']
+2025-04-29 12:28:03,558 - INFO - Running test with conversation ID: test-run-51c7870a-174d-4a9e-8c75-ea14594dd006
+2025-04-29 12:28:26,324 - INFO - --- Workflow Output Messages ---
+2025-04-29 12:28:26,324 - INFO - ================================ Human Message =================================
+
+Genera un gráfico de línea de la primera columna vs la segunda columna del archivo data.csv
+2025-04-29 12:28:26,324 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_graph_expert (20297e12-19ee-4d7b-ab4c-1acd8a3ba8b7)
+ Call ID: 20297e12-19ee-4d7b-ab4c-1acd8a3ba8b7
+  Args:
+    data_file: data.csv
+    type: line
+    x_column: 0
+    y_column: 1
+2025-04-29 12:28:26,324 - INFO - ================================= Tool Message =================================
+Name: assign_to_graph_expert
+
+Successfully transferred to graph_expert
+2025-04-29 12:28:26,324 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_line (fd3629f9-39a3-4dc1-a2b5-7e16470d35b0)
+ Call ID: fd3629f9-39a3-4dc1-a2b5-7e16470d35b0
+  Args:
+    file_path: src/data/data.csv
+    x_col: 0
+    y_col: 1
+2025-04-29 12:28:26,325 - INFO - ================================= Tool Message =================================
+Name: plot_line
+
+Error: KeyError('0')
+ Please fix your mistakes.
+2025-04-29 12:28:26,325 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_line (85cb7bc4-b2c2-49d3-b9c5-919d98e98c8a)
+ Call ID: 85cb7bc4-b2c2-49d3-b9c5-919d98e98c8a
+  Args:
+    file_path: src/data/data.csv
+    x_col: 0
+    y_col: 1
+2025-04-29 12:28:26,325 - INFO - ================================= Tool Message =================================
+Name: plot_line
+
+Gráfico de línea (plot_line) realizado exitosamente
+2025-04-29 12:28:26,326 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+<think>
+
+</think>
+
+Se ha generado exitosamente el gráfico de línea utilizando la primera columna como eje x y la segunda columna como eje y del archivo `data.csv`. ¿Hay algo más en lo que pueda ayudarte?
+2025-04-29 12:28:26,326 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (a8544bc1-9ba7-44ad-98c0-ff6ea68ef422)
+ Call ID: a8544bc1-9ba7-44ad-98c0-ff6ea68ef422
+  Args:
+2025-04-29 12:28:26,326 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 12:28:26,326 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+<think>
+
+</think>
+
+¡Listo para ayudarte con lo siguiente! ¿Tienes alguna otra solicitud?
+2025-04-29 12:28:26,327 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 12:28:26,327 - INFO - --- Calculating goal score for Test Case 1: Line Plot ---
+2025-04-29 12:28:40,346 - INFO - goal: 1.0000
+2025-04-29 12:28:40,346 - INFO - --- Calculating tool score for Test Case 1: Line Plot ---
+2025-04-29 12:28:40,347 - INFO - tool: 1.0000
+2025-04-29 12:28:40,347 - INFO - --- End of Test Case 1: Line Plot ---

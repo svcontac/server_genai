@@ -1,0 +1,56 @@
+2025-04-29 10:08:33,496 - INFO - --- Running Test Case 8: Ganancia bruta del cobre (Log file: logs\recuperador\PetrosStav_gemma3-tools_12b\recuperador_tc_7.log) ---
+2025-04-29 10:08:33,496 - INFO - User Query: Necesito un documento que me entrege la información númerica de la ganancia bruta del cobre en el año 2022.
+2025-04-29 10:08:33,496 - INFO - Reference: El documento que estás buscando es src\data\2023_03_31_codelco_entrega_resultados_4t_2022.pdf
+2025-04-29 10:08:33,496 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'ganancia bruta del cobre en el año 2022'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:08:33,496 - INFO - Running test with conversation ID: test-run-5b71b31f-2b23-46de-947f-7cd78a10f357
+2025-04-29 10:09:13,574 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:09:13,574 - INFO - ================================ Human Message =================================
+
+Necesito un documento que me entrege la información númerica de la ganancia bruta del cobre en el año 2022.
+2025-04-29 10:09:13,574 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (abdb9863-923b-4e2c-9a6a-91c1a3c6ddff)
+ Call ID: abdb9863-923b-4e2c-9a6a-91c1a3c6ddff
+  Args:
+2025-04-29 10:09:13,575 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-29 10:09:13,575 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (f8834d6a-37b5-4a07-95ab-960988546a68)
+ Call ID: f8834d6a-37b5-4a07-95ab-960988546a68
+  Args:
+    query: ganancia bruta cobre 2022
+2025-04-29 10:09:13,575 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+Error retrieving context from FAISS: 
+2025-04-29 10:09:13,575 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+I am sorry, I was unable to retrieve the requested file. Please try again later.
+2025-04-29 10:09:13,576 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (45518e1a-a7db-4f47-8cb3-e33f3a30d0e6)
+ Call ID: 45518e1a-a7db-4f47-8cb3-e33f3a30d0e6
+  Args:
+2025-04-29 10:09:13,576 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:09:13,576 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al recuperar el documento que solicitaste sobre la ganancia bruta del cobre en 2022. Por favor, inténtalo de nuevo más tarde. Si el problema persiste, ponte en contacto con soporte técnico.
+2025-04-29 10:09:13,577 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:09:13,577 - INFO - --- Calculating goal score for Test Case 8: Ganancia bruta del cobre ---
+2025-04-29 10:09:25,486 - INFO - goal: 0.0000
+2025-04-29 10:09:25,486 - INFO - --- Calculating tool score for Test Case 8: Ganancia bruta del cobre ---
+2025-04-29 10:09:25,487 - INFO - tool: 0.6667
+2025-04-29 10:09:25,487 - INFO - --- End of Test Case 8: Ganancia bruta del cobre ---

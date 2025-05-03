@@ -1,0 +1,71 @@
+2025-04-29 14:31:51,103 - INFO - --- Running RAG Test 13: Ganancia Bruta Codelco 2022 (Log file: logs\rag\qwen3_14b\rag_tc_12.log) ---
+2025-04-29 14:31:51,103 - INFO - User Query: ¿Cuál fue la ganancia bruta de Codelco del año 2022?
+2025-04-29 14:31:51,103 - INFO - Reference: 4.734
+2025-04-29 14:31:51,103 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'ganancia bruta Codelco 2022'})", 'transfer_back_to_supervisor({})']
+2025-04-29 14:31:51,104 - INFO - Running test with conversation ID: test-run-9e0e3d9a-4994-4951-bae4-e675bda0c143
+2025-04-29 14:32:17,013 - INFO - --- Workflow Output Messages ---
+2025-04-29 14:32:17,013 - INFO - ================================ Human Message =================================
+
+¿Cuál fue la ganancia bruta de Codelco del año 2022?
+2025-04-29 14:32:17,013 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (34f683a6-86d5-4997-be88-a3d74d9dfe40)
+ Call ID: 34f683a6-86d5-4997-be88-a3d74d9dfe40
+  Args:
+2025-04-29 14:32:17,013 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 14:32:17,014 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (dbee8d65-d02f-49fb-b18d-c69e9969c122)
+ Call ID: dbee8d65-d02f-49fb-b18d-c69e9969c122
+  Args:
+    k: 1
+    query: ¿Cuál fue la ganancia bruta de Codelco del año 2022?
+2025-04-29 14:32:17,014 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Error retrieving context from FAISS: 
+2025-04-29 14:32:17,014 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+<think>
+
+</think>
+
+No se pudo recuperar la información solicitada. Por favor, intenta reformular tu pregunta o proporciona más detalles para poder ayudarte mejor.
+2025-04-29 14:32:17,014 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (a12143be-806a-41a6-86d5-3b4c03722685)
+ Call ID: a12143be-806a-41a6-86d5-3b4c03722685
+  Args:
+2025-04-29 14:32:17,015 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 14:32:17,015 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+<think>
+
+</think>
+
+No se pudo recuperar la información solicitada. Por favor, intenta reformular tu pregunta o proporciona más detalles para poder ayudarte mejor.
+2025-04-29 14:32:17,015 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 14:32:17,016 - INFO - --- Calculating answer_accuracy score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 14:32:21,027 - INFO - answer_accuracy: 0.0000
+2025-04-29 14:32:21,027 - INFO - --- Calculating bleu score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 14:32:21,028 - INFO - bleu: 0.0000
+2025-04-29 14:32:21,028 - INFO - --- Calculating rouge score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 14:32:21,029 - INFO - rouge: 0.0000
+2025-04-29 14:32:21,029 - INFO - --- Calculating non_llm_similarity score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 14:32:21,029 - INFO - non_llm_similarity: 0.0062
+2025-04-29 14:32:21,029 - INFO - --- Calculating tool score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-29 14:32:21,029 - INFO - tool: 0.6667
+2025-04-29 14:32:21,030 - INFO - --- End of RAG Test 13: Ganancia Bruta Codelco 2022 ---

@@ -1,0 +1,56 @@
+2025-04-29 10:06:54,079 - INFO - --- Running Test Case 6: Significado de RMI (Log file: logs\recuperador\PetrosStav_gemma3-tools_12b\recuperador_tc_5.log) ---
+2025-04-29 10:06:54,079 - INFO - User Query: ¿Qué archivo menciona el significado de RMI?
+2025-04-29 10:06:54,079 - INFO - Reference: El documento que estás buscando es src\data\mineria_chilena_removed.pdf
+2025-04-29 10:06:54,079 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})', "retrieve_file({'query': 'significado de RMI'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:06:54,079 - INFO - Running test with conversation ID: test-run-a9060aa0-40f9-446d-925c-ee835516ba53
+2025-04-29 10:07:33,180 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:07:33,180 - INFO - ================================ Human Message =================================
+
+¿Qué archivo menciona el significado de RMI?
+2025-04-29 10:07:33,180 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (cc37f5be-5172-49c1-ab3b-e4cf5bc51c42)
+ Call ID: cc37f5be-5172-49c1-ab3b-e4cf5bc51c42
+  Args:
+2025-04-29 10:07:33,181 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-29 10:07:33,181 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (7add3d6a-85be-43c0-aa7d-ee006e1286d8)
+ Call ID: 7add3d6a-85be-43c0-aa7d-ee006e1286d8
+  Args:
+    query: significado de RMI
+2025-04-29 10:07:33,181 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+Error retrieving context from FAISS: 
+2025-04-29 10:07:33,181 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+I am sorry, I was unable to retrieve the file. Please check your query and try again.
+2025-04-29 10:07:33,182 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (12066154-a86c-4c3b-97ef-1163c76c76b4)
+ Call ID: 12066154-a86c-4c3b-97ef-1163c76c76b4
+  Args:
+2025-04-29 10:07:33,182 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:07:33,182 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al recuperar el archivo que buscabas. Por favor, verifica tu consulta y vuelve a intentarlo. Si continúas teniendo problemas, ponte en contacto con soporte técnico.
+2025-04-29 10:07:33,182 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:07:33,183 - INFO - --- Calculating goal score for Test Case 6: Significado de RMI ---
+2025-04-29 10:07:42,429 - INFO - goal: 0.0000
+2025-04-29 10:07:42,429 - INFO - --- Calculating tool score for Test Case 6: Significado de RMI ---
+2025-04-29 10:07:42,430 - INFO - tool: 1.0000
+2025-04-29 10:07:42,430 - INFO - --- End of Test Case 6: Significado de RMI ---

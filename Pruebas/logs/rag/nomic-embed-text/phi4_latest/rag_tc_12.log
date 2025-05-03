@@ -1,0 +1,89 @@
+2025-04-28 21:27:35,438 - INFO - --- Running RAG Test 13: Ganancia Bruta Codelco 2022 (Log file: logs\rag\phi4_latest\rag_tc_12.log) ---
+2025-04-28 21:27:35,438 - INFO - User Query: ¿Cuál fue la ganancia bruta de Codelco del año 2022?
+2025-04-28 21:27:35,438 - INFO - Reference: 4.734
+2025-04-28 21:27:35,438 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'ganancia bruta Codelco 2022'})", 'transfer_back_to_supervisor({})']
+2025-04-28 21:27:35,438 - INFO - Running test with conversation ID: test-run-a8b3e39d-1035-4266-a76f-f9448c80b3f3
+2025-04-28 21:27:37,625 - ERROR - Error during app.invoke: registry.ollama.ai/library/phi4:latest does not support tools (status code: 400)
+Traceback (most recent call last):
+  File "c:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\metrics_calculator.py", line 130, in run_test_case
+    result = app.invoke(input_data, config=test_config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2795, in invoke
+    for chunk in self.stream(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2433, in stream
+    for _ in runner.tick(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\runner.py", line 153, in tick
+    run_with_retry(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\utils\runnable.py", line 623, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\utils\runnable.py", line 370, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph_supervisor\supervisor.py", line 83, in call_agent
+    output = agent.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2795, in invoke
+    for chunk in self.stream(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\__init__.py", line 2433, in stream
+    for _ in runner.tick(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\runner.py", line 153, in tick
+    run_with_retry(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\utils\runnable.py", line 623, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\utils\runnable.py", line 370, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langgraph\prebuilt\chat_agent_executor.py", line 745, in call_model
+    response = cast(AIMessage, model_runnable.invoke(state, config))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\runnables\base.py", line 3034, in invoke
+    input = context.run(step.invoke, input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\runnables\base.py", line 5416, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 369, in invoke
+    self.generate_prompt(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 946, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 765, in generate
+    self._generate_with_cache(
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1011, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 715, in _generate
+    final_chunk = self._chat_stream_with_aggregation(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 652, in _chat_stream_with_aggregation
+    for chunk in self._iterate_over_stream(messages, stop, **kwargs):
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 737, in _iterate_over_stream
+    for stream_resp in self._create_chat_stream(messages, stop, **kwargs):
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\langchain_ollama\chat_models.py", line 639, in _create_chat_stream
+    yield from self._client.chat(**chat_params)
+  File "C:\Users\CAEX\Desktop\Proyecto_DMH\Pruebas\contac\Lib\site-packages\ollama\_client.py", line 168, in inner
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: registry.ollama.ai/library/phi4:latest does not support tools (status code: 400)
+During task with name 'agent' and id 'a25bec50-17b9-6cdd-1c4e-70a22353b65b'
+During task with name 'rag_expert' and id '9b9447d3-16a3-d864-88ca-4a7c30e6e124'
+2025-04-28 21:27:37,629 - INFO - --- Workflow Output Messages ---
+2025-04-28 21:27:37,629 - WARNING - Warning: No messages found in the result.
+2025-04-28 21:27:37,629 - INFO - --- Calculating answer_accuracy score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-28 21:27:37,629 - WARNING - Skipping single-turn metric 'answer_accuracy': Generated answer unavailable.
+2025-04-28 21:27:37,629 - INFO - --- Calculating bleu score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-28 21:27:37,629 - WARNING - Skipping single-turn metric 'bleu': Generated answer unavailable.
+2025-04-28 21:27:37,630 - INFO - --- Calculating rouge score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-28 21:27:37,630 - WARNING - Skipping single-turn metric 'rouge': Generated answer unavailable.
+2025-04-28 21:27:37,630 - INFO - --- Calculating non_llm_similarity score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-28 21:27:37,630 - WARNING - Skipping single-turn metric 'non_llm_similarity': Generated answer unavailable.
+2025-04-28 21:27:37,630 - INFO - --- Calculating tool score for RAG Test 13: Ganancia Bruta Codelco 2022 ---
+2025-04-28 21:27:37,630 - WARNING - Skipping multi-turn metric 'tool': Ragas trace unavailable.
+2025-04-28 21:27:37,630 - INFO - --- End of RAG Test 13: Ganancia Bruta Codelco 2022 ---

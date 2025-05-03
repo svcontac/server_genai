@@ -1,0 +1,64 @@
+2025-04-29 10:34:12,744 - INFO - --- Running RAG Test 7: Componentes Retroexcavadora (Log file: logs\rag\PetrosStav_gemma3-tools_12b\rag_tc_6.log) ---
+2025-04-29 10:34:12,744 - INFO - User Query: ¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-29 10:34:12,745 - INFO - Reference: Chasis o bastidor, cabina, ruedas u orugas, estabilizadores, brazo principal (boom), brazo secundario (dipper stick), cucharón (bucket), cargador frontal (front loader), sistemas hidráulicos, motor, sistema de escape, luces y espejos, placa de contrapeso.
+2025-04-29 10:34:12,745 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'componentes externos retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-29 10:34:12,745 - INFO - Running test with conversation ID: test-run-b5bb9c22-4460-4adb-a5a9-bbdb11641686
+2025-04-29 10:35:28,969 - INFO - --- Workflow Output Messages ---
+2025-04-29 10:35:28,970 - INFO - ================================ Human Message =================================
+
+¿Puedes entregarme los componentes externos de una retroexcavadora?
+2025-04-29 10:35:28,970 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (5db8578c-3d89-4557-8955-1dd6a34dd257)
+ Call ID: 5db8578c-3d89-4557-8955-1dd6a34dd257
+  Args:
+2025-04-29 10:35:28,970 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 10:35:28,970 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Los componentes externos de una retroexcavadora incluyen:
+
+*   **Contenedor:** Es la estructura principal que alberga todos los componentes de la retroexcavadora.
+*   **Pluma:** Es el brazo largo que se extiende desde el cuerpo de la retroexcavadora y se utiliza para excavar.
+*   **Cubeta:** Es la herramienta en forma de cuchara que se une al extremo de la pluma y se utiliza para excavar y cargar materiales.
+*   **Brazo:** Es la parte de la retroexcavadora que conecta la pluma con la cubeta.
+*   **Palanca de control:** Se utiliza para controlar el movimiento de la pluma, el brazo y la cubeta.
+*   **Motor:** Proporciona la potencia para operar la retroexcavadora.
+*   **Sistema hidráulico:** Transmite la potencia del motor a los cilindros hidráulicos que controlan el movimiento de la pluma, el brazo y la cubeta.
+*   **Neumáticos:** Proporcionan tracción y estabilidad a la retroexcavadora.
+*   **Cabina:** Es el espacio donde el operador controla la retroexcavadora.
+*   **Asientos:** Proporcionan un lugar cómodo para el operador.
+*   **Luces:** Proporcionan iluminación para trabajar en condiciones de poca luz.
+*   **Estabilizadores:** Proporcionan estabilidad a la retroexcavadora cuando está en funcionamiento.
+2025-04-29 10:35:28,971 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (e16d48f5-2b99-4027-8ebd-600ab2b62496)
+ Call ID: e16d48f5-2b99-4027-8ebd-600ab2b62496
+  Args:
+2025-04-29 10:35:28,971 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 10:35:28,972 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El RAG expert ha proporcionado información sobre los componentes externos de una retroexcavadora. Si necesitas más detalles específicos o tienes alguna otra pregunta, por favor házmelo saber.
+2025-04-29 10:35:28,972 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 10:35:28,972 - INFO - --- Calculating answer_accuracy score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 10:35:29,943 - INFO - answer_accuracy: 0.0000
+2025-04-29 10:35:29,943 - INFO - --- Calculating bleu score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 10:35:29,944 - INFO - bleu: 0.0013
+2025-04-29 10:35:29,944 - INFO - --- Calculating rouge score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 10:35:29,945 - INFO - rouge: 0.0606
+2025-04-29 10:35:29,945 - INFO - --- Calculating non_llm_similarity score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 10:35:29,945 - INFO - non_llm_similarity: 0.2196
+2025-04-29 10:35:29,945 - INFO - --- Calculating tool score for RAG Test 7: Componentes Retroexcavadora ---
+2025-04-29 10:35:29,946 - INFO - tool: 0.0000
+2025-04-29 10:35:29,946 - INFO - --- End of RAG Test 7: Componentes Retroexcavadora ---

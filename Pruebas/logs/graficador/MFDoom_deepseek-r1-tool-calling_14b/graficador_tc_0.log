@@ -1,0 +1,5 @@
+2025-04-28 16:59:47,205 - INFO - --- Running Test Case 1: Line Plot (Log file: logs\graficador\MFDoom_deepseek-r1-tool-calling_14b\graficador_tc_0.log) ---
+2025-04-28 16:59:47,205 - INFO - User Query: Genera un gráfico de línea de la primera columna vs la segunda columna del archivo data.csv
+2025-04-28 16:59:47,205 - INFO - Reference: Gráfico de línea (plot_line) realizado.
+2025-04-28 16:59:47,205 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'line'})", "plot_line({'file_path': 'src/data/data.csv', 'x_col': 0, 'y_col': 1})", 'transfer_back_to_supervisor({})']
+2025-04-28 16:59:47,206 - INFO - Running test with conversation ID: test-run-88b24ec8-db86-4d72-871c-529901103b42

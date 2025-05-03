@@ -1,0 +1,63 @@
+2025-04-28 22:33:42,137 - INFO - --- Running RAG Test 1: Producción Ministro Hales (Log file: logs\rag\qwen2.5_14b\rag_tc_0.log) ---
+2025-04-28 22:33:42,137 - INFO - User Query: ¿Cuál es la producción diaria estimada para la mina Ministro Hales?
+2025-04-28 22:33:42,137 - INFO - Reference: Tendría una producción diaria de 50.000 toneladas de mineral.
+2025-04-28 22:33:42,137 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'producción diaria estimada mina Ministro Hales'})", 'transfer_back_to_supervisor({})']
+2025-04-28 22:33:42,137 - INFO - Running test with conversation ID: test-run-a43fcce4-27a3-4786-8cf3-12d2c380893b
+2025-04-28 22:34:13,416 - INFO - --- Workflow Output Messages ---
+2025-04-28 22:34:13,417 - INFO - ================================ Human Message =================================
+
+¿Cuál es la producción diaria estimada para la mina Ministro Hales?
+2025-04-28 22:34:13,417 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (8e01d71f-d35a-475f-8f76-db2fa2dc13c2)
+ Call ID: 8e01d71f-d35a-475f-8f76-db2fa2dc13c2
+  Args:
+2025-04-28 22:34:13,417 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 22:34:13,417 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (48c6bec1-9487-49b1-9dfa-fe175ce6df86)
+ Call ID: 48c6bec1-9487-49b1-9dfa-fe175ce6df86
+  Args:
+    k: 3
+    query: producción diaria estimada mina Ministro Hales
+2025-04-28 22:34:13,418 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Error retrieving context from FAISS: 
+2025-04-28 22:34:13,418 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Lo siento, no pude recuperar la información sobre la producción diaria estimada para la mina Ministro Hales. Quizás podrías proporcionar más detalles o verificar el nombre de la mina.
+2025-04-28 22:34:13,418 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (b9f6dede-186b-469c-add6-242c90fd2093)
+ Call ID: b9f6dede-186b-469c-add6-242c90fd2093
+  Args:
+2025-04-28 22:34:13,418 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 22:34:13,419 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Lo siento, hubo un problema al recuperar la información sobre la producción diaria estimada para la mina Ministro Hales. Por favor, verifica el nombre de la mina o proporciona más detalles si es posible. Si tienes alguna otra pregunta o necesitas ayuda con algo diferente, estaré encantado de ayudarte.
+2025-04-28 22:34:13,419 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 22:34:13,419 - INFO - --- Calculating answer_accuracy score for RAG Test 1: Producción Ministro Hales ---
+2025-04-28 22:34:14,696 - INFO - answer_accuracy: 0.0000
+2025-04-28 22:34:14,696 - INFO - --- Calculating bleu score for RAG Test 1: Producción Ministro Hales ---
+2025-04-28 22:34:14,698 - INFO - bleu: 0.0383
+2025-04-28 22:34:14,698 - INFO - --- Calculating rouge score for RAG Test 1: Producción Ministro Hales ---
+2025-04-28 22:34:14,699 - INFO - rouge: 0.1562
+2025-04-28 22:34:14,699 - INFO - --- Calculating non_llm_similarity score for RAG Test 1: Producción Ministro Hales ---
+2025-04-28 22:34:14,700 - INFO - non_llm_similarity: 0.1623
+2025-04-28 22:34:14,700 - INFO - --- Calculating tool score for RAG Test 1: Producción Ministro Hales ---
+2025-04-28 22:34:14,700 - INFO - tool: 1.0000
+2025-04-28 22:34:14,700 - INFO - --- End of RAG Test 1: Producción Ministro Hales ---

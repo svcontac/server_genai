@@ -1,0 +1,996 @@
+{
+   "supervisor": {
+      "qwen2.5:14b": {
+         "0": {
+            "metricas": {
+               "time": 15.908174514770508,
+               "tool": 1.0
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 11.735582828521729,
+               "tool": 1.0
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 13.858151197433472,
+               "tool": 0.0
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 11.008482217788696,
+               "tool": 0.0
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 14.1703200340271,
+               "tool": 1.0
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 34.45161986351013,
+               "tool": 1.0
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 34.21941828727722,
+               "tool": 1.0
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 23.442450046539307,
+               "tool": 1.0
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 16.01595664024353,
+               "tool": 1.0
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 23.626099348068237,
+               "tool": 1.0
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 43.88632869720459,
+               "tool": 1.0
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 18.603399991989136,
+               "tool": 1.0
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      },
+      "hengwen/watt-tool-8B:latest": {
+         "0": {
+            "metricas": {
+               "time": 0.03580594062805176
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 0.027135848999023438
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 0.026073217391967773
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 0.025895357131958008
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 0.026056528091430664
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 0.026496171951293945
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 0.027727603912353516
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 0.027654170989990234
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 0.027170419692993164
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 0.027684688568115234
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 0.02720022201538086
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 0.027201414108276367
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      },
+      "hengwen/watt-tool-8B": {
+         "0": {
+            "metricas": {
+               "time": 0.04752016067504883
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 0.0283815860748291
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 0.03018975257873535
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 0.028660297393798828
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 0.02857804298400879
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 0.029268264770507812
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 0.028528690338134766
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 0.030515193939208984
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 0.02820730209350586
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 0.027581453323364258
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 0.0284726619720459
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 0.028444766998291016
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      },
+      "deepseek-r1:14b": {
+         "0": {
+            "metricas": {
+               "time": 0.03032708168029785
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         }
+      },
+      "MFDoom/deepseek-r1-tool-calling:14b": {
+         "0": {
+            "metricas": {
+               "time": 18.1266987323761,
+               "tool": 0.0
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 19.065401554107666,
+               "tool": 0.0
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 20.21745991706848,
+               "tool": 0.0
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 17.985748291015625,
+               "tool": 0.0
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 28.458130836486816,
+               "tool": 1.0
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 56.652392625808716,
+               "tool": 1.0
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 38.852184534072876,
+               "tool": 1.0
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 27.483279705047607,
+               "tool": 1.0
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 29.688840627670288,
+               "tool": 1.0
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 29.61832857131958,
+               "tool": 1.0
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 23.668657779693604,
+               "tool": 1.0
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 43.34793949127197,
+               "tool": 1.0
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      },
+      "kitsonk/watt-tool-8B": {
+         "0": {
+            "metricas": {
+               "time": 0.9805781841278076,
+               "tool": 0.0
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 0.2971963882446289,
+               "tool": 0.0
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 0.26015710830688477,
+               "tool": 0.0
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 0.2599363327026367,
+               "tool": 0.0
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 0.2762436866760254,
+               "tool": 0.0
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 0.27814412117004395,
+               "tool": 0.0
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 0.27759504318237305,
+               "tool": 0.0
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 0.27956271171569824,
+               "tool": 0.0
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 0.28271913528442383,
+               "tool": 0.0
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 0.2861795425415039,
+               "tool": 0.0
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 0.28200864791870117,
+               "tool": 0.0
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 0.2745170593261719,
+               "tool": 0.0
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      },
+      "fireshihtzu/watt-tool-8B-formatted": {
+         "0": {
+            "metricas": {
+               "time": 0.8012316226959229,
+               "tool": 0.0
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 0.2980992794036865,
+               "tool": 0.0
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 0.26073384284973145,
+               "tool": 0.0
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 0.26409316062927246,
+               "tool": 0.0
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 0.2755563259124756,
+               "tool": 0.0
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 0.27706408500671387,
+               "tool": 0.0
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 0.2754323482513428,
+               "tool": 0.0
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 0.2757134437561035,
+               "tool": 0.0
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 0.28221940994262695,
+               "tool": 0.0
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 0.27680373191833496,
+               "tool": 0.0
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 0.27881622314453125,
+               "tool": 0.0
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 0.2762265205383301,
+               "tool": 0.0
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      },
+      "hf.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf:F16": {
+         "0": {
+            "metricas": {
+               "time": 57.26713466644287,
+               "tool": 1.0
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 31.810168981552124,
+               "tool": 1.0
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 31.576019048690796,
+               "tool": 0.0
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 23.35534405708313,
+               "tool": 0.0
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 40.1104633808136,
+               "tool": 1.0
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 53.29451394081116,
+               "tool": 1.0
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 17.09347891807556,
+               "tool": 0.0
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 14.797239780426025,
+               "tool": 0.0
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 16.526020765304565,
+               "tool": 0.0
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 33.632978439331055,
+               "tool": 1.0
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 36.17528796195984,
+               "tool": 1.0
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 43.41869068145752,
+               "tool": 1.0
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      },
+      "hf.co/Eddie-3dd13/ToolACE-2-Llama-3.1-8B-Q8_0-GGUF:Q8_0": {
+         "0": {
+            "metricas": {
+               "time": 27.29249095916748,
+               "tool": 0.0
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 18.113765239715576,
+               "tool": 0.0
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 19.583919763565063,
+               "tool": 0.0
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 17.740817070007324,
+               "tool": 0.0
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 25.421135902404785,
+               "tool": 1.0
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 19.428565502166748,
+               "tool": 0.0
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 32.4139347076416,
+               "tool": 1.0
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 20.915976524353027,
+               "tool": 1.0
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 19.658296823501587,
+               "tool": 1.0
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 24.68287992477417,
+               "tool": 1.0
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 18.670197010040283,
+               "tool": 1.0
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 28.36672592163086,
+               "tool": 1.0
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      },
+      "hf.co/eaddario/Watt-Tool-8B-GGUF:F16": {
+         "0": {
+            "metricas": {
+               "time": 0.0854945182800293
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 0.02497267723083496
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 0.02448129653930664
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 0.025124549865722656
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 0.0254056453704834
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 0.023469209671020508
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 0.023336410522460938
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 0.027032852172851562
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 0.023488283157348633
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 0.02346062660217285
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 0.023926258087158203
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 0.025130510330200195
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      },
+      "hf.co/mradermacher/BitAgent-8B-GGUF:IQ4_XS": {
+         "0": {
+            "metricas": {
+               "time": 0.03505253791809082
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 0.025682687759399414
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 0.02558732032775879
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 0.025033235549926758
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 0.025553464889526367
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 0.02478194236755371
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 0.025430917739868164
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 0.02669358253479004
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 0.026562213897705078
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 0.02504444122314453
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 0.024207592010498047
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 0.024865388870239258
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      },
+      "qwen3:14b": {
+         "0": {
+            "metricas": {
+               "time": 21.63574528694153,
+               "tool": 1.0
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 18.673705101013184,
+               "tool": 1.0
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 20.37545943260193,
+               "tool": 0.0
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 16.881242990493774,
+               "tool": 0.0
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 22.94734239578247,
+               "tool": 1.0
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 21.138335466384888,
+               "tool": 1.0
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 43.534915924072266,
+               "tool": 1.0
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 30.353477478027344,
+               "tool": 1.0
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 23.31531596183777,
+               "tool": 1.0
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 28.647757053375244,
+               "tool": 1.0
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 49.53711771965027,
+               "tool": 1.0
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 33.69688296318054,
+               "tool": 1.0
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      },
+      "hf.co/jedisct1/MiMo-7B-RL-GGUF:Q4_K_M": {
+         "0": {
+            "metricas": {
+               "time": 224.07901406288147,
+               "tool": 0.0
+            },
+            "description": "TC 1 (Recuperador): Delegate Humectacion Query"
+         },
+         "1": {
+            "metricas": {
+               "time": 171.162433385849,
+               "tool": 1.0
+            },
+            "description": "TC 2 (Recuperador): Delegate Litio Query"
+         },
+         "2": {
+            "metricas": {
+               "time": 70.62980651855469,
+               "tool": 0.0
+            },
+            "description": "TC 3 (Graficador): Delegate Line Plot Query"
+         },
+         "3": {
+            "metricas": {
+               "time": 7596.54469871521,
+               "tool": 0.0
+            },
+            "description": "TC 4 (Graficador): Delegate Histogram Query"
+         },
+         "4": {
+            "metricas": {
+               "time": 31.34024214744568,
+               "tool": 1.0
+            },
+            "description": "TC 5 (RAG): Delegate Producci\u00f3n Ministro Hales Query"
+         },
+         "5": {
+            "metricas": {
+               "time": 311.6395320892334,
+               "tool": 1.0
+            },
+            "description": "TC 6 (RAG): Delegate \u00c1reas Montaje Query"
+         },
+         "6": {
+            "metricas": {
+               "time": 67.7617871761322,
+               "tool": 1.0
+            },
+            "description": "TC 7 (RAG): Delegate Inversi\u00f3n Proyecto Query"
+         },
+         "7": {
+            "metricas": {
+               "time": 157.60215401649475,
+               "tool": 1.0
+            },
+            "description": "TC 8 (RAG): Delegate Mineral Importante Query"
+         },
+         "8": {
+            "metricas": {
+               "time": 44.51468873023987,
+               "tool": 1.0
+            },
+            "description": "TC 9 (RAG): Delegate PIB Cobre 2023 Query"
+         },
+         "9": {
+            "metricas": {
+               "time": 72.31068658828735,
+               "tool": 0.0
+            },
+            "description": "TC 10 (RAG): Delegate Reserva Plata 2016 Query"
+         },
+         "10": {
+            "metricas": {
+               "time": 25.012129068374634,
+               "tool": 0.0
+            },
+            "description": "TC 11 (RAG): Delegate Componentes Retroexcavadora Query"
+         },
+         "11": {
+            "metricas": {
+               "time": 71.53536605834961,
+               "tool": 1.0
+            },
+            "description": "TC 12 (RAG): Delegate Brazo Telesc\u00f3pico Query"
+         }
+      }
+   }
+}

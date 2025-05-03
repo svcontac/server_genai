@@ -1,0 +1,59 @@
+2025-04-29 17:26:54,494 - INFO - --- Running RAG Test 3: Inversión Proyecto (Log file: logs\rag\qwen2.5_14b\rag_tc_2.log) ---
+2025-04-29 17:26:54,495 - INFO - User Query: ¿Cuál es la inversión que contempló el proyecto de la mina Ministro Hales?
+2025-04-29 17:26:54,495 - INFO - Reference: El proyecto tuvo una inversión superior a los US $ 3.000 millones
+2025-04-29 17:26:54,495 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'inversión proyecto mina Ministro Hales'})", 'transfer_back_to_supervisor({})']
+2025-04-29 17:26:54,495 - INFO - Running test with conversation ID: test-run-2533cafb-d87d-4aca-9770-4c8a2d618cc0
+2025-04-29 17:27:11,294 - INFO - --- Workflow Output Messages ---
+2025-04-29 17:27:11,294 - INFO - ================================ Human Message =================================
+
+¿Cuál es la inversión que contempló el proyecto de la mina Ministro Hales?
+2025-04-29 17:27:11,294 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (48909da4-19ca-4228-b658-50802e1b0ade)
+ Call ID: 48909da4-19ca-4228-b658-50802e1b0ade
+  Args:
+2025-04-29 17:27:11,295 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-29 17:27:11,295 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (322d2dc7-04d4-455d-8e6e-14a17d8c0a87)
+ Call ID: 322d2dc7-04d4-455d-8e6e-14a17d8c0a87
+  Args:
+    k: 3
+    query: inversión proyecto mina Ministro Hales
+2025-04-29 17:27:11,299 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+El proyecto de la mina Ministro Hales contempló una inversión total estimada de más de US$ 3.000 millones.
+2025-04-29 17:27:11,299 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (efccfba8-7e89-4abe-8662-8c9f3534a821)
+ Call ID: efccfba8-7e89-4abe-8662-8c9f3534a821
+  Args:
+2025-04-29 17:27:11,299 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 17:27:11,300 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El proyecto de la mina Ministro Hales contempló una inversión total estimada de más de **US$ 3.000 millones**.
+2025-04-29 17:27:11,300 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 17:27:11,300 - INFO - --- Calculating answer_accuracy score for RAG Test 3: Inversión Proyecto ---
+2025-04-29 17:27:12,142 - INFO - answer_accuracy: 1.0000
+2025-04-29 17:27:12,142 - INFO - --- Calculating bleu score for RAG Test 3: Inversión Proyecto ---
+2025-04-29 17:27:12,142 - INFO - bleu: 0.1331
+2025-04-29 17:27:12,143 - INFO - --- Calculating rouge score for RAG Test 3: Inversión Proyecto ---
+2025-04-29 17:27:12,143 - INFO - rouge: 0.5294
+2025-04-29 17:27:12,143 - INFO - --- Calculating non_llm_similarity score for RAG Test 3: Inversión Proyecto ---
+2025-04-29 17:27:12,143 - INFO - non_llm_similarity: 0.4727
+2025-04-29 17:27:12,144 - INFO - --- Calculating tool score for RAG Test 3: Inversión Proyecto ---
+2025-04-29 17:27:12,144 - INFO - tool: 1.0000
+2025-04-29 17:27:12,144 - INFO - --- End of RAG Test 3: Inversión Proyecto ---

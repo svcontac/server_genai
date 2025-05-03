@@ -1,0 +1,82 @@
+2025-04-28 17:50:11,262 - INFO - --- Running RAG Test 9: Historia Retroexcavadora (Log file: logs\rag\qwen2.5_14b\rag_tc_8.log) ---
+2025-04-28 17:50:11,262 - INFO - User Query: ¿Qué país estuve involucrado en la historia de la retroexcavadora?
+2025-04-28 17:50:11,263 - INFO - Reference: Los EE.UU.
+2025-04-28 17:50:11,263 - INFO - Expected Tool Calls: ['assign_to_rag_expert({})', "retrieve_context({'query': 'país involucrado historia retroexcavadora'})", 'transfer_back_to_supervisor({})']
+2025-04-28 17:50:11,263 - INFO - Running test with conversation ID: test-run-b237e2ce-95c5-4de0-9196-91a447b88ffe
+2025-04-28 17:50:43,222 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:50:43,222 - INFO - ================================ Human Message =================================
+
+¿Qué país estuve involucrado en la historia de la retroexcavadora?
+2025-04-28 17:50:43,223 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_rag_expert (d7270425-6195-4c09-87d0-6b17b50e08b4)
+ Call ID: d7270425-6195-4c09-87d0-6b17b50e08b4
+  Args:
+2025-04-28 17:50:43,223 - INFO - ================================= Tool Message =================================
+Name: assign_to_rag_expert
+
+Successfully transferred to rag_expert
+2025-04-28 17:50:43,223 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+Tool Calls:
+  retrieve_context (1190839b-c2db-470f-9c0a-159d4e146771)
+ Call ID: 1190839b-c2db-470f-9c0a-159d4e146771
+  Args:
+    k: 2
+    query: historia retroexcavadora
+2025-04-28 17:50:43,224 - INFO - ================================= Tool Message =================================
+Name: retrieve_context
+
+Retrieved context:\n124 
+ 
+¿QUÉ ES UNA RETROEXCAVADORA? 
+ 
+Las retroexcavadoras son máquinas versátiles y potentes que se utilizan en una amplia variedad de 
+aplicaciones en la industria. También conocidas como cargador retro, estas máquinas combinan las 
+funciones de una cargadora frontal y una excavadora en un solo equipo. Su diseño único les permite 
+realizar una amplia gama de tareas, lo que las convierte en una herramienta imprescindible.\n---\n127 
+ 
+TIPOS DE RETROEXCAVADORAS Y EXCAVADORAS 
+ 
+Las retroexcavadoras son máquinas de construcción versátiles utilizadas para una variedad de tareas, 
+como excavar, cargar, levantar y mover materiales. Se clasifican en varios tipos según su tamaño, 
+diseño y aplicaciones específicas. 
+ 
+ 
+ 
+Retroexcavadoras Estándar: 
+Descripción:  Equipadas con una pala en la parte delantera y una retroexcavadora en la parte trasera. 
+Uso:  Excavación general, carga y descarga de materiales, y construcción.
+2025-04-28 17:50:43,224 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+El texto proporcionado no menciona específicamente un país relacionado con la historia de la retroexcavadora. Parece que el contexto se centra en describir qué es una retroexcavadora y los tipos diferentes de estas máquinas. Quizás necesitemos más información específica para responder a tu pregunta sobre un país particular.
+2025-04-28 17:50:43,225 - INFO - ================================== Ai Message ==================================
+Name: rag_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (b99d3961-f671-41c0-947f-503c7c098a8a)
+ Call ID: b99d3961-f671-41c0-947f-503c7c098a8a
+  Args:
+2025-04-28 17:50:43,225 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 17:50:43,225 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+El texto consultado no proporciona información sobre un país específico en relación con la historia de las retroexcavadoras. Si necesitas detalles específicos sobre el origen o desarrollo de estas máquinas en algún país, por favor proporciona más detalles para que podamos buscar esa información específica.
+2025-04-28 17:50:43,226 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:50:43,226 - INFO - --- Calculating answer_accuracy score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 17:50:44,478 - INFO - answer_accuracy: 0.0000
+2025-04-28 17:50:44,478 - INFO - --- Calculating bleu score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 17:50:44,478 - INFO - bleu: 0.0000
+2025-04-28 17:50:44,478 - INFO - --- Calculating rouge score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 17:50:44,479 - INFO - rouge: 0.0000
+2025-04-28 17:50:44,479 - INFO - --- Calculating non_llm_similarity score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 17:50:44,479 - INFO - non_llm_similarity: 0.0163
+2025-04-28 17:50:44,480 - INFO - --- Calculating tool score for RAG Test 9: Historia Retroexcavadora ---
+2025-04-28 17:50:44,480 - INFO - tool: 0.6667
+2025-04-28 17:50:44,480 - INFO - --- End of RAG Test 9: Historia Retroexcavadora ---

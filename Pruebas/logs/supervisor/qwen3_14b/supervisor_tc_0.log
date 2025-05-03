@@ -1,0 +1,59 @@
+2025-04-29 14:54:28,593 - INFO - --- Running TC 1 (Recuperador): Delegate Humectacion Query (Log file: logs\supervisor\qwen3_14b\supervisor_tc_0.log) ---
+2025-04-29 14:54:28,593 - INFO - User Query: Puedes entregarme el archivo pdf que hable sobre el plan de humectación
+2025-04-29 14:54:28,593 - INFO - Reference: The goal is to assign the task to the retriever expert.
+2025-04-29 14:54:28,593 - INFO - Expected Tool Calls: ['assign_to_retriever_expert({})']
+2025-04-29 14:54:28,594 - INFO - Running test with conversation ID: test-run-e6a5f169-99c0-44c3-a68f-9c84cfb0208a
+2025-04-29 14:54:50,230 - INFO - --- Workflow Output Messages ---
+2025-04-29 14:54:50,230 - INFO - ================================ Human Message =================================
+
+Puedes entregarme el archivo pdf que hable sobre el plan de humectación
+2025-04-29 14:54:50,230 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_retriever_expert (dbb371a6-e2d7-4c8f-a992-741de7dd4a7f)
+ Call ID: dbb371a6-e2d7-4c8f-a992-741de7dd4a7f
+  Args:
+2025-04-29 14:54:50,231 - INFO - ================================= Tool Message =================================
+Name: assign_to_retriever_expert
+
+Successfully transferred to retriever_expert
+2025-04-29 14:54:50,231 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+Tool Calls:
+  retrieve_file (70794f7f-dc54-420d-8e3b-acd56a0f3c4d)
+ Call ID: 70794f7f-dc54-420d-8e3b-acd56a0f3c4d
+  Args:
+    query: plan de humectación
+2025-04-29 14:54:50,231 - INFO - ================================= Tool Message =================================
+Name: retrieve_file
+
+src\data\Mina_Ministro_Hales.pdf
+2025-04-29 14:54:50,231 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+src/data/Mina_Ministro_Hales.pdf
+2025-04-29 14:54:50,232 - INFO - ================================== Ai Message ==================================
+Name: retriever_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (acebe5c0-f609-4e80-abbf-cf8c6555b86b)
+ Call ID: acebe5c0-f609-4e80-abbf-cf8c6555b86b
+  Args:
+2025-04-29 14:54:50,232 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-29 14:54:50,232 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+<think>
+
+</think>
+
+El documento que estás buscando es: src/data/Mina_Ministro_Hales.pdf.
+2025-04-29 14:54:50,233 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-29 14:54:50,233 - INFO - --- Calculating tool score for TC 1 (Recuperador): Delegate Humectacion Query ---
+2025-04-29 14:54:50,233 - INFO - --- Using TRUNCATED Ragas Trace for Supervisor ToolCallAccuracy ---
+2025-04-29 14:54:50,236 - INFO - tool: 1.0000
+2025-04-29 14:54:50,237 - INFO - --- End of TC 1 (Recuperador): Delegate Humectacion Query ---

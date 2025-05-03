@@ -1,0 +1,58 @@
+2025-04-28 17:08:32,648 - INFO - --- Running Test Case 3: Line Plot - 2 (Log file: logs\graficador\qwen2.5_14b\graficador_tc_2.log) ---
+2025-04-28 17:08:32,648 - INFO - User Query: Puedes graficar la primera variable a tráves del tiempo del data.csv
+2025-04-28 17:08:32,648 - INFO - Reference: Gráfico de línea (plot_line) realizado.
+2025-04-28 17:08:32,648 - INFO - Expected Tool Calls: ["assign_to_graph_expert({'plot_type': 'line'})", "plot_line({'file_path': 'src/data/data.csv', 'x_col': 0, 'y_col': 'tiempo'})", 'transfer_back_to_supervisor({})']
+2025-04-28 17:08:32,648 - INFO - Running test with conversation ID: test-run-7774cbff-fa29-4dd9-a3ac-b485b94205c1
+2025-04-28 17:09:08,896 - INFO - --- Workflow Output Messages ---
+2025-04-28 17:09:08,896 - INFO - ================================ Human Message =================================
+
+Puedes graficar la primera variable a tráves del tiempo del data.csv
+2025-04-28 17:09:08,896 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+Tool Calls:
+  assign_to_graph_expert (6d88f6cb-67a4-4fbb-bddd-fa03f35fb26c)
+ Call ID: 6d88f6cb-67a4-4fbb-bddd-fa03f35fb26c
+  Args:
+2025-04-28 17:09:08,897 - INFO - ================================= Tool Message =================================
+Name: assign_to_graph_expert
+
+Successfully transferred to graph_expert
+2025-04-28 17:09:08,897 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+Tool Calls:
+  plot_line (13ec9396-b56d-47ba-8e12-a3d83b4f4e6a)
+ Call ID: 13ec9396-b56d-47ba-8e12-a3d83b4f4e6a
+  Args:
+    file_path: src/data/data.csv
+    x_col: 1
+    y_col: 0
+2025-04-28 17:09:08,897 - INFO - ================================= Tool Message =================================
+Name: plot_line
+
+null
+2025-04-28 17:09:08,897 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+He creado un gráfico de línea utilizando la primera columna del archivo data.csv como y-axis (variable) y la segunda columna como x-axis (tiempo). Si necesita ver el resultado o hacer alguna modificación, por favor indíquemelo.
+2025-04-28 17:09:08,898 - INFO - ================================== Ai Message ==================================
+Name: graph_expert
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (f3588b61-ab35-4914-b39a-88c7984f9387)
+ Call ID: f3588b61-ab35-4914-b39a-88c7984f9387
+  Args:
+2025-04-28 17:09:08,898 - INFO - ================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+2025-04-28 17:09:08,898 - INFO - ================================== Ai Message ==================================
+Name: supervisor
+
+Se ha generado un gráfico de línea con la primera variable a través del tiempo basado en los datos proporcionados en el archivo data.csv. Si necesita más detalles o ajustes, por favor indíquemelo.
+2025-04-28 17:09:08,899 - INFO - --- Ragas Trace Conversion Successful ---
+2025-04-28 17:09:08,899 - INFO - --- Calculating goal score for Test Case 3: Line Plot - 2 ---
+2025-04-28 17:09:22,304 - INFO - goal: 1.0000
+2025-04-28 17:09:22,304 - INFO - --- Calculating tool score for Test Case 3: Line Plot - 2 ---
+2025-04-28 17:09:22,305 - INFO - tool: 0.4444
+2025-04-28 17:09:22,305 - INFO - --- End of Test Case 3: Line Plot - 2 ---
